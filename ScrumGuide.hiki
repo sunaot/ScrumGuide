@@ -53,7 +53,8 @@
 本稿では、スクラムをプロダクト開発に使用する方法を説明する。
 ただし、スクラムはプロセスや技術ではない。
 正しくは、様々なプロセスや技術を取り込むことのできるフレームワークである。
-スクラムの役割は、'''複雑なプロダクト開発が可能なフレームワークを提供することで'''、開発プラクティスの効果を相対的に浮き彫りにし、改善することである。
+スクラムの役割はあなたが開発プラクティスを使って改善していけるように、その相対的な効果を浮き彫りにすることだ。
+そのために複雑なプロダクトが開発可能なフレームワークを提供する。
 
 //SCRUM THEORY 
 //Scrum, which is grounded in empirical process control theory, employs an iterative, incremental approach to optimize predictability and control risk. Three pillars uphold every every implementation of empirical process control. 
