@@ -1,739 +1,739 @@
-// [—pŒêW]
-// :ship:o‰×‚·‚é
-// :deliver:”[•i‚·‚é
-// :implement: À‘•‚Æ‚Í•Ê‚Ì‰½‚©B[“±“ü]
-// :work: d–
-// [’ˆÓ]
-// u`‚½‚ß‚Ìv‚Í”ğ‚¯‚éBu‚·‚é‚±‚Æ‚Ìv‚ğ”ğ‚¯‚éB
-// Å—Dæ–€ -> Å—Dæ€–Ú
+// [ç”¨èªé›†]
+// :ship:å‡ºè·ã™ã‚‹
+// :deliver:ç´å“ã™ã‚‹
+// :implement: å®Ÿè£…ã¨ã¯åˆ¥ã®ä½•ã‹ã€‚[å°å…¥]
+// :work: ä»•äº‹
+// [æ³¨æ„]
+// ã€Œã€œãŸã‚ã®ã€ã¯é¿ã‘ã‚‹ã€‚ã€Œã™ã‚‹ã“ã¨ã®ã€ã‚’é¿ã‘ã‚‹ã€‚
+// æœ€å„ªå…ˆäº‹é … -> æœ€å„ªå…ˆé …ç›®
 
 [[cover.gif]]
 
 //! Acknowledgements 
 
-!Ó«
+!è¬è¾
 
 //!! General 
-//Scrum is based on industry-accepted best practices, used and proven for decades. It is then set in an empirical process theory. As Jim Coplien once remarked to Jeff, gEveryone will like Scrum; it is what we already do when our back is against the wall.h 
+//Scrum is based on industry-accepted best practices, used and proven for decades. It is then set in an empirical process theory. As Jim Coplien once remarked to Jeff, â€œEveryone will like Scrum; it is what we already do when our back is against the wall.â€ 
 
-!! ‘S”Ê
-ƒXƒNƒ‰ƒ€‚ÍAY‹ÆŠE‚Åó‚¯“ü‚ê‚ç‚ê‚½ƒxƒXƒgƒvƒ‰ƒNƒeƒBƒX‚ÉŠî‚Ã‚¢‚Ä‚¢‚éB
-‚»‚ê‚ç‚ÍA”\”N‚©‚¯‚Äg—p‚³‚êAÀØ‚³‚ê‚Ä‚«‚½‚à‚Ì‚¾B
-Œã‚ÉŒoŒ±ƒvƒƒZƒX—˜_‚Ìˆê•”‚Æ‚È‚Á‚Ä‚¢‚éB
-‚ ‚éAJim Coplien‚ªJeff Sutherland‚ÉŒ¾‚Á‚½B
-u
-‚İ‚ñ‚ÈƒXƒNƒ‰ƒ€‚ªD‚«‚É‚È‚é‚æB
-’Ç‚¢‹l‚ß‚ç‚ê‚½‚É‚¢‚Â‚à‚â‚Á‚Ä‚é‚±‚Æ‚È‚ñ‚¾‚©‚ç
-v
+!! å…¨èˆ¬
+ã‚¹ã‚¯ãƒ©ãƒ ã¯ã€ç”£æ¥­ç•Œã§å—ã‘å…¥ã‚Œã‚‰ã‚ŒãŸãƒ™ã‚¹ãƒˆãƒ—ãƒ©ã‚¯ãƒ†ã‚£ã‚¹ã«åŸºã¥ã„ã¦ã„ã‚‹ã€‚
+ãã‚Œã‚‰ã¯ã€æ•°åå¹´ã‹ã‘ã¦ä½¿ç”¨ã•ã‚Œã€å®Ÿè¨¼ã•ã‚Œã¦ããŸã‚‚ã®ã ã€‚
+å¾Œã«çµŒé¨“ãƒ—ãƒ­ã‚»ã‚¹ç†è«–ã®ä¸€éƒ¨ã¨ãªã£ã¦ã„ã‚‹ã€‚
+ã‚ã‚‹æ™‚ã€Jim CoplienãŒJeff Sutherlandã«è¨€ã£ãŸã€‚
+ã€Œ
+ã¿ã‚“ãªã‚¹ã‚¯ãƒ©ãƒ ãŒå¥½ãã«ãªã‚‹ã‚ˆã€‚
+è¿½ã„è©°ã‚ã‚‰ã‚ŒãŸæ™‚ã«ã„ã¤ã‚‚ã‚„ã£ã¦ã‚‹ã“ã¨ãªã‚“ã ã‹ã‚‰
+ã€
 
 //!!People  
-//Of the thousands of people that have contributed to Scrum, we should single out those that were instrumental in its first ten years. First there were Jeff Sutherland, working with Jeff Mckenna, and Ken Schwaber with Mike Smith and Chris Martin. Scrum was first formally presented and published at OOPSLA 1995. During the next five years, Mike Beadle and Martine Devos made significant contributions. And then everyone else, without whose help Scrum wouldnft have been refined into what it is today. 
+//Of the thousands of people that have contributed to Scrum, we should single out those that were instrumental in its first ten years. First there were Jeff Sutherland, working with Jeff Mckenna, and Ken Schwaber with Mike Smith and Chris Martin. Scrum was first formally presented and published at OOPSLA 1995. During the next five years, Mike Beadle and Martine Devos made significant contributions. And then everyone else, without whose help Scrum wouldnâ€™t have been refined into what it is today. 
 
-!!lX
-ƒXƒNƒ‰ƒ€‚ÉvŒ£‚µ‚Ä‚­‚ê‚½”ñí‚É‘½‚­‚Ìl‚½‚¿‚Ì‚È‚©‚©‚çA
-Å‰‚Ì10”NŠÔ‚ÉvŒ£‚µ‚Ä‚­‚ê‚½l‚ğ‘I‚ñ‚Å‚¢‚±‚¤B
-‚Ü‚¸AJeff Sutherland‚ÆJeff MckennaB
-‚»‚ê‚©‚çAKen Schwaber‚ÆMike Smith‚ÆChris Martin‚¾B
-ƒXƒNƒ‰ƒ€‚ÍAŒö®‚É‚Í OOPSLA 1995 ‚Å”­•\‚³‚ê‚½B
-Ÿ‚Ì5”NŠÔ‚Å‚ÍAMike Beadle‚ÆMartine Devos‚ª‘å‚«‚ÈvŒ£‚ğ‚µ‚Ä‚­‚ê‚½B
-‚»‚µ‚ÄA‚»‚Ì‘¼‚Ì‚İ‚È‚³‚ñB
-‚İ‚È‚³‚ñ‚Ì•‚¯‚ª‚È‚¯‚ê‚ÎA¡‚Ì‚æ‚¤‚Éô—û‚³‚ê‚½ƒXƒNƒ‰ƒ€‚Í‚È‚©‚Á‚½‚¾‚ë‚¤B
+!!äººã€…
+ã‚¹ã‚¯ãƒ©ãƒ ã«è²¢çŒ®ã—ã¦ãã‚ŒãŸéå¸¸ã«å¤šãã®äººãŸã¡ã®ãªã‹ã‹ã‚‰ã€
+æœ€åˆã®10å¹´é–“ã«è²¢çŒ®ã—ã¦ãã‚ŒãŸäººã‚’é¸ã‚“ã§ã„ã“ã†ã€‚
+ã¾ãšã€Jeff Sutherlandã¨Jeff Mckennaã€‚
+ãã‚Œã‹ã‚‰ã€Ken Schwaberã¨Mike Smithã¨Chris Martinã ã€‚
+ã‚¹ã‚¯ãƒ©ãƒ ã¯ã€å…¬å¼ã«ã¯ OOPSLA 1995 ã§ç™ºè¡¨ã•ã‚ŒãŸã€‚
+æ¬¡ã®5å¹´é–“ã§ã¯ã€Mike Beadleã¨Martine DevosãŒå¤§ããªè²¢çŒ®ã‚’ã—ã¦ãã‚ŒãŸã€‚
+ãã—ã¦ã€ãã®ä»–ã®ã¿ãªã•ã‚“ã€‚
+ã¿ãªã•ã‚“ã®åŠ©ã‘ãŒãªã‘ã‚Œã°ã€ä»Šã®ã‚ˆã†ã«æ´—ç·´ã•ã‚ŒãŸã‚¹ã‚¯ãƒ©ãƒ ã¯ãªã‹ã£ãŸã ã‚ã†ã€‚
 
 //!!History 
 //The history of Scrum can already be considered long in the world of software development. To honor the first places where it was tried and refined, we honor Individual, Inc., Fidelity Investments, and IDX (now GE Medical).
 
-!!—ğj
-ƒXƒNƒ‰ƒ€‚Ì—ğj‚ÍAƒ\ƒtƒgƒEƒFƒAŠJ”­‚Ì¢ŠE‚¾‚ÆA‚·‚Å‚É’·‚¢•”—Ş‚É“ü‚Á‚Ä‚¢‚é‚±‚Æ‚¾‚ë‚¤B‚Ü‚¸‚¨—ç‚ğq‚×‚½‚¢‚Ì‚ÍAÅ‰‚ÌsöŒë‚Ìê‚Å‚ ‚éBIndividual, Inc.AFidelity InvestmentsAIDXiŒ» GE Medicalj‚ÉŠ´Ó‚µ‚½‚¢B
+!!æ­´å²
+ã‚¹ã‚¯ãƒ©ãƒ ã®æ­´å²ã¯ã€ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢é–‹ç™ºã®ä¸–ç•Œã ã¨ã€ã™ã§ã«é•·ã„éƒ¨é¡ã«å…¥ã£ã¦ã„ã‚‹ã“ã¨ã ã‚ã†ã€‚ã¾ãšãŠç¤¼ã‚’è¿°ã¹ãŸã„ã®ã¯ã€æœ€åˆã®è©¦è¡ŒéŒ¯èª¤ã®å ´ã§ã‚ã‚‹ã€‚Individual, Inc.ã€Fidelity Investmentsã€IDXï¼ˆç¾ GE Medicalï¼‰ã«æ„Ÿè¬ã—ãŸã„ã€‚
 
 //PURPOSE
 //Scrum has been used to develop complex products since the early 1990s. This paper describes how to use Scrum to build products. Scrum is not a process or a technique for building products; rather, it is a framework within which you can employ various processes and techniques. The role of Scrum is to surface the relative efficacy of your development practices so that you can improve upon them while providing a framework within which complex products can be developed. 
 
-!–Ú“I
-ƒXƒNƒ‰ƒ€‚Í1990”N‘ã‰“ª‚©‚ç•¡G‚Èƒvƒƒ_ƒNƒg‚ÌŠJ”­‚Ég—p‚³‚ê‚Ä‚«‚½B
-–{e‚Å‚ÍAƒXƒNƒ‰ƒ€‚ğƒvƒƒ_ƒNƒgŠJ”­‚Ég—p‚·‚é•û–@‚ğà–¾‚·‚éB
-‚½‚¾‚µAƒXƒNƒ‰ƒ€‚ÍƒvƒƒZƒX‚â‹Zp‚Å‚Í‚È‚¢B
-³‚µ‚­‚ÍA—lX‚ÈƒvƒƒZƒX‚â‹Zp‚ğæ‚è‚Ş‚±‚Æ‚Ì‚Å‚«‚éƒtƒŒ[ƒ€ƒ[ƒN‚Å‚ ‚éB
-ƒXƒNƒ‰ƒ€‚Ì–ğŠ„‚ÍA'''•¡G‚Èƒvƒƒ_ƒNƒgŠJ”­‚ª‰Â”\‚ÈƒtƒŒ[ƒ€ƒ[ƒN‚ğ’ñ‹Ÿ‚·‚é‚±‚Æ‚Å'''AŠJ”­ƒvƒ‰ƒNƒeƒBƒX‚ÌŒø‰Ê‚ğ‘Š‘Î“I‚É•‚‚«’¤‚è‚É‚µA‰ü‘P‚·‚é‚±‚Æ‚Å‚ ‚éB
+!ç›®çš„
+ã‚¹ã‚¯ãƒ©ãƒ ã¯1990å¹´ä»£åˆé ­ã‹ã‚‰è¤‡é›‘ãªãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã®é–‹ç™ºã«ä½¿ç”¨ã•ã‚Œã¦ããŸã€‚
+æœ¬ç¨¿ã§ã¯ã€ã‚¹ã‚¯ãƒ©ãƒ ã‚’ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆé–‹ç™ºã«ä½¿ç”¨ã™ã‚‹æ–¹æ³•ã‚’èª¬æ˜ã™ã‚‹ã€‚
+ãŸã ã—ã€ã‚¹ã‚¯ãƒ©ãƒ ã¯ãƒ—ãƒ­ã‚»ã‚¹ã‚„æŠ€è¡“ã§ã¯ãªã„ã€‚
+æ­£ã—ãã¯ã€æ§˜ã€…ãªãƒ—ãƒ­ã‚»ã‚¹ã‚„æŠ€è¡“ã‚’å–ã‚Šè¾¼ã‚€ã“ã¨ã®ã§ãã‚‹ãƒ•ãƒ¬ãƒ¼ãƒ ãƒ¯ãƒ¼ã‚¯ã§ã‚ã‚‹ã€‚
+ã‚¹ã‚¯ãƒ©ãƒ ã®å½¹å‰²ã¯ã€'''è¤‡é›‘ãªãƒ—ãƒ­ãƒ€ã‚¯ãƒˆé–‹ç™ºãŒå¯èƒ½ãªãƒ•ãƒ¬ãƒ¼ãƒ ãƒ¯ãƒ¼ã‚¯ã‚’æä¾›ã™ã‚‹ã“ã¨ã§'''ã€é–‹ç™ºãƒ—ãƒ©ã‚¯ãƒ†ã‚£ã‚¹ã®åŠ¹æœã‚’ç›¸å¯¾çš„ã«æµ®ãå½«ã‚Šã«ã—ã€æ”¹å–„ã™ã‚‹ã“ã¨ã§ã‚ã‚‹ã€‚
 
 //SCRUM THEORY 
 //Scrum, which is grounded in empirical process control theory, employs an iterative, incremental approach to optimize predictability and control risk. Three pillars uphold every every implementation of empirical process control. 
 
-!ƒXƒNƒ‰ƒ€‚Ì—˜_
-ƒXƒNƒ‰ƒ€‚ÍuŒoŒ±“IƒvƒƒZƒX§Œäv‚Ì—˜_‚ğª‹’‚Æ‚µ‚Ä‚¨‚èA”½•œ“I‚Å‘Qi“I‚Èè–@‚ğ—p‚¢‚ÄA—\‘ª‰Â”\«‚ğÅ“K‰»‚µAƒŠƒXƒN‚ğƒRƒ“ƒgƒ[ƒ‹‚·‚éBŒoŒ±“IƒvƒƒZƒX§Œä‚ÌÀŒ»‚ÍA3–{‚Ì‹r‚Éx‚¦‚ç‚ê‚Ä‚¢‚éB
+!ã‚¹ã‚¯ãƒ©ãƒ ã®ç†è«–
+ã‚¹ã‚¯ãƒ©ãƒ ã¯ã€ŒçµŒé¨“çš„ãƒ—ãƒ­ã‚»ã‚¹åˆ¶å¾¡ã€ã®ç†è«–ã‚’æ ¹æ‹ ã¨ã—ã¦ãŠã‚Šã€åå¾©çš„ã§æ¼¸é€²çš„ãªæ‰‹æ³•ã‚’ç”¨ã„ã¦ã€äºˆæ¸¬å¯èƒ½æ€§ã‚’æœ€é©åŒ–ã—ã€ãƒªã‚¹ã‚¯ã‚’ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã™ã‚‹ã€‚çµŒé¨“çš„ãƒ—ãƒ­ã‚»ã‚¹åˆ¶å¾¡ã®å®Ÿç¾ã¯ã€3æœ¬ã®è„šã«æ”¯ãˆã‚‰ã‚Œã¦ã„ã‚‹ã€‚
 
 //THE FIRST LEG IS TRANSPARENCY 
 //Transparency ensures that aspects of the process that affect the outcome must be visible to those managing the outcomes. Not only must these aspects be transparent, but also what is being seen must be known. That is, when someone inspecting a process believes that something is done; it must be equivalent to their definition of done. 
 
-!!1‚Â–Ú‚Ì‹r‚Í“§–¾«
-“§–¾«‚Æ‚ÍA¬‰Ê‚É‰e‹¿‚·‚éƒvƒƒZƒX‚Ì—lq‚ªA¬‰Ê‚ğŠÇ—‚·‚él‚Ì–Ú‚ÉŒ©‚¦‚é‚±‚Æ‚ğ•ÛØ‚·‚é‚±‚Æ‚Å‚ ‚éB
-‚Ü‚½A–Ú‚ÉŒ©‚¦‚é‚à‚Ì‚Í’m‚ç‚ê‚Ä‚¢‚È‚¯‚ê‚Î‚È‚ç‚È‚¢B
-‚Â‚Ü‚èA•¨–‚ÌŠ®—¹‚ÆƒvƒƒZƒX‚ğŒŸ¸‚·‚él‚ªl‚¦‚éŠ®—¹‚Ì’è‹`‚Í“™‚µ‚­‚È‚¯‚ê‚Î‚È‚ç‚È‚¢B
+!!1ã¤ç›®ã®è„šã¯é€æ˜æ€§
+é€æ˜æ€§ã¨ã¯ã€æˆæœã«å½±éŸ¿ã™ã‚‹ãƒ—ãƒ­ã‚»ã‚¹ã®æ§˜å­ãŒã€æˆæœã‚’ç®¡ç†ã™ã‚‹äººã®ç›®ã«è¦‹ãˆã‚‹ã“ã¨ã‚’ä¿è¨¼ã™ã‚‹ã“ã¨ã§ã‚ã‚‹ã€‚
+ã¾ãŸã€ç›®ã«è¦‹ãˆã‚‹ã‚‚ã®ã¯çŸ¥ã‚‰ã‚Œã¦ã„ãªã‘ã‚Œã°ãªã‚‰ãªã„ã€‚
+ã¤ã¾ã‚Šã€ç‰©äº‹ã®å®Œäº†ã¨ãƒ—ãƒ­ã‚»ã‚¹ã‚’æ¤œæŸ»ã™ã‚‹äººãŒè€ƒãˆã‚‹å®Œäº†ã®å®šç¾©ã¯ç­‰ã—ããªã‘ã‚Œã°ãªã‚‰ãªã„ã€‚
 
 //THE SECOND LEG IS INSPECTION 
-//The various aspects of the process must be inspected frequently enough so that unacceptable variances in the process can be detected. The frequency of inspection has to take into consideration that all processes are changed by the act of inspection. A conundrum occurs when the required frequency of inspection exceeds the tolerance to inspection of the process. Fortunately, this doesnft seem to be true of software development. The other factor is the skill and diligence of the people inspecting the work results. 
+//The various aspects of the process must be inspected frequently enough so that unacceptable variances in the process can be detected. The frequency of inspection has to take into consideration that all processes are changed by the act of inspection. A conundrum occurs when the required frequency of inspection exceeds the tolerance to inspection of the process. Fortunately, this doesnâ€™t seem to be true of software development. The other factor is the skill and diligence of the people inspecting the work results. 
 
-!!2‚Â–Ú‚Ì‹r‚ÍŒŸ¸
-ƒvƒƒZƒX‚Ì—lq‚ÍA
-ó‚¯“ü‚ê“ï‚¢•Ï‰»‚ğ‚·‚®ŒŸ’m‚Å‚«‚é‚æ‚¤‚ÉA
-•p”É‚ÉŒŸ¸‚µ‚Ä‚¨‚©‚È‚¯‚ê‚Î‚È‚ç‚È‚¢B
-‚½‚¾‚µAŒŸ¸‚É‚æ‚Á‚ÄƒvƒƒZƒX©‘Ì‚ª•ÏX‚³‚ê‚Ä‚µ‚Ü‚¤‚±‚Æ‚ğl—¶‚É“ü‚ê‚Ä‚¨‚­‚±‚ÆB
-•K—v‚Æ‚È‚éŒŸ¸‚Ì•p“x‚ªƒvƒƒZƒX‚Ì‹–—e‚ğ’´‚¦‚Ä‚µ‚Ü‚Á‚Ä‚Í‚¢‚¯‚È‚¢B
-K‚¢‚È‚±‚Æ‚ÉA‚±‚ê‚Íƒ\ƒtƒgƒEƒFƒAŠJ”­‚É‚Í“–‚Ä‚Í‚Ü‚ç‚È‚¢‚æ‚¤‚¾B
-‘¼‚É‚àƒvƒƒZƒX‚É‰e‹¿‚ğ—^‚¦‚é—vˆö‚Æ‚µ‚Ä‚ÍAì‹Æ‚Ì¬‰Ê‚ğŒŸ¸‚·‚él‚Ì‹Zp‚â‹Î•×‚³‚È‚Ç‚ª‚ ‚éB
+!!2ã¤ç›®ã®è„šã¯æ¤œæŸ»
+ãƒ—ãƒ­ã‚»ã‚¹ã®æ§˜å­ã¯ã€
+å—ã‘å…¥ã‚Œé›£ã„å¤‰åŒ–ã‚’ã™ãæ¤œçŸ¥ã§ãã‚‹ã‚ˆã†ã«ã€
+é »ç¹ã«æ¤œæŸ»ã—ã¦ãŠã‹ãªã‘ã‚Œã°ãªã‚‰ãªã„ã€‚
+ãŸã ã—ã€æ¤œæŸ»ã«ã‚ˆã£ã¦ãƒ—ãƒ­ã‚»ã‚¹è‡ªä½“ãŒå¤‰æ›´ã•ã‚Œã¦ã—ã¾ã†ã“ã¨ã‚’è€ƒæ…®ã«å…¥ã‚Œã¦ãŠãã“ã¨ã€‚
+å¿…è¦ã¨ãªã‚‹æ¤œæŸ»ã®é »åº¦ãŒãƒ—ãƒ­ã‚»ã‚¹ã®è¨±å®¹ã‚’è¶…ãˆã¦ã—ã¾ã£ã¦ã¯ã„ã‘ãªã„ã€‚
+å¹¸ã„ãªã“ã¨ã«ã€ã“ã‚Œã¯ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢é–‹ç™ºã«ã¯å½“ã¦ã¯ã¾ã‚‰ãªã„ã‚ˆã†ã ã€‚
+ä»–ã«ã‚‚ãƒ—ãƒ­ã‚»ã‚¹ã«å½±éŸ¿ã‚’ä¸ãˆã‚‹è¦å› ã¨ã—ã¦ã¯ã€ä½œæ¥­ã®æˆæœã‚’æ¤œæŸ»ã™ã‚‹äººã®æŠ€è¡“ã‚„å‹¤å‹‰ã•ãªã©ãŒã‚ã‚‹ã€‚
 
 //THE THIRD LEG IS ADAPTATION 
 //If the inspector determines from the inspection that one or more aspects of the process are outside acceptable limits, and that the resulting product will be unacceptable, the inspector must adjust the process or the material being processed. The adjustment must be made as quickly as possible to minimize further deviation. 
 
-!!3‚Â–Ú‚Ì‹r‚Í“K‰
-ŒŸ¸Œ‹‰Ê‚ğŒ©‚ÄAƒvƒƒZƒX‚É•s”õ‚ª‚ ‚èA¬‰Ê‚Æ‚È‚éƒvƒƒ_ƒNƒg‚ğó‚¯“ü‚ê‚ç‚ê‚È‚¢‚Æ”»’f‚µ‚½ê‡AŒŸ¸l‚ÍƒvƒƒZƒX‚Ü‚½‚Í¬‰Ê•¨‚ğ’²®‚µ‚È‚¯‚ê‚Î‚È‚ç‚È‚¢B
-’²®‚Í‚Å‚«‚é‚¾‚¯‘‚­s‚¢A‚±‚êˆÈã‚Ìˆí’E‚Í–h‚ª‚È‚¯‚ê‚Î‚È‚ç‚È‚¢B
+!!3ã¤ç›®ã®è„šã¯é©å¿œ
+æ¤œæŸ»çµæœã‚’è¦‹ã¦ã€ãƒ—ãƒ­ã‚»ã‚¹ã«ä¸å‚™ãŒã‚ã‚Šã€æˆæœã¨ãªã‚‹ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚’å—ã‘å…¥ã‚Œã‚‰ã‚Œãªã„ã¨åˆ¤æ–­ã—ãŸå ´åˆã€æ¤œæŸ»äººã¯ãƒ—ãƒ­ã‚»ã‚¹ã¾ãŸã¯æˆæœç‰©ã‚’èª¿æ•´ã—ãªã‘ã‚Œã°ãªã‚‰ãªã„ã€‚
+èª¿æ•´ã¯ã§ãã‚‹ã ã‘æ—©ãè¡Œã„ã€ã“ã‚Œä»¥ä¸Šã®é€¸è„±ã¯é˜²ãŒãªã‘ã‚Œã°ãªã‚‰ãªã„ã€‚
 
 //There are three points for inspection and adaptation in Scrum. The Daily Scrum meeting is used to inspect progress toward the Sprint goal, and to make adaptations that optimize the value of the next work day. In addition, the Sprint Review and Planning meetings are used to inspect progress toward the Release Goal and to make adaptations that optimize the value of the next Sprint. Finally, the Sprint Retrospective is used to review the past Sprint and determine what adaptations will make the next Sprint more productive, fulfilling, and enjoyable. 
 
-ƒXƒNƒ‰ƒ€‚É‚ÍŒŸ¸‚Æ“K‰‚ğs‚¤êŠ‚ª3‚Â‚ ‚éB
-‚Ü‚¸AƒfƒCƒŠ[ƒXƒNƒ‰ƒ€ƒ~[ƒeƒBƒ“ƒO‚Å‚ ‚éB
-ƒXƒvƒŠƒ“ƒgƒS[ƒ‹‚É‘Î‚·‚éi’»‚ğŒŸ¸‚µA
-Ÿ‚Ìì‹Æ“ú‚Ì‰¿’l‚ğÅ“K‰»‚·‚é‚æ‚¤‚É“K‰‚·‚éB
-Ÿ‚ÉAƒXƒvƒŠƒ“ƒgƒŒƒrƒ…[‚ÆƒXƒvƒŠƒ“ƒgŒv‰æƒ~[ƒeƒBƒ“ƒO‚Å‚ ‚éB
-ƒŠƒŠ[ƒXƒS[ƒ‹‚Ìi’»‚ğŒŸ¸‚µA
-Ÿ‚ÌƒXƒvƒŠƒ“ƒg‚Ì‰¿’l‚ğÅ“K‰»‚·‚é‚æ‚¤‚É“K‰‚·‚éB
-ÅŒã‚ÉAƒXƒvƒŠƒ“ƒgƒŒƒgƒƒXƒyƒNƒeƒBƒu‚Å‚ ‚éB
-I—¹‚µ‚½ƒXƒvƒŠƒ“ƒg‚ğŒŸ¸‚µA
-Ÿ‚ÌƒXƒvƒŠƒ“ƒg‚ğ‚æ‚è¶Y“I‚ÉA[À‚µ‚½AŠy‚µ‚¢‚à‚Ì‚É‚·‚é
-“K‰•û–@‚ğŒˆ‚ß‚éB
+ã‚¹ã‚¯ãƒ©ãƒ ã«ã¯æ¤œæŸ»ã¨é©å¿œã‚’è¡Œã†å ´æ‰€ãŒ3ã¤ã‚ã‚‹ã€‚
+ã¾ãšã€ãƒ‡ã‚¤ãƒªãƒ¼ã‚¹ã‚¯ãƒ©ãƒ ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã§ã‚ã‚‹ã€‚
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆã‚´ãƒ¼ãƒ«ã«å¯¾ã™ã‚‹é€²æ—ã‚’æ¤œæŸ»ã—ã€
+æ¬¡ã®ä½œæ¥­æ—¥ã®ä¾¡å€¤ã‚’æœ€é©åŒ–ã™ã‚‹ã‚ˆã†ã«é©å¿œã™ã‚‹ã€‚
+æ¬¡ã«ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒ¬ãƒ“ãƒ¥ãƒ¼ã¨ã‚¹ãƒ—ãƒªãƒ³ãƒˆè¨ˆç”»ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã§ã‚ã‚‹ã€‚
+ãƒªãƒªãƒ¼ã‚¹ã‚´ãƒ¼ãƒ«ã®é€²æ—ã‚’æ¤œæŸ»ã—ã€
+æ¬¡ã®ã‚¹ãƒ—ãƒªãƒ³ãƒˆã®ä¾¡å€¤ã‚’æœ€é©åŒ–ã™ã‚‹ã‚ˆã†ã«é©å¿œã™ã‚‹ã€‚
+æœ€å¾Œã«ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒ¬ãƒˆãƒ­ã‚¹ãƒšã‚¯ãƒ†ã‚£ãƒ–ã§ã‚ã‚‹ã€‚
+çµ‚äº†ã—ãŸã‚¹ãƒ—ãƒªãƒ³ãƒˆã‚’æ¤œæŸ»ã—ã€
+æ¬¡ã®ã‚¹ãƒ—ãƒªãƒ³ãƒˆã‚’ã‚ˆã‚Šç”Ÿç”£çš„ã«ã€å……å®Ÿã—ãŸã€æ¥½ã—ã„ã‚‚ã®ã«ã™ã‚‹
+é©å¿œæ–¹æ³•ã‚’æ±ºã‚ã‚‹ã€‚
 
 //SCRUM CONTENT 
 //The Scrum framework consists of a set of Scrum Teams and their associated roles: Time-Boxes, Artifacts, and Rules. 
 
-!ƒXƒNƒ‰ƒ€‚Ì“à—e
-ƒXƒNƒ‰ƒ€ƒtƒŒ[ƒ€ƒ[ƒN‚ÍA
-'''ƒXƒNƒ‰ƒ€ƒ`[ƒ€'''‚Æ‚»‚Ì–ğŠ„A
-'''ƒ^ƒCƒ€ƒ{ƒbƒNƒX'''A
-'''¬‰Ê•¨'''A
-‚¨‚æ‚Ñ'''ƒ‹[ƒ‹'''‚Å
-\¬‚³‚ê‚éB
+!ã‚¹ã‚¯ãƒ©ãƒ ã®å†…å®¹
+ã‚¹ã‚¯ãƒ©ãƒ ãƒ•ãƒ¬ãƒ¼ãƒ ãƒ¯ãƒ¼ã‚¯ã¯ã€
+'''ã‚¹ã‚¯ãƒ©ãƒ ãƒãƒ¼ãƒ '''ã¨ãã®å½¹å‰²ã€
+'''ã‚¿ã‚¤ãƒ ãƒœãƒƒã‚¯ã‚¹'''ã€
+'''æˆæœç‰©'''ã€
+ãŠã‚ˆã³'''ãƒ«ãƒ¼ãƒ«'''ã§
+æ§‹æˆã•ã‚Œã‚‹ã€‚
 
-//Scrum Teams are designed to optimize flexibility and productivity; to this end, they are self-organizing, they are cross-functional, and they work in iterations. Each Scrum Team has three roles: 1) the ScrumMaster, who is responsible for ensuring the process is understood and followed; 2) the Product Owner, who is responsible for maximizing the value of the work that the Scrum Team does; and 3) the Team, which does the work. The Team consists of developers with all the skills to turn the Product Ownerfs requirements into a potentially releasable piece of the product by the end of the Sprint. 
+//Scrum Teams are designed to optimize flexibility and productivity; to this end, they are self-organizing, they are cross-functional, and they work in iterations. Each Scrum Team has three roles: 1) the ScrumMaster, who is responsible for ensuring the process is understood and followed; 2) the Product Owner, who is responsible for maximizing the value of the work that the Scrum Team does; and 3) the Team, which does the work. The Team consists of developers with all the skills to turn the Product Ownerâ€™s requirements into a potentially releasable piece of the product by the end of the Sprint. 
 
-ƒXƒNƒ‰ƒ€ƒ`[ƒ€‚ÍA_“î«‚Æ¶Y«‚ÌÅ“K‰»‚ğ–Úw‚·‚à‚Ì‚Å‚ ‚éB
-ƒ`[ƒ€‚ÍA©ŒÈ‘gD‰»‚µ‚Ä‚¨‚èAƒNƒƒXƒtƒ@ƒ“ƒNƒVƒ‡ƒiƒ‹‚Å‚ ‚èA”½•œ“I‚Éì‹Æ‚ğ‚·‚éB
-ƒXƒNƒ‰ƒ€ƒ`[ƒ€‚É‚Í3‚Â‚Ì–ğŠ„‚ª‚ ‚éB
-i1j'''ƒXƒNƒ‰ƒ€ƒ}ƒXƒ^['''iƒ`[ƒ€‚ªƒvƒƒZƒX‚ğ—‰ğ‚µA’Ç]‚·‚é‚±‚Æ‚ÉÓ”C‚ğ•‰‚¤jA
-i2j'''ƒvƒƒ_ƒNƒgƒI[ƒi['''iƒXƒNƒ‰ƒ€ƒ`[ƒ€‚Ìì‹Æ‚Ì‰¿’l‚ğÅ‘å‚É‚·‚é‚±‚Æ‚ÉÓ”C‚ğ•‰‚¤jA
-i3j'''ƒ`[ƒ€'''iì‹Æ‚ğ‚·‚éjB
-ƒ`[ƒ€‚ÍAƒXƒvƒŠƒ“ƒg‚ÌI—¹‚Ü‚Å‚ÉAƒvƒƒ_ƒNƒgƒI[ƒi[‚Ì—v‹‚ğƒŠƒŠ[ƒX”»’f‰Â”\‚Èƒvƒƒ_ƒNƒg‚Ì’f•Ğ‚É•Ï‚¦‚éƒXƒLƒ‹‚ğ‚Á‚½ŠJ”­Ò‚ÌW‚Ü‚è‚Å‚ ‚éB
+ã‚¹ã‚¯ãƒ©ãƒ ãƒãƒ¼ãƒ ã¯ã€æŸ”è»Ÿæ€§ã¨ç”Ÿç”£æ€§ã®æœ€é©åŒ–ã‚’ç›®æŒ‡ã™ã‚‚ã®ã§ã‚ã‚‹ã€‚
+ãƒãƒ¼ãƒ ã¯ã€è‡ªå·±çµ„ç¹”åŒ–ã—ã¦ãŠã‚Šã€ã‚¯ãƒ­ã‚¹ãƒ•ã‚¡ãƒ³ã‚¯ã‚·ãƒ§ãƒŠãƒ«ã§ã‚ã‚Šã€åå¾©çš„ã«ä½œæ¥­ã‚’ã™ã‚‹ã€‚
+ã‚¹ã‚¯ãƒ©ãƒ ãƒãƒ¼ãƒ ã«ã¯3ã¤ã®å½¹å‰²ãŒã‚ã‚‹ã€‚
+ï¼ˆ1ï¼‰'''ã‚¹ã‚¯ãƒ©ãƒ ãƒã‚¹ã‚¿ãƒ¼'''ï¼ˆãƒãƒ¼ãƒ ãŒãƒ—ãƒ­ã‚»ã‚¹ã‚’ç†è§£ã—ã€è¿½å¾“ã™ã‚‹ã“ã¨ã«è²¬ä»»ã‚’è² ã†ï¼‰ã€
+ï¼ˆ2ï¼‰'''ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼'''ï¼ˆã‚¹ã‚¯ãƒ©ãƒ ãƒãƒ¼ãƒ ã®ä½œæ¥­ã®ä¾¡å€¤ã‚’æœ€å¤§ã«ã™ã‚‹ã“ã¨ã«è²¬ä»»ã‚’è² ã†ï¼‰ã€
+ï¼ˆ3ï¼‰'''ãƒãƒ¼ãƒ '''ï¼ˆä½œæ¥­ã‚’ã™ã‚‹ï¼‰ã€‚
+ãƒãƒ¼ãƒ ã¯ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆã®çµ‚äº†ã¾ã§ã«ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ã®è¦æ±‚ã‚’ãƒªãƒªãƒ¼ã‚¹åˆ¤æ–­å¯èƒ½ãªãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã®æ–­ç‰‡ã«å¤‰ãˆã‚‹ã‚¹ã‚­ãƒ«ã‚’æŒã£ãŸé–‹ç™ºè€…ã®é›†ã¾ã‚Šã§ã‚ã‚‹ã€‚
 
 //Scrum employs time boxes to create regularity. Elements of Scrum that are timeboxed include the Release Planning Meeting, the Sprint Planning Meeting, the Sprint, the Daily Scrum, the Sprint Review, and the Sprint Retrospective. The heart of Scrum is a Sprint, which is an iteration of one month or less that is of consistent length throughout a development effort. All Sprints use the same Scrum framework, and all Sprints deliver an increment of the final product that is potentially releasable. One Sprint starts immediately after the other. 
 
-ƒXƒNƒ‰ƒ€‚ªƒ^ƒCƒ€ƒ{ƒbƒNƒX‚ğÌ—p‚µ‚Ä‚¢‚é‚Ì‚ÍA‹K‘¥“I‚ÈƒŠƒYƒ€‚ğ‚Â‚¯‚é‚½‚ß‚Å‚ ‚éB
-ƒ^ƒCƒ€ƒ{ƒbƒNƒX‚É‚ÍA
-'''ƒŠƒŠ[ƒXŒv‰æƒ~[ƒeƒBƒ“ƒO'''A
-'''ƒXƒvƒŠƒ“ƒgŒv‰æƒ~[ƒeƒBƒ“ƒO'''A
-'''ƒXƒvƒŠƒ“ƒg'''A
-'''ƒfƒCƒŠ[ƒXƒNƒ‰ƒ€'''A
-'''ƒXƒvƒŠƒ“ƒgƒŒƒrƒ…['''A
-'''ƒXƒvƒŠƒ“ƒgƒŒƒgƒƒXƒyƒNƒeƒBƒu'''
-‚ªŠÜ‚Ü‚ê‚éB
-ƒXƒNƒ‰ƒ€‚Ì’†S‚Í'''ƒXƒvƒŠƒ“ƒg'''‚Å‚ ‚éB
-ƒXƒvƒŠƒ“ƒg‚Æ‚ÍA1ƒ–Œ‚Ü‚½‚Í‚»‚êˆÈ‰º‚ÌƒCƒeƒŒ[ƒVƒ‡ƒ“‚ÅAˆê˜A‚ÌŠJ”­ì‹Æ‚ªŒp‘±‚·‚é’·‚³‚Æ‚È‚Á‚Ä‚¢‚éB
-‚·‚×‚Ä‚ÌƒXƒvƒŠƒ“ƒg‚Å“¯‚¶ƒXƒNƒ‰ƒ€ƒtƒŒ[ƒ€ƒ[ƒN‚ğg—p‚µA
-ƒŠƒŠ[ƒX”»’f‰Â”\‚È
-ÅIƒvƒƒ_ƒNƒg‚ÌƒCƒ“ƒNƒŠƒƒ“ƒg‚ğ”[•i‚·‚éB
-ƒXƒvƒŠƒ“ƒgI—¹’¼Œã‚ÉŸ‚ÌƒXƒvƒŠƒ“ƒg‚ğŠJn‚·‚éB
+ã‚¹ã‚¯ãƒ©ãƒ ãŒã‚¿ã‚¤ãƒ ãƒœãƒƒã‚¯ã‚¹ã‚’æ¡ç”¨ã—ã¦ã„ã‚‹ã®ã¯ã€è¦å‰‡çš„ãªãƒªã‚ºãƒ ã‚’ã¤ã‘ã‚‹ãŸã‚ã§ã‚ã‚‹ã€‚
+ã‚¿ã‚¤ãƒ ãƒœãƒƒã‚¯ã‚¹ã«ã¯ã€
+'''ãƒªãƒªãƒ¼ã‚¹è¨ˆç”»ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°'''ã€
+'''ã‚¹ãƒ—ãƒªãƒ³ãƒˆè¨ˆç”»ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°'''ã€
+'''ã‚¹ãƒ—ãƒªãƒ³ãƒˆ'''ã€
+'''ãƒ‡ã‚¤ãƒªãƒ¼ã‚¹ã‚¯ãƒ©ãƒ '''ã€
+'''ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒ¬ãƒ“ãƒ¥ãƒ¼'''ã€
+'''ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒ¬ãƒˆãƒ­ã‚¹ãƒšã‚¯ãƒ†ã‚£ãƒ–'''
+ãŒå«ã¾ã‚Œã‚‹ã€‚
+ã‚¹ã‚¯ãƒ©ãƒ ã®ä¸­å¿ƒã¯'''ã‚¹ãƒ—ãƒªãƒ³ãƒˆ'''ã§ã‚ã‚‹ã€‚
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆã¨ã¯ã€1ãƒ¶æœˆã¾ãŸã¯ãã‚Œä»¥ä¸‹ã®ã‚¤ãƒ†ãƒ¬ãƒ¼ã‚·ãƒ§ãƒ³ã§ã€ä¸€é€£ã®é–‹ç™ºä½œæ¥­ãŒç¶™ç¶šã™ã‚‹é•·ã•ã¨ãªã£ã¦ã„ã‚‹ã€‚
+ã™ã¹ã¦ã®ã‚¹ãƒ—ãƒªãƒ³ãƒˆã§åŒã˜ã‚¹ã‚¯ãƒ©ãƒ ãƒ•ãƒ¬ãƒ¼ãƒ ãƒ¯ãƒ¼ã‚¯ã‚’ä½¿ç”¨ã—ã€
+ãƒªãƒªãƒ¼ã‚¹åˆ¤æ–­å¯èƒ½ãª
+æœ€çµ‚ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã®ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã‚’ç´å“ã™ã‚‹ã€‚
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆçµ‚äº†ç›´å¾Œã«æ¬¡ã®ã‚¹ãƒ—ãƒªãƒ³ãƒˆã‚’é–‹å§‹ã™ã‚‹ã€‚
 
 //Scrum employs four principal artifacts. The Product Backlog is a prioritized list of everything that might be needed in the product. The Sprint Backlog is a list of tasks to turn the Product Backlog for one Sprint into an increment of potentially shippable product. A burndown is a measure of remaining backlog over time. A Release Burndown measures remaining Product Backlog across the time of a release plan. A Sprint Burndown measures remaining Sprint Backlog items across the time of a Sprint.
 
-ƒXƒNƒ‰ƒ€‚Í4‚Â‚Ìå—v‚È¬‰Ê•¨‚ğÌ—p‚µ‚Ä‚¢‚éB
-'''ƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO'''‚ÍAƒvƒƒ_ƒNƒg‚Å•K—v‚Æ‚È‚é‰Â”\«‚Ì‚ ‚é‚à‚Ì‚·‚×‚Ä‚É—Dæ“x‚ğ‚Â‚¯‚½ˆê——‚Å‚ ‚éB
-'''ƒXƒvƒŠƒ“ƒgƒoƒbƒNƒƒO'''‚ÍAƒXƒvƒŠƒ“ƒg‚É‚¨‚¢‚ÄAƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚ğo‰×”»’f‰Â”\‚Èƒvƒƒ_ƒNƒg‚ÌƒCƒ“ƒNƒŠƒƒ“ƒg‚É•Ï‚¦‚é‚½‚ß‚É•K—v‚Æ‚È‚éƒ^ƒXƒN‚É—Dæ“x‚ğ‚Â‚¯‚½ˆê——‚Å‚ ‚éB
-ƒo[ƒ“ƒ_ƒEƒ“‚ÍAŠÔ‚ğ‚©‚¯‚Äc‚Á‚½ƒoƒbƒNƒƒO‚Ì€–Ú‚ğŒv‘ª‚·‚é‚½‚ß‚Ì‚à‚Ì‚Å‚ ‚éB
-'''ƒŠƒŠ[ƒXƒo[ƒ“ƒ_ƒEƒ“'''‚ÍAƒŠƒŠ[ƒXŒv‰æ’†‚Éc‚Á‚½ƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚Ì€–Ú‚ğŒv‘ª‚·‚é‚½‚ß‚Ì‚à‚Ì‚¾B
-'''ƒXƒvƒŠƒ“ƒgƒo[ƒ“ƒ_ƒEƒ“'''‚ÍAƒXƒvƒŠƒ“ƒg’†‚Éc‚Á‚½ƒXƒvƒŠƒ“ƒgƒoƒbƒNƒƒO‚Ì€–Ú‚ğŒv‘ª‚·‚é‚à‚Ì‚¾B
+ã‚¹ã‚¯ãƒ©ãƒ ã¯4ã¤ã®ä¸»è¦ãªæˆæœç‰©ã‚’æ¡ç”¨ã—ã¦ã„ã‚‹ã€‚
+'''ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°'''ã¯ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã§å¿…è¦ã¨ãªã‚‹å¯èƒ½æ€§ã®ã‚ã‚‹ã‚‚ã®ã™ã¹ã¦ã«å„ªå…ˆåº¦ã‚’ã¤ã‘ãŸä¸€è¦§ã§ã‚ã‚‹ã€‚
+'''ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°'''ã¯ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆã«ãŠã„ã¦ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã‚’å‡ºè·åˆ¤æ–­å¯èƒ½ãªãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã®ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã«å¤‰ãˆã‚‹ãŸã‚ã«å¿…è¦ã¨ãªã‚‹ã‚¿ã‚¹ã‚¯ã«å„ªå…ˆåº¦ã‚’ã¤ã‘ãŸä¸€è¦§ã§ã‚ã‚‹ã€‚
+ãƒãƒ¼ãƒ³ãƒ€ã‚¦ãƒ³ã¯ã€æ™‚é–“ã‚’ã‹ã‘ã¦æ®‹ã£ãŸãƒãƒƒã‚¯ãƒ­ã‚°ã®é …ç›®ã‚’è¨ˆæ¸¬ã™ã‚‹ãŸã‚ã®ã‚‚ã®ã§ã‚ã‚‹ã€‚
+'''ãƒªãƒªãƒ¼ã‚¹ãƒãƒ¼ãƒ³ãƒ€ã‚¦ãƒ³'''ã¯ã€ãƒªãƒªãƒ¼ã‚¹è¨ˆç”»ä¸­ã«æ®‹ã£ãŸãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®é …ç›®ã‚’è¨ˆæ¸¬ã™ã‚‹ãŸã‚ã®ã‚‚ã®ã ã€‚
+'''ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒãƒ¼ãƒ³ãƒ€ã‚¦ãƒ³'''ã¯ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆä¸­ã«æ®‹ã£ãŸã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®é …ç›®ã‚’è¨ˆæ¸¬ã™ã‚‹ã‚‚ã®ã ã€‚
 
-//Rules bind together Scrumfs time-boxes, roles, and artifacts. Its rules are described throughout the body of this document. For example, it is a Scrum rule that only Team members ? the people committed to turning the Product Backlog into an increment ? can talk during a Daily Scrum. Ways of implementing Scrum that are not rules but rather are suggestions are described in gTipsh boxes.
+//Rules bind together Scrumâ€™s time-boxes, roles, and artifacts. Its rules are described throughout the body of this document. For example, it is a Scrum rule that only Team members ? the people committed to turning the Product Backlog into an increment ? can talk during a Daily Scrum. Ways of implementing Scrum that are not rules but rather are suggestions are described in â€œTipsâ€ boxes.
 
-'''ƒ‹[ƒ‹'''‚ÍA
-ƒXƒNƒ‰ƒ€‚Ìƒ^ƒCƒ€ƒ{ƒbƒNƒXA–ğŠ„A‚¨‚æ‚Ñ¬‰Ê•¨‚ğŒ‹‚Ñ‚Â‚¯‚é‚à‚Ì‚Å‚ ‚éB
-ƒ‹[ƒ‹‚É‚Â‚¢‚Ä‚ÍA–{e‚ÌŠ‚é‚Æ‚±‚ë‚Åà–¾‚·‚éB
-—á‚¦‚ÎAuƒ`[ƒ€ƒƒ“ƒo[iƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚ğƒCƒ“ƒNƒŠƒƒ“ƒg‚É•Ï‚¦‚é‚±‚ÆƒRƒ~ƒbƒg‚µ‚½l‚½‚¿j‚¾‚¯‚ªAƒfƒCƒŠ[ƒXƒNƒ‰ƒ€‚Å˜b‚·‚±‚Æ‚ª‚Å‚«‚év‚È‚Ç‚ªƒXƒNƒ‰ƒ€‚Ìƒ‹[ƒ‹‚Å‚ ‚éB
-ƒXƒNƒ‰ƒ€‚ğ“±“ü‚·‚é‚½‚ß‚Ìƒ‹[ƒ‹‚Å‚Í‚È‚­A‚±‚¿‚ç‚©‚ç‚Ì’ñˆÄ‚É‚Â‚¢‚Ä‚ÍAuTipv˜g“à‚Åq‚×‚é‚±‚Æ‚É‚·‚éB
+'''ãƒ«ãƒ¼ãƒ«'''ã¯ã€
+ã‚¹ã‚¯ãƒ©ãƒ ã®ã‚¿ã‚¤ãƒ ãƒœãƒƒã‚¯ã‚¹ã€å½¹å‰²ã€ãŠã‚ˆã³æˆæœç‰©ã‚’çµã³ã¤ã‘ã‚‹ã‚‚ã®ã§ã‚ã‚‹ã€‚
+ãƒ«ãƒ¼ãƒ«ã«ã¤ã„ã¦ã¯ã€æœ¬ç¨¿ã®è‡³ã‚‹ã¨ã“ã‚ã§èª¬æ˜ã™ã‚‹ã€‚
+ä¾‹ãˆã°ã€ã€Œãƒãƒ¼ãƒ ãƒ¡ãƒ³ãƒãƒ¼ï¼ˆãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã‚’ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã«å¤‰ãˆã‚‹ã“ã¨ã‚³ãƒŸãƒƒãƒˆã—ãŸäººãŸã¡ï¼‰ã ã‘ãŒã€ãƒ‡ã‚¤ãƒªãƒ¼ã‚¹ã‚¯ãƒ©ãƒ ã§è©±ã™ã“ã¨ãŒã§ãã‚‹ã€ãªã©ãŒã‚¹ã‚¯ãƒ©ãƒ ã®ãƒ«ãƒ¼ãƒ«ã§ã‚ã‚‹ã€‚
+ã‚¹ã‚¯ãƒ©ãƒ ã‚’å°å…¥ã™ã‚‹ãŸã‚ã®ãƒ«ãƒ¼ãƒ«ã§ã¯ãªãã€ã“ã¡ã‚‰ã‹ã‚‰ã®ææ¡ˆã«ã¤ã„ã¦ã¯ã€ã€ŒTipã€æ å†…ã§è¿°ã¹ã‚‹ã“ã¨ã«ã™ã‚‹ã€‚
 
-//Tip: When rules are not stated, the users of Scrum are expected to figure out what to do. Donft try to figure out a perfect solution, because the problem usually changes quickly. Instead, try something and see how it works. The inspect-and-adapt mechanisms of Scrumfs empirical nature will guide you. 
+//Tip: When rules are not stated, the users of Scrum are expected to figure out what to do. Donâ€™t try to figure out a perfect solution, because the problem usually changes quickly. Instead, try something and see how it works. The inspect-and-adapt mechanisms of Scrumâ€™s empirical nature will guide you. 
 
-""Tip: ƒ‹[ƒ‹‚ªİ’è‚³‚ê‚È‚¢ê‡‚ÍAƒXƒNƒ‰ƒ€‚Ìƒ†[ƒU[‚Í©‚ç‰½‚ğs‚¤‚×‚«‚©‚ğl‚¦‚È‚¯‚ê‚Î‚È‚ç‚È‚¢B–â‘è‚Í•p”É‚É•ÏX‚³‚ê‚é‚Ì‚ÅAÅ‰‚©‚çŠ®‘S‚È‰ğ‚ğŒ©‚Â‚¯‚æ‚¤‚Æ‚Í‚µ‚È‚¢‚±‚ÆB‚»‚Ì‘ã‚í‚èA‰½‚©‚ğ‚µ‚Ä‚İ‚ÄA‚»‚ÌŒø‰Ê‚ğŠm‚©‚ß‚é‚±‚ÆBŒŸ¸‚Æ“K‰‚Æ‚¢‚¤d‘g‚İ‚ÍAŒoŒ±“I‚É‰½‚©‚ğŠl“¾‚µ‚Ä‚¢‚­‚Æ‚¢‚¤ƒXƒNƒ‰ƒ€‚Ì“Á«‚Å‚ ‚èA‚ ‚È‚½‚ğ“±‚¢‚Ä‚­‚ê‚é‚±‚Æ‚¾‚ë‚¤B
+""Tip: ãƒ«ãƒ¼ãƒ«ãŒè¨­å®šã•ã‚Œãªã„å ´åˆã¯ã€ã‚¹ã‚¯ãƒ©ãƒ ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã¯è‡ªã‚‰ä½•ã‚’è¡Œã†ã¹ãã‹ã‚’è€ƒãˆãªã‘ã‚Œã°ãªã‚‰ãªã„ã€‚å•é¡Œã¯é »ç¹ã«å¤‰æ›´ã•ã‚Œã‚‹ã®ã§ã€æœ€åˆã‹ã‚‰å®Œå…¨ãªè§£ã‚’è¦‹ã¤ã‘ã‚ˆã†ã¨ã¯ã—ãªã„ã“ã¨ã€‚ãã®ä»£ã‚ã‚Šã€ä½•ã‹ã‚’è©¦ã—ã¦ã¿ã¦ã€ãã®åŠ¹æœã‚’ç¢ºã‹ã‚ã‚‹ã“ã¨ã€‚æ¤œæŸ»ã¨é©å¿œã¨ã„ã†ä»•çµ„ã¿ã¯ã€çµŒé¨“çš„ã«ä½•ã‹ã‚’ç²å¾—ã—ã¦ã„ãã¨ã„ã†ã‚¹ã‚¯ãƒ©ãƒ ã®ç‰¹æ€§ã§ã‚ã‚Šã€ã‚ãªãŸã‚’å°ã„ã¦ãã‚Œã‚‹ã“ã¨ã ã‚ã†ã€‚
 
 //SCRUM ROLES 
-//The Scrum Team consists of the ScrumMaster, the Product Owner, and the Team. Scrum Team members are called gpigs.h Everyone else is a gchicken.h Chickens cannot tell gpigsh how to do their work. Chickens and pigs come from the story, 
-!ƒXƒNƒ‰ƒ€‚É“oê‚·‚é–ğŠ„
-ƒXƒNƒ‰ƒ€ƒ`[ƒ€‚ÍA
-'''ƒXƒNƒ‰ƒ€ƒ}ƒXƒ^['''A
-'''ƒvƒƒ_ƒNƒgƒI[ƒi['''A
-‚¨‚æ‚Ñ'''ƒ`[ƒ€'''‚Å\¬‚³‚ê‚éB
-ƒXƒNƒ‰ƒ€ƒ`[ƒ€‚Ìƒƒ“ƒo[‚Íu“Øv‚ÆŒÄ‚Î‚ê‚éB
-‚»‚Ì‘¼‚Ìl‚Í‚·‚×‚ÄuŒ{v‚Å‚ ‚éB
-Œ{‚Íu“Øv‚Éì‹Æ‚Ì‚â‚è•û‚ğ–½—ß‚·‚é‚±‚Æ‚Í‚Å‚«‚È‚¢B
-Œ{‚Æ“Ø‚Æ‚ÍAŸ‚Ì‚æ‚¤‚È•¨Œê‚É—R—ˆ‚·‚éB
+//The Scrum Team consists of the ScrumMaster, the Product Owner, and the Team. Scrum Team members are called â€œpigs.â€ Everyone else is a â€œchicken.â€ Chickens cannot tell â€œpigsâ€ how to do their work. Chickens and pigs come from the story, 
+!ã‚¹ã‚¯ãƒ©ãƒ ã«ç™»å ´ã™ã‚‹å½¹å‰²
+ã‚¹ã‚¯ãƒ©ãƒ ãƒãƒ¼ãƒ ã¯ã€
+'''ã‚¹ã‚¯ãƒ©ãƒ ãƒã‚¹ã‚¿ãƒ¼'''ã€
+'''ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼'''ã€
+ãŠã‚ˆã³'''ãƒãƒ¼ãƒ '''ã§æ§‹æˆã•ã‚Œã‚‹ã€‚
+ã‚¹ã‚¯ãƒ©ãƒ ãƒãƒ¼ãƒ ã®ãƒ¡ãƒ³ãƒãƒ¼ã¯ã€Œè±šã€ã¨å‘¼ã°ã‚Œã‚‹ã€‚
+ãã®ä»–ã®äººã¯ã™ã¹ã¦ã€Œé¶ã€ã§ã‚ã‚‹ã€‚
+é¶ã¯ã€Œè±šã€ã«ä½œæ¥­ã®ã‚„ã‚Šæ–¹ã‚’å‘½ä»¤ã™ã‚‹ã“ã¨ã¯ã§ããªã„ã€‚
+é¶ã¨è±šã¨ã¯ã€æ¬¡ã®ã‚ˆã†ãªç‰©èªã«ç”±æ¥ã™ã‚‹ã€‚
 
-//gA chicken and a pig are together when the chicken says, gLetfs start a restaurant!h 
-//The pig thinks it over and says, gWhat would we call this restaurant?h 
-//The chicken says, gHam nf Eggs!h 
-//The pig says, gNo thanks, Ifd be committed, but youfd only be involved!h 
+//â€œA chicken and a pig are together when the chicken says, â€œLetâ€™s start a restaurant!â€ 
+//The pig thinks it over and says, â€œWhat would we call this restaurant?â€ 
+//The chicken says, â€œHam nâ€™ Eggs!â€ 
+//The pig says, â€œNo thanks, Iâ€™d be committed, but youâ€™d only be involved!â€ 
 
-* ‚ ‚é‚Æ‚«Œ{‚Æ“Ø‚ªˆê‚É‚¢‚½BŒ{‚ªuƒŒƒXƒgƒ‰ƒ“‚ğn‚ß‚æ‚¤Iv‚ÆŒ¾‚¢o‚µ‚½B
-* “Ø‚Í‚æ‚­l‚¦‚Ä‚©‚ç‚±‚¤q‚Ë‚½BuƒŒƒXƒgƒ‰ƒ“‚Å‚Í‰½‚ğo‚·‚ñ‚¾‚¢Hv
-* Œ{‚Íuƒnƒ€ƒGƒbƒO‚¾‚æIv‚Æ“š‚¦‚½B
-* “Ø‚ÍŒ¾‚Á‚½Bu‚»‚ê‚Í‚â‚ß‚Ä‚¨‚±‚¤‚©‚ÈB„‚Íg‚ğí‚é‚Ì‚ÉAŒN‚Í‚¿‚å‚Á‚ÆŠÖ‚í‚Á‚Ä‚é‚¾‚¯‚¶‚á‚È‚¢‚©v
+* ã‚ã‚‹ã¨ãé¶ã¨è±šãŒä¸€ç·’ã«ã„ãŸã€‚é¶ãŒã€Œãƒ¬ã‚¹ãƒˆãƒ©ãƒ³ã‚’å§‹ã‚ã‚ˆã†ï¼ã€ã¨è¨€ã„å‡ºã—ãŸã€‚
+* è±šã¯ã‚ˆãè€ƒãˆã¦ã‹ã‚‰ã“ã†å°‹ã­ãŸã€‚ã€Œãƒ¬ã‚¹ãƒˆãƒ©ãƒ³ã§ã¯ä½•ã‚’å‡ºã™ã‚“ã ã„ï¼Ÿã€
+* é¶ã¯ã€Œãƒãƒ ã‚¨ãƒƒã‚°ã ã‚ˆï¼ã€ã¨ç­”ãˆãŸã€‚
+* è±šã¯è¨€ã£ãŸã€‚ã€Œãã‚Œã¯ã‚„ã‚ã¦ãŠã“ã†ã‹ãªã€‚ç§ã¯èº«ã‚’å‰Šã‚‹ã®ã«ã€å›ã¯ã¡ã‚‡ã£ã¨é–¢ã‚ã£ã¦ã‚‹ã ã‘ã˜ã‚ƒãªã„ã‹ã€
 
-//Tip: The ScrumMaster works with the customers and management to identify and instantiate a Product Owner. The ScrumMaster teaches the Product Owner how to do his or her job. Product Owners are expected to know how to manage to optimize value using Scrum. If they donft, we hold the ScrumMaster accountable. 
+//Tip: The ScrumMaster works with the customers and management to identify and instantiate a Product Owner. The ScrumMaster teaches the Product Owner how to do his or her job. Product Owners are expected to know how to manage to optimize value using Scrum. If they donâ€™t, we hold the ScrumMaster accountable. 
 
-""Tip: ƒXƒNƒ‰ƒ€ƒ}ƒXƒ^[‚ÍAŒÚ‹q‚âƒ}ƒl[ƒWƒƒ[‚Æˆê‚Éƒvƒƒ_ƒNƒgƒI[ƒi[‚ğ‹ï‘Ì“I‚É“Á’è‚·‚éB‚»‚µ‚ÄAƒvƒƒ_ƒNƒgƒI[ƒi[‚É‚»‚Ì–ğŠ„‚ğ‹³‚¦‚éBƒvƒƒ_ƒNƒgƒI[ƒi[‚ÍAƒXƒNƒ‰ƒ€‚ğg—p‚·‚é‰¿’l‚ğÅ“K‰»‚·‚é‚½‚ß‚ÌŠÇ—•û–@‚ğ’m‚Á‚Ä‚¨‚©‚È‚¯‚ê‚Î‚È‚ç‚È‚¢Bƒvƒƒ_ƒNƒgƒI[ƒi[‚ª’m‚ç‚È‚¢ê‡‚ÍAƒXƒNƒ‰ƒ€ƒ}ƒXƒ^[‚ª‚»‚ÌÓ”C‚ğ•‰‚¤B
+""Tip: ã‚¹ã‚¯ãƒ©ãƒ ãƒã‚¹ã‚¿ãƒ¼ã¯ã€é¡§å®¢ã‚„ãƒãƒãƒ¼ã‚¸ãƒ£ãƒ¼ã¨ä¸€ç·’ã«ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ã‚’å…·ä½“çš„ã«ç‰¹å®šã™ã‚‹ã€‚ãã—ã¦ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ã«ãã®å½¹å‰²ã‚’æ•™ãˆã‚‹ã€‚ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ã¯ã€ã‚¹ã‚¯ãƒ©ãƒ ã‚’ä½¿ç”¨ã™ã‚‹ä¾¡å€¤ã‚’æœ€é©åŒ–ã™ã‚‹ãŸã‚ã®ç®¡ç†æ–¹æ³•ã‚’çŸ¥ã£ã¦ãŠã‹ãªã‘ã‚Œã°ãªã‚‰ãªã„ã€‚ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ãŒçŸ¥ã‚‰ãªã„å ´åˆã¯ã€ã‚¹ã‚¯ãƒ©ãƒ ãƒã‚¹ã‚¿ãƒ¼ãŒãã®è²¬ä»»ã‚’è² ã†ã€‚
 
 //THE SCRUMMASTER 
 //The ScrumMaster is responsible for ensuring that the Scrum Team adheres to Scrum values, practices, and rules. The ScrumMaster helps the Scrum Team and the organization adopt Scrum. The ScrumMaster teaches the Scrum Team by coaching and by leading it to be more productive and produce higher quality products. The ScrumMaster helps the Scrum Team understand and use self-management and cross-functionality. However, the ScrumMaster does not manage the Scrum Team; the Scrum Team is self-organizing. 
 
 
-!!ƒXƒNƒ‰ƒ€ƒ}ƒXƒ^[
-ƒXƒNƒ‰ƒ€ƒ}ƒXƒ^[‚ÍAƒXƒNƒ‰ƒ€ƒ`[ƒ€‚ªƒXƒNƒ‰ƒ€‚Ì‰¿’lAŠµKA‚¨‚æ‚Ñƒ‹[ƒ‹‚É’‰À‚Å‚ ‚é‚±‚Æ‚ğ•ÛØ‚·‚éÓ”C‚ª‚ ‚éB
-ƒXƒNƒ‰ƒ€ƒ}ƒXƒ^[‚ÍAƒXƒNƒ‰ƒ€ƒ`[ƒ€‚Æ‘gD‚ªƒXƒNƒ‰ƒ€‚ğÌ—p‚·‚é‚±‚Æ‚ğx‰‡‚·‚éB
-ƒXƒNƒ‰ƒ€ƒ}ƒXƒ^[‚ÍAƒR[ƒ`ƒ“ƒO‚âƒŠ[ƒfƒBƒ“ƒO‚ğg‚Á‚ÄAƒXƒNƒ‰ƒ€ƒ`[ƒ€‚ª‚æ‚è¶Y“I‚ÉA‚æ‚è¿‚Ì‚‚¢ƒvƒƒ_ƒNƒg‚ğì‚ê‚é‚æ‚¤w“±‚·‚éB
-ƒXƒNƒ‰ƒ€ƒ}ƒXƒ^[‚ÍAƒXƒNƒ‰ƒ€ƒ`[ƒ€‚ª©ŒÈŠÇ—‚ÆƒNƒƒXƒtƒ@ƒ“ƒNƒVƒ‡ƒ“‚ğ—‰ğ‚µAÀ‘H‚·‚é‚±‚Æ‚ğx‰‡‚·‚éB
-‚½‚¾‚µAƒXƒNƒ‰ƒ€ƒ}ƒXƒ^[‚ªƒXƒNƒ‰ƒ€ƒ`[ƒ€‚ğŠÇ—‚·‚é‚±‚Æ‚Í‚È‚¢B
-ƒXƒNƒ‰ƒ€ƒ`[ƒ€‚Í©ŒÈ‘gD‚È‚Ì‚Å‚ ‚éB
+!!ã‚¹ã‚¯ãƒ©ãƒ ãƒã‚¹ã‚¿ãƒ¼
+ã‚¹ã‚¯ãƒ©ãƒ ãƒã‚¹ã‚¿ãƒ¼ã¯ã€ã‚¹ã‚¯ãƒ©ãƒ ãƒãƒ¼ãƒ ãŒã‚¹ã‚¯ãƒ©ãƒ ã®ä¾¡å€¤ã€æ…£ç¿’ã€ãŠã‚ˆã³ãƒ«ãƒ¼ãƒ«ã«å¿ å®Ÿã§ã‚ã‚‹ã“ã¨ã‚’ä¿è¨¼ã™ã‚‹è²¬ä»»ãŒã‚ã‚‹ã€‚
+ã‚¹ã‚¯ãƒ©ãƒ ãƒã‚¹ã‚¿ãƒ¼ã¯ã€ã‚¹ã‚¯ãƒ©ãƒ ãƒãƒ¼ãƒ ã¨çµ„ç¹”ãŒã‚¹ã‚¯ãƒ©ãƒ ã‚’æ¡ç”¨ã™ã‚‹ã“ã¨ã‚’æ”¯æ´ã™ã‚‹ã€‚
+ã‚¹ã‚¯ãƒ©ãƒ ãƒã‚¹ã‚¿ãƒ¼ã¯ã€ã‚³ãƒ¼ãƒãƒ³ã‚°ã‚„ãƒªãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã‚’ä½¿ã£ã¦ã€ã‚¹ã‚¯ãƒ©ãƒ ãƒãƒ¼ãƒ ãŒã‚ˆã‚Šç”Ÿç”£çš„ã«ã€ã‚ˆã‚Šè³ªã®é«˜ã„ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚’ä½œã‚Œã‚‹ã‚ˆã†æŒ‡å°ã™ã‚‹ã€‚
+ã‚¹ã‚¯ãƒ©ãƒ ãƒã‚¹ã‚¿ãƒ¼ã¯ã€ã‚¹ã‚¯ãƒ©ãƒ ãƒãƒ¼ãƒ ãŒè‡ªå·±ç®¡ç†ã¨ã‚¯ãƒ­ã‚¹ãƒ•ã‚¡ãƒ³ã‚¯ã‚·ãƒ§ãƒ³ã‚’ç†è§£ã—ã€å®Ÿè·µã™ã‚‹ã“ã¨ã‚’æ”¯æ´ã™ã‚‹ã€‚
+ãŸã ã—ã€ã‚¹ã‚¯ãƒ©ãƒ ãƒã‚¹ã‚¿ãƒ¼ãŒã‚¹ã‚¯ãƒ©ãƒ ãƒãƒ¼ãƒ ã‚’ç®¡ç†ã™ã‚‹ã“ã¨ã¯ãªã„ã€‚
+ã‚¹ã‚¯ãƒ©ãƒ ãƒãƒ¼ãƒ ã¯è‡ªå·±çµ„ç¹”ãªã®ã§ã‚ã‚‹ã€‚
 
 
 //Tip: The ScrumMaster may be a member of the Team; for example, a developer performing Sprint tasks. However, this often leads to conflicts when the ScrumMaster has to choose between removing impediments and performing tasks. The ScrumMaster should never be the Product Owner.
 
 
-""Tip: ƒXƒNƒ‰ƒ€ƒ}ƒXƒ^[‚ÍAƒXƒvƒŠƒ“ƒg‚Ìƒ^ƒXƒN‚ğs‚¤ŠJ”­Ò‚È‚Ç‚Ìƒ`[ƒ€ƒƒ“ƒo[‚ªŒ“”C‚·‚é‚±‚Æ‚à‚ ‚éB‚µ‚©‚µAáŠQ‚Ìœ‹‚©ƒ^ƒXƒN‚ÌÁ‰»‚©‚Ì‚¢‚¸‚ê‚©‚ğ‘I‚Î‚È‚¯‚ê‚Î‚È‚ç‚È‚¢ê‡‚É‚ÍA–µ‚‚É‚Â‚È‚ª‚éB‚È‚¨AƒXƒNƒ‰ƒ€ƒ}ƒXƒ^[‚Íƒvƒƒ_ƒNƒgƒI[ƒi[‚ªŒ“”C‚µ‚Ä‚Í‚È‚ç‚È‚¢B
+""Tip: ã‚¹ã‚¯ãƒ©ãƒ ãƒã‚¹ã‚¿ãƒ¼ã¯ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆã®ã‚¿ã‚¹ã‚¯ã‚’è¡Œã†é–‹ç™ºè€…ãªã©ã®ãƒãƒ¼ãƒ ãƒ¡ãƒ³ãƒãƒ¼ãŒå…¼ä»»ã™ã‚‹ã“ã¨ã‚‚ã‚ã‚‹ã€‚ã—ã‹ã—ã€éšœå®³ã®é™¤å»ã‹ã‚¿ã‚¹ã‚¯ã®æ¶ˆåŒ–ã‹ã®ã„ãšã‚Œã‹ã‚’é¸ã°ãªã‘ã‚Œã°ãªã‚‰ãªã„å ´åˆã«ã¯ã€çŸ›ç›¾ã«ã¤ãªãŒã‚‹ã€‚ãªãŠã€ã‚¹ã‚¯ãƒ©ãƒ ãƒã‚¹ã‚¿ãƒ¼ã¯ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ãŒå…¼ä»»ã—ã¦ã¯ãªã‚‰ãªã„ã€‚
 
 
 //THE PRODUCT OWNER 
-//The Product Owner is the one and only person responsible for managing the Product Backlog and ensuring the value of the work the Team performs. This person maintains the Product Backlog and ensures that it is visible to everyone. Everyone knows what items have the highest priority, so everyone knows what will be worked on. The Product Owner is one person, not a committee. Committees may exist that advise or influence this person, but people who want to change an itemfs priority have to convince the Product Owner. Companies that adopt Scrum may find it that influences their methods for setting priorities and requirements over time. 
+//The Product Owner is the one and only person responsible for managing the Product Backlog and ensuring the value of the work the Team performs. This person maintains the Product Backlog and ensures that it is visible to everyone. Everyone knows what items have the highest priority, so everyone knows what will be worked on. The Product Owner is one person, not a committee. Committees may exist that advise or influence this person, but people who want to change an itemâ€™s priority have to convince the Product Owner. Companies that adopt Scrum may find it that influences their methods for setting priorities and requirements over time. 
 
-!!ƒvƒƒ_ƒNƒgƒI[ƒi[
-ƒvƒƒ_ƒNƒgƒI[ƒi[‚ÍAƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚ÌŠÇ—‚ÆAƒ`[ƒ€‚Ìì‹Æ‚Ì‰¿’l‚ğ•ÛØ‚·‚é‚±‚Æ‚Ì‚Å‚«‚é—Bˆê‚Ìl•¨‚Å‚ ‚éB
-ƒvƒƒ_ƒNƒgƒI[ƒi[‚ÍAƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚ğˆÛ‚µA‚İ‚ñ‚È‚ÉŠmÀ‚ÉŒ©‚¦‚é‚æ‚¤‚É‚·‚éB‚Ç‚ê‚ªÅ—Dæ€–Ú‚È‚Ì‚©‚ğ’m‚ç‚¹A‰½‚Éæ‚è‘g‚ß‚Î‚æ‚¢‚Ì‚©‚ª•ª‚©‚é‚æ‚¤‚É‚·‚éB
-ƒvƒƒ_ƒNƒgƒI[ƒi[‚Í1l‚ÌlŠÔ‚Å‚ ‚èAˆÏˆõ‰ï‚Å‚ ‚Á‚Ä‚Í‚È‚ç‚È‚¢B
-•Œ¾‚µ‚½‚è‰e‹¿‚ğ—^‚¦‚½‚è‚·‚éˆÏˆõ‰ï‚ª‚ ‚Á‚Ä‚à‚æ‚¢‚ªA€–Ú‚Ì—Dæ“x‚ğ•ÏX‚µ‚½‚¢l‚Íƒvƒƒ_ƒNƒgƒI[ƒi[‚ğ”[“¾‚³‚¹‚È‚¯‚ê‚Î‚È‚ç‚È‚¢B
-ƒXƒNƒ‰ƒ€‚ğ“±“ü‚·‚é‰ïĞ‚ÍA©Ğ‚Ì—Dæ“x•t‚¯‚â—v‹‚ÌŒˆ‚ß•û‚É‰e‹¿‚ª‚ ‚é‚©‚à‚µ‚ê‚È‚¢B
+!!ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼
+ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ã¯ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®ç®¡ç†ã¨ã€ãƒãƒ¼ãƒ ã®ä½œæ¥­ã®ä¾¡å€¤ã‚’ä¿è¨¼ã™ã‚‹ã“ã¨ã®ã§ãã‚‹å”¯ä¸€ã®äººç‰©ã§ã‚ã‚‹ã€‚
+ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ã¯ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã‚’ç¶­æŒã—ã€ã¿ã‚“ãªã«ç¢ºå®Ÿã«è¦‹ãˆã‚‹ã‚ˆã†ã«ã™ã‚‹ã€‚ã©ã‚ŒãŒæœ€å„ªå…ˆé …ç›®ãªã®ã‹ã‚’çŸ¥ã‚‰ã›ã€ä½•ã«å–ã‚Šçµ„ã‚ã°ã‚ˆã„ã®ã‹ãŒåˆ†ã‹ã‚‹ã‚ˆã†ã«ã™ã‚‹ã€‚
+ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ã¯1äººã®äººé–“ã§ã‚ã‚Šã€å§”å“¡ä¼šã§ã‚ã£ã¦ã¯ãªã‚‰ãªã„ã€‚
+åŠ©è¨€ã—ãŸã‚Šå½±éŸ¿ã‚’ä¸ãˆãŸã‚Šã™ã‚‹å§”å“¡ä¼šãŒã‚ã£ã¦ã‚‚ã‚ˆã„ãŒã€é …ç›®ã®å„ªå…ˆåº¦ã‚’å¤‰æ›´ã—ãŸã„äººã¯ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ã‚’ç´å¾—ã•ã›ãªã‘ã‚Œã°ãªã‚‰ãªã„ã€‚
+ã‚¹ã‚¯ãƒ©ãƒ ã‚’å°å…¥ã™ã‚‹ä¼šç¤¾ã¯ã€è‡ªç¤¾ã®å„ªå…ˆåº¦ä»˜ã‘ã‚„è¦æ±‚ã®æ±ºã‚æ–¹ã«å½±éŸ¿ãŒã‚ã‚‹ã‹ã‚‚ã—ã‚Œãªã„ã€‚
 
 
 //Tip: For commercial development, the Product Owner may be the product manager.For in-house development efforts, the Product Owner could be the manager of the business function that is being automated. 
 
 
-""Tip: ¤—pŠJ”­‚Ìê‡Aƒvƒƒ_ƒNƒgƒI[ƒi[‚Íƒvƒƒ_ƒNƒgƒ}ƒl[ƒWƒƒ[‚É‚È‚é‚¾‚ë‚¤BĞ“àŠJ”­‚Ìê‡‚ÍA©“®“I‚ÉƒrƒWƒlƒX‘gD‚Ìƒ}ƒl[ƒWƒƒ[‚É‚È‚é‚¾‚ë‚¤B
+""Tip: å•†ç”¨é–‹ç™ºã®å ´åˆã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ã¯ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒãƒ¼ã‚¸ãƒ£ãƒ¼ã«ãªã‚‹ã ã‚ã†ã€‚ç¤¾å†…é–‹ç™ºã®å ´åˆã¯ã€è‡ªå‹•çš„ã«ãƒ“ã‚¸ãƒã‚¹çµ„ç¹”ã®ãƒãƒãƒ¼ã‚¸ãƒ£ãƒ¼ã«ãªã‚‹ã ã‚ã†ã€‚
 
 
-//For the Product Owner to succeed, everyone in the organization has to respect his or her decisions. No one is allowed to tell the Team to work from a different set of priorities, and Teams arenft allowed to listen to anyone who says otherwise. The Product Ownerfs decisions are visible in the content and prioritization of the Product Backlog. This visibility requires the Product Owner to do his or her best, and it makes the role of Product Owner both a demanding and a rewarding one.
+//For the Product Owner to succeed, everyone in the organization has to respect his or her decisions. No one is allowed to tell the Team to work from a different set of priorities, and Teams arenâ€™t allowed to listen to anyone who says otherwise. The Product Ownerâ€™s decisions are visible in the content and prioritization of the Product Backlog. This visibility requires the Product Owner to do his or her best, and it makes the role of Product Owner both a demanding and a rewarding one.
 
 
-ƒvƒƒ_ƒNƒgƒI[ƒi[‚ª¬Œ÷‚·‚é‚É‚ÍA‘gD‚Ì‚İ‚ñ‚È‚ªƒvƒƒ_ƒNƒgƒI[ƒi[‚ÌŒˆ’è‚ğ‘¸d‚µ‚È‚¯‚ê‚Î‚È‚ç‚È‚¢B
-—Dæ“x‚ÌˆÙ‚È‚éì‹Æ‚ğƒ`[ƒ€‚É–½‚¶‚é‚±‚Æ‚Í‘¼‚Ì’N‚É‚à”F‚ß‚ç‚ê‚Ä‚¨‚ç‚¸A
-ƒ`[ƒ€‚É‚àAˆÙ‚È‚é‚±‚Æ‚ğŒ¾‚¤l‚ÌˆÓŒ©‚ğ•·‚­‚±‚Æ‚Í‹–‚³‚ê‚Ä‚¢‚È‚¢B
-ƒvƒƒ_ƒNƒgƒI[ƒi[‚ÌŒˆ’è‚ÍAƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚Ì“à—e‚Æ—Dæ“x‚ÅŒ©‚é‚±‚Æ‚ª‚Å‚«‚éB
-‚±‚ÌŒ©‚¦‚é‰»‚Íƒvƒƒ_ƒNƒgƒI[ƒi[‚Ì“w—Í‚É‚©‚©‚Á‚Ä‚¨‚èA‚»‚Ì‚½‚ßƒvƒƒ_ƒNƒgƒI[ƒi[‚Ì–ğŠ„‚Í¢“ï‚¾‚ªA‚â‚èb”ã‚Ì‚ ‚é‚à‚Ì‚Æ‚È‚Á‚Ä‚¢‚éB
+ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ãŒæˆåŠŸã™ã‚‹ã«ã¯ã€çµ„ç¹”ã®ã¿ã‚“ãªãŒãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ã®æ±ºå®šã‚’å°Šé‡ã—ãªã‘ã‚Œã°ãªã‚‰ãªã„ã€‚
+å„ªå…ˆåº¦ã®ç•°ãªã‚‹ä½œæ¥­ã‚’ãƒãƒ¼ãƒ ã«å‘½ã˜ã‚‹ã“ã¨ã¯ä»–ã®èª°ã«ã‚‚èªã‚ã‚‰ã‚Œã¦ãŠã‚‰ãšã€
+ãƒãƒ¼ãƒ ã«ã‚‚ã€ç•°ãªã‚‹ã“ã¨ã‚’è¨€ã†äººã®æ„è¦‹ã‚’èãã“ã¨ã¯è¨±ã•ã‚Œã¦ã„ãªã„ã€‚
+ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ã®æ±ºå®šã¯ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®å†…å®¹ã¨å„ªå…ˆåº¦ã§è¦‹ã‚‹ã“ã¨ãŒã§ãã‚‹ã€‚
+ã“ã®è¦‹ãˆã‚‹åŒ–ã¯ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ã®åŠªåŠ›ã«ã‹ã‹ã£ã¦ãŠã‚Šã€ãã®ãŸã‚ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ã®å½¹å‰²ã¯å›°é›£ã ãŒã€ã‚„ã‚Šç”²æ–ã®ã‚ã‚‹ã‚‚ã®ã¨ãªã£ã¦ã„ã‚‹ã€‚
 
-//Tip: The Product Owner can be a Team member, also doing development work. Thisadditional responsibility may cut into the Product Ownerfs ability to work with stakeholders. However, the Product Owner can never be the ScrumMaster. 
+//Tip: The Product Owner can be a Team member, also doing development work. Thisadditional responsibility may cut into the Product Ownerâ€™s ability to work with stakeholders. However, the Product Owner can never be the ScrumMaster. 
 
-""Tip: ƒvƒƒ_ƒNƒgƒI[ƒi[‚Íƒ`[ƒ€ƒƒ“ƒo[‚ª’S“–‚µ‚Ä‚à‚æ‚¢BŠJ”­‹Æ–±‚ğs‚Á‚Ä‚à\‚í‚È‚¢B‚µ‚©‚µAÓ”C‚ª‘‚¦‚é‚±‚Æ‚É‚æ‚Á‚ÄAƒXƒe[ƒNƒzƒ‹ƒ_[‚Æì‹Æ‚ğ‚·‚éƒvƒƒ_ƒNƒgƒI[ƒi[‚Ì”\—Í‚ª‰º‚ª‚Á‚Ä‚µ‚Ü‚¤‚©‚à‚µ‚ê‚È‚¢B‚È‚¨Aƒvƒƒ_ƒNƒgƒI[ƒi[‚ÍƒXƒNƒ‰ƒ€ƒ}ƒXƒ^[‚Å‚ ‚Á‚Ä‚Í‚È‚ç‚È‚¢B
+""Tip: ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ã¯ãƒãƒ¼ãƒ ãƒ¡ãƒ³ãƒãƒ¼ãŒæ‹…å½“ã—ã¦ã‚‚ã‚ˆã„ã€‚é–‹ç™ºæ¥­å‹™ã‚’è¡Œã£ã¦ã‚‚æ§‹ã‚ãªã„ã€‚ã—ã‹ã—ã€è²¬ä»»ãŒå¢—ãˆã‚‹ã“ã¨ã«ã‚ˆã£ã¦ã€ã‚¹ãƒ†ãƒ¼ã‚¯ãƒ›ãƒ«ãƒ€ãƒ¼ã¨ä½œæ¥­ã‚’ã™ã‚‹ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ã®èƒ½åŠ›ãŒä¸‹ãŒã£ã¦ã—ã¾ã†ã‹ã‚‚ã—ã‚Œãªã„ã€‚ãªãŠã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ã¯ã‚¹ã‚¯ãƒ©ãƒ ãƒã‚¹ã‚¿ãƒ¼ã§ã‚ã£ã¦ã¯ãªã‚‰ãªã„ã€‚
 
 //THE TEAM 
 //Teams of developers turn Product Backlog into increments of potentially shippable functionality every Sprint. Teams are also cross-functional; Team members must have all of the skills necessary to create an increment of work. Team members often have specialized skills, such as programming, quality control, business analysis, architecture, user interface design, or database design. However, the skills that Team member share ? that is, the skill of addressing a requirement and turning it into a usable product ? tend to be more important than the ones that they do not. People who refuse to code because they are architects or designers are not good fits for Teams. Everyone chips in, even if that requires learning new skills or remembering old ones. There are no titles on Teams, and there are no exceptions to this rule. Teams do not contain sub-Teams dedicated to particular domains like testing or business analysis, either. 
 
-!!ƒ`[ƒ€
-ŠJ”­Ò‚ÌW‚Ü‚è‚Å‚ ‚éƒ`[ƒ€‚ÍAƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚ğƒXƒvƒŠƒ“ƒg‚²‚Æ‚Éo‰×”»’f‰Â”\‚È‹@”\‚ÌƒCƒ“ƒNƒŠƒƒ“ƒg‚É•Ï‚¦‚éB
-‚³‚ç‚ÉAƒ`[ƒ€‚ÍƒNƒƒXƒtƒ@ƒ“ƒNƒVƒ‡ƒiƒ‹‚Å‚ ‚éB‚Â‚Ü‚èAƒ`[ƒ€ƒƒ“ƒo[‚ÍAƒCƒ“ƒNƒŠƒƒ“ƒg‚ğì¬‚·‚é‚Ì‚É•K—v‚ÈƒXƒLƒ‹‚ğ‚·‚×‚Ä‚Á‚Ä‚¢‚È‚¯‚ê‚Î‚È‚ç‚È‚¢B
-ƒ`[ƒ€ƒƒ“ƒo[‚ÍAƒvƒƒOƒ‰ƒ~ƒ“ƒOA•i¿ŠÇ—AŒo‰c•ªÍAƒA[ƒLƒeƒNƒ`ƒƒAƒ†[ƒU[ƒCƒ“ƒ^[ƒtƒF[ƒXİŒvA‚ ‚é‚¢‚Íƒf[ƒ^ƒx[ƒXİŒv‚Ì‚æ‚¤‚È“Á‰»‚µ‚½ƒXƒLƒ‹‚ğ‚Á‚Ä‚¢‚éB
-‚µ‚©‚µAƒ`[ƒ€ƒƒ“ƒo[‚ª‹¤—L‚·‚éƒXƒLƒ‹\\‚Â‚Ü‚èA—v‹‚ğŒ©o‚µA‚»‚ê‚ğ—˜—p‰Â”\‚Èƒvƒƒ_ƒNƒg‚É•Ï‚¦‚é‹Zp\\‚Ì‚Ù‚¤‚ªd—v‚Å‚ ‚éê‡‚ª‘½‚¢B
-ƒA[ƒLƒeƒNƒg‚âİŒvÒ‚¾‚©‚ç‚ÆƒR[ƒfƒBƒ“ƒO‚ğ’f‚é‚æ‚¤‚Èl‚Íƒ`[ƒ€‚É‚Ó‚³‚í‚µ‚­‚È‚¢B
-V‚µ‚¢ƒXƒLƒ‹‚ğŠw‚ñ‚¾‚èŒÃ‚¢ƒXƒLƒ‹‚ğv‚¢o‚µ‚½‚è‚·‚é•K—v‚ª‚ ‚Á‚Ä‚àA‚İ‚ñ‚È‚ª—Í‚ğ‘İ‚·‚±‚ÆB
-ƒ`[ƒ€“à‚ÉŒ¨‘‚«‚Í‚È‚¢B‚Ü‚½A‚±‚Ìƒ‹[ƒ‹‚É—áŠO‚Í‚È‚¢B
-ƒ`[ƒ€‚É‚ÍAƒeƒXƒg‚âƒrƒWƒlƒX•ªÍ‚Æ‚¢‚Á‚½ƒhƒƒCƒ“‚Éê”O‚·‚éƒTƒuƒ`[ƒ€‚Í‘¶İ‚µ‚È‚¢B
+!!ãƒãƒ¼ãƒ 
+é–‹ç™ºè€…ã®é›†ã¾ã‚Šã§ã‚ã‚‹ãƒãƒ¼ãƒ ã¯ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã‚’ã‚¹ãƒ—ãƒªãƒ³ãƒˆã”ã¨ã«å‡ºè·åˆ¤æ–­å¯èƒ½ãªæ©Ÿèƒ½ã®ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã«å¤‰ãˆã‚‹ã€‚
+ã•ã‚‰ã«ã€ãƒãƒ¼ãƒ ã¯ã‚¯ãƒ­ã‚¹ãƒ•ã‚¡ãƒ³ã‚¯ã‚·ãƒ§ãƒŠãƒ«ã§ã‚ã‚‹ã€‚ã¤ã¾ã‚Šã€ãƒãƒ¼ãƒ ãƒ¡ãƒ³ãƒãƒ¼ã¯ã€ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã‚’ä½œæˆã™ã‚‹ã®ã«å¿…è¦ãªã‚¹ã‚­ãƒ«ã‚’ã™ã¹ã¦æŒã£ã¦ã„ãªã‘ã‚Œã°ãªã‚‰ãªã„ã€‚
+ãƒãƒ¼ãƒ ãƒ¡ãƒ³ãƒãƒ¼ã¯ã€ãƒ—ãƒ­ã‚°ãƒ©ãƒŸãƒ³ã‚°ã€å“è³ªç®¡ç†ã€çµŒå–¶åˆ†æã€ã‚¢ãƒ¼ã‚­ãƒ†ã‚¯ãƒãƒ£ã€ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚¤ãƒ³ã‚¿ãƒ¼ãƒ•ã‚§ãƒ¼ã‚¹è¨­è¨ˆã€ã‚ã‚‹ã„ã¯ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹è¨­è¨ˆã®ã‚ˆã†ãªç‰¹åŒ–ã—ãŸã‚¹ã‚­ãƒ«ã‚’æŒã£ã¦ã„ã‚‹ã€‚
+ã—ã‹ã—ã€ãƒãƒ¼ãƒ ãƒ¡ãƒ³ãƒãƒ¼ãŒå…±æœ‰ã™ã‚‹ã‚¹ã‚­ãƒ«â€•â€•ã¤ã¾ã‚Šã€è¦æ±‚ã‚’è¦‹å‡ºã—ã€ãã‚Œã‚’åˆ©ç”¨å¯èƒ½ãªãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã«å¤‰ãˆã‚‹æŠ€è¡“â€•â€•ã®ã»ã†ãŒé‡è¦ã§ã‚ã‚‹å ´åˆãŒå¤šã„ã€‚
+ã‚¢ãƒ¼ã‚­ãƒ†ã‚¯ãƒˆã‚„è¨­è¨ˆè€…ã ã‹ã‚‰ã¨ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã‚’æ–­ã‚‹ã‚ˆã†ãªäººã¯ãƒãƒ¼ãƒ ã«ãµã•ã‚ã—ããªã„ã€‚
+æ–°ã—ã„ã‚¹ã‚­ãƒ«ã‚’å­¦ã‚“ã ã‚Šå¤ã„ã‚¹ã‚­ãƒ«ã‚’æ€ã„å‡ºã—ãŸã‚Šã™ã‚‹å¿…è¦ãŒã‚ã£ã¦ã‚‚ã€ã¿ã‚“ãªãŒåŠ›ã‚’è²¸ã™ã“ã¨ã€‚
+ãƒãƒ¼ãƒ å†…ã«è‚©æ›¸ãã¯ãªã„ã€‚ã¾ãŸã€ã“ã®ãƒ«ãƒ¼ãƒ«ã«ä¾‹å¤–ã¯ãªã„ã€‚
+ãƒãƒ¼ãƒ ã«ã¯ã€ãƒ†ã‚¹ãƒˆã‚„ãƒ“ã‚¸ãƒã‚¹åˆ†æã¨ã„ã£ãŸãƒ‰ãƒ¡ã‚¤ãƒ³ã«å°‚å¿µã™ã‚‹ã‚µãƒ–ãƒãƒ¼ãƒ ã¯å­˜åœ¨ã—ãªã„ã€‚
 
-//Teams are also self-organizing. No one ? not even the ScrumMaster ? tells the Team how to turn Product Backlog into increments of shippable functionality. The Team figures this out on its own. Each Team member applies his or her expertise to all of the problems. The synergy that results improves the entire Teamfs overall efficiency and effectiveness.
+//Teams are also self-organizing. No one ? not even the ScrumMaster ? tells the Team how to turn Product Backlog into increments of shippable functionality. The Team figures this out on its own. Each Team member applies his or her expertise to all of the problems. The synergy that results improves the entire Teamâ€™s overall efficiency and effectiveness.
 
-‚³‚ç‚ÉAƒ`[ƒ€‚Í©ŒÈ‘gD‚Å‚ ‚éB
-’N‚à\\ƒXƒNƒ‰ƒ€ƒ}ƒXƒ^[‚Å‚³‚¦‚à\\ƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚ğo‰×‰Â”\‚È‹@”\‚ÌƒCƒ“ƒNƒŠƒƒ“ƒg‚É•Ï‚¦‚é•û–@‚ğƒ`[ƒ€‚É“`‚¦‚é‚±‚Æ‚Í‚È‚¢B
-ƒ`[ƒ€‚Í’P“Æ‚Å‚±‚ê‚ğ‰ğŒˆ‚·‚éB
-ƒ`[ƒ€ƒƒ“ƒo[‚Íê–å’m¯‚ğ‚·‚×‚Ä‚Ì–â‘è‚É“K—p‚·‚éB
-‚»‚ÌŒ‹‰Ê¶‚¶‚éƒVƒiƒW[‚É‚æ‚Á‚ÄAƒ`[ƒ€‘S‘Ì‚ÌŒø—¦‚ÆŒø‰Ê‚ªŒüã‚·‚éB
+ã•ã‚‰ã«ã€ãƒãƒ¼ãƒ ã¯è‡ªå·±çµ„ç¹”ã§ã‚ã‚‹ã€‚
+èª°ã‚‚â€•â€•ã‚¹ã‚¯ãƒ©ãƒ ãƒã‚¹ã‚¿ãƒ¼ã§ã•ãˆã‚‚â€•â€•ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã‚’å‡ºè·å¯èƒ½ãªæ©Ÿèƒ½ã®ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã«å¤‰ãˆã‚‹æ–¹æ³•ã‚’ãƒãƒ¼ãƒ ã«ä¼ãˆã‚‹ã“ã¨ã¯ãªã„ã€‚
+ãƒãƒ¼ãƒ ã¯å˜ç‹¬ã§ã“ã‚Œã‚’è§£æ±ºã™ã‚‹ã€‚
+ãƒãƒ¼ãƒ ãƒ¡ãƒ³ãƒãƒ¼ã¯å°‚é–€çŸ¥è­˜ã‚’ã™ã¹ã¦ã®å•é¡Œã«é©ç”¨ã™ã‚‹ã€‚
+ãã®çµæœç”Ÿã˜ã‚‹ã‚·ãƒŠã‚¸ãƒ¼ã«ã‚ˆã£ã¦ã€ãƒãƒ¼ãƒ å…¨ä½“ã®åŠ¹ç‡ã¨åŠ¹æœãŒå‘ä¸Šã™ã‚‹ã€‚
 
-//The optimal size for a Team is seven people, plus or minus two. When there are fewer than five Team members, there is less interaction and as a result less productivity gain.  Whatfs more, the Team may encounter skill constraints during parts of the Sprint and be unable to deliver a releasable piece of the product. If there are more than nine members, there is simply too much coordination required. Large Teams generate too much complexity for an empirical processs to manage. However, we have encountered some successful Teams that have exceeded the upper and lower bounds of this size range. The Product Owner and ScrumMaster roles are not included in this count unless they are also pigs. 
+//The optimal size for a Team is seven people, plus or minus two. When there are fewer than five Team members, there is less interaction and as a result less productivity gain.  Whatâ€™s more, the Team may encounter skill constraints during parts of the Sprint and be unable to deliver a releasable piece of the product. If there are more than nine members, there is simply too much coordination required. Large Teams generate too much complexity for an empirical processs to manage. However, we have encountered some successful Teams that have exceeded the upper and lower bounds of this size range. The Product Owner and ScrumMaster roles are not included in this count unless they are also pigs. 
 
 
-ƒ`[ƒ€‚ÉÅ“K‚È‹K–Í‚ÍA7}2–¼‚Å‚ ‚éB
-ƒ`[ƒ€ƒƒ“ƒo[‚ª5–¼–¢–‚Ìê‡A‘ŠŒİì—p‚ª­‚È‚­A¶Y«‚Ìã¸‚ª’á‚¢B
-‚³‚ç‚ÉAƒXƒvƒŠƒ“ƒg’†‚É‹Zp“I§–ñ‚É‘˜‹ö‚µ‚½‚èAƒŠƒŠ[ƒX‰Â”\‚Èƒvƒƒ_ƒNƒg‚ğ”[•i‚Å‚«‚È‚©‚Á‚½‚è‚·‚é‚©‚à‚µ‚ê‚È‚¢B
-ƒ`[ƒ€ƒƒ“ƒo[‚ª9–¼‚ğ’´‚¦‚éê‡A’Pƒ‚É’²®‚·‚é—Ê‚ª‘½‚­‚È‚Á‚Ä‚µ‚Ü‚¤B
-‘å‚«‚Èƒ`[ƒ€‚ÍAŒoŒ±“IƒvƒƒZƒX‚ğŠÇ—‚·‚é‚É‚Í‚ ‚Ü‚è‚É‚à•¡G‚Å‚ ‚éB
-‚Æ‚Í‚¢‚¦A‚±‚Ì”ÍˆÍ‚É“ü‚ç‚È‚¢‹K–Í‚Ìƒ`[ƒ€‚ª¬Œ÷‚µ‚½—á‚É‰äX‚Í‰½“x‚©‘˜‹ö‚µ‚½‚±‚Æ‚ª‚ ‚éB
-ƒvƒƒ_ƒNƒgƒI[ƒi[‚ÆƒXƒNƒ‰ƒ€ƒ}ƒXƒ^[‚ÍA”Ş‚ç‚ª“Ø‚Å‚È‚¢‚Ì‚Å‚ ‚ê‚ÎAl”‚ÉŠÜ‚Ü‚È‚¢B
+ãƒãƒ¼ãƒ ã«æœ€é©ãªè¦æ¨¡ã¯ã€7Â±2åã§ã‚ã‚‹ã€‚
+ãƒãƒ¼ãƒ ãƒ¡ãƒ³ãƒãƒ¼ãŒ5åæœªæº€ã®å ´åˆã€ç›¸äº’ä½œç”¨ãŒå°‘ãªãã€ç”Ÿç”£æ€§ã®ä¸Šæ˜‡ãŒä½ã„ã€‚
+ã•ã‚‰ã«ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆä¸­ã«æŠ€è¡“çš„åˆ¶ç´„ã«é­é‡ã—ãŸã‚Šã€ãƒªãƒªãƒ¼ã‚¹å¯èƒ½ãªãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚’ç´å“ã§ããªã‹ã£ãŸã‚Šã™ã‚‹ã‹ã‚‚ã—ã‚Œãªã„ã€‚
+ãƒãƒ¼ãƒ ãƒ¡ãƒ³ãƒãƒ¼ãŒ9åã‚’è¶…ãˆã‚‹å ´åˆã€å˜ç´”ã«èª¿æ•´ã™ã‚‹é‡ãŒå¤šããªã£ã¦ã—ã¾ã†ã€‚
+å¤§ããªãƒãƒ¼ãƒ ã¯ã€çµŒé¨“çš„ãƒ—ãƒ­ã‚»ã‚¹ã‚’ç®¡ç†ã™ã‚‹ã«ã¯ã‚ã¾ã‚Šã«ã‚‚è¤‡é›‘ã§ã‚ã‚‹ã€‚
+ã¨ã¯ã„ãˆã€ã“ã®ç¯„å›²ã«å…¥ã‚‰ãªã„è¦æ¨¡ã®ãƒãƒ¼ãƒ ãŒæˆåŠŸã—ãŸä¾‹ã«æˆ‘ã€…ã¯ä½•åº¦ã‹é­é‡ã—ãŸã“ã¨ãŒã‚ã‚‹ã€‚
+ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ã¨ã‚¹ã‚¯ãƒ©ãƒ ãƒã‚¹ã‚¿ãƒ¼ã¯ã€å½¼ã‚‰ãŒè±šã§ãªã„ã®ã§ã‚ã‚Œã°ã€äººæ•°ã«å«ã¾ãªã„ã€‚
 
 //Team composition may change at the end of a Sprint. Every time Team membership is changed, the productivity gained from self-organization is diminished. Care should be taken when changing Team composition. 
 
 
-ƒXƒvƒŠƒ“ƒg‚ªI—¹‚·‚é‚ÆAƒ`[ƒ€\¬‚ª•Ï‚í‚é‚±‚Æ‚à‚ ‚éB
-ƒ`[ƒ€ƒƒ“ƒo[‚ª‘Ö‚í‚é‚½‚Ñ‚É©ŒÈ‘gD‚É‚æ‚Á‚ÄŠl“¾‚µ‚½¶Y«‚Í’á‰º‚·‚éB
-ƒ`[ƒ€\¬‚ğ•ÏX‚·‚é‚Æ‚«‚Í’ˆÓ‚·‚×‚«‚Å‚ ‚éB
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆãŒçµ‚äº†ã™ã‚‹ã¨ã€ãƒãƒ¼ãƒ æ§‹æˆãŒå¤‰ã‚ã‚‹ã“ã¨ã‚‚ã‚ã‚‹ã€‚
+ãƒãƒ¼ãƒ ãƒ¡ãƒ³ãƒãƒ¼ãŒæ›¿ã‚ã‚‹ãŸã³ã«è‡ªå·±çµ„ç¹”ã«ã‚ˆã£ã¦ç²å¾—ã—ãŸç”Ÿç”£æ€§ã¯ä½ä¸‹ã™ã‚‹ã€‚
+ãƒãƒ¼ãƒ æ§‹æˆã‚’å¤‰æ›´ã™ã‚‹ã¨ãã¯æ³¨æ„ã™ã¹ãã§ã‚ã‚‹ã€‚
 
 //TIME-BOXES 
 //The Time-Boxes in Scrum are the Release Planning Meeting, the Sprint, the Sprint Planning Meeting, the Sprint Review, the Sprint Retrospective, and the Daily Scrum. 
 
-!ƒ^ƒCƒ€ƒ{ƒbƒNƒX
-ƒXƒNƒ‰ƒ€‚Ìƒ^ƒCƒ€ƒ{ƒbƒNƒX‚É‚ÍA
-'''ƒŠƒŠ[ƒXŒv‰æƒ~[ƒeƒBƒ“ƒO'''A
-'''ƒXƒvƒŠƒ“ƒg'''A
-'''ƒXƒvƒŠƒ“ƒgŒv‰æƒ~[ƒeƒBƒ“ƒO'''A
-'''ƒXƒvƒŠƒ“ƒgƒŒƒrƒ…['''A
-'''ƒXƒvƒŠƒ“ƒgƒŒƒgƒƒXƒyƒNƒeƒBƒu'''A
-‚¨‚æ‚Ñ'''ƒfƒCƒŠ[ƒXƒNƒ‰ƒ€'''
-‚ª‚ ‚éB
+!ã‚¿ã‚¤ãƒ ãƒœãƒƒã‚¯ã‚¹
+ã‚¹ã‚¯ãƒ©ãƒ ã®ã‚¿ã‚¤ãƒ ãƒœãƒƒã‚¯ã‚¹ã«ã¯ã€
+'''ãƒªãƒªãƒ¼ã‚¹è¨ˆç”»ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°'''ã€
+'''ã‚¹ãƒ—ãƒªãƒ³ãƒˆ'''ã€
+'''ã‚¹ãƒ—ãƒªãƒ³ãƒˆè¨ˆç”»ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°'''ã€
+'''ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒ¬ãƒ“ãƒ¥ãƒ¼'''ã€
+'''ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒ¬ãƒˆãƒ­ã‚¹ãƒšã‚¯ãƒ†ã‚£ãƒ–'''ã€
+ãŠã‚ˆã³'''ãƒ‡ã‚¤ãƒªãƒ¼ã‚¹ã‚¯ãƒ©ãƒ '''
+ãŒã‚ã‚‹ã€‚
 
 
 //RELEASE PLANNING MEETING 
-//The purpose of release planning is to establish a plan and goals that the Scrum Teams and the rest of the organizations can understand and communicate. Release planning answers the questions, gHow can we turn the vision into a winning product in the best possible way? How can we meet or exceed the desired customer satisfaction and Return on Investment?h The release plan establishes the goal of the release, the highest priority Product Backlog, the major risks, and the overall features and functionality that the release will contain. It also establishes a probable delivery date and cost that should hold if nothing changes. The organization can then inspect progress and make changes to this release plan on a Sprint-by-Sprint basis. 
+//The purpose of release planning is to establish a plan and goals that the Scrum Teams and the rest of the organizations can understand and communicate. Release planning answers the questions, â€œHow can we turn the vision into a winning product in the best possible way? How can we meet or exceed the desired customer satisfaction and Return on Investment?â€ The release plan establishes the goal of the release, the highest priority Product Backlog, the major risks, and the overall features and functionality that the release will contain. It also establishes a probable delivery date and cost that should hold if nothing changes. The organization can then inspect progress and make changes to this release plan on a Sprint-by-Sprint basis. 
 
-!!ƒŠƒŠ[ƒXŒv‰æƒ~[ƒeƒBƒ“ƒO
-ƒŠƒŠ[ƒXŒv‰æƒ~[ƒeƒBƒ“ƒO‚Ì–Ú“I‚ÍAƒXƒNƒ‰ƒ€ƒ`[ƒ€‚â‘gD‘S‘Ì‚ªA—‰ğ‚µ‚½ã‚ÅƒRƒ~ƒ…ƒjƒP[ƒVƒ‡ƒ“‚Å‚«‚éŒv‰æ‚âƒS[ƒ‹‚ğŠm—§‚·‚é‚±‚Æ‚Å‚ ‚éB
-ƒŠƒŠ[ƒXŒv‰æ‚Í
-u
-‚Ç‚Ì‚æ‚¤‚É‚·‚ê‚ÎÅ—Ç‚Ì•û–@‚ÅƒrƒWƒ‡ƒ“‚ğ¬Œ÷ƒvƒƒ_ƒNƒg‚É•Ï‚¦‚é‚±‚Æ‚ª‚Å‚«‚é‚Ì‚©B
-‚Ç‚Ì‚æ‚¤‚É‚·‚ê‚Î‹‚ß‚ç‚ê‚éŒÚ‹q–‘«‚âROI‚ğ–‚½‚·i‚ ‚é‚¢‚Í’´‚¦‚éj‚±‚Æ‚ª‚Å‚«‚é‚Ì‚©B
-v
-‚Æ‚¢‚Á‚½‹^–â‚É“š‚¦‚é‚à‚Ì‚Å‚ ‚éB
-ƒŠƒŠ[ƒXŒv‰æ‚Å‚ÍAƒŠƒŠ[ƒXƒS[ƒ‹Aƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚ÌÅ—Dæ€–ÚAå‚ÈƒŠƒXƒNA‘S”Ê“I‚ÈƒtƒB[ƒ`ƒƒA‚¨‚æ‚ÑƒŠƒŠ[ƒX‚ÉŠÜ‚Ş‹@”\‚ğŒˆ‚ß‚éB
-‚³‚ç‚ÉA”[•i—\’è“úA‰½‚à•ÏX‚ª”­¶‚µ‚È‚©‚Á‚½ê‡‚É‚©‚©‚éƒRƒXƒg‚àŒˆ‚ß‚Ä‚¨‚­B
-‘gD‚Íi’»‚ğŒŸ¸‚µ‚ÄAƒXƒvƒŠƒ“ƒg‚²‚Æ‚ÉƒŠƒŠ[ƒXŒv‰æ‚ğ•ÏX‚Å‚«‚éB
+!!ãƒªãƒªãƒ¼ã‚¹è¨ˆç”»ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°
+ãƒªãƒªãƒ¼ã‚¹è¨ˆç”»ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã®ç›®çš„ã¯ã€ã‚¹ã‚¯ãƒ©ãƒ ãƒãƒ¼ãƒ ã‚„çµ„ç¹”å…¨ä½“ãŒã€ç†è§£ã—ãŸä¸Šã§ã‚³ãƒŸãƒ¥ãƒ‹ã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã§ãã‚‹è¨ˆç”»ã‚„ã‚´ãƒ¼ãƒ«ã‚’ç¢ºç«‹ã™ã‚‹ã“ã¨ã§ã‚ã‚‹ã€‚
+ãƒªãƒªãƒ¼ã‚¹è¨ˆç”»ã¯
+ã€Œ
+ã©ã®ã‚ˆã†ã«ã™ã‚Œã°æœ€è‰¯ã®æ–¹æ³•ã§ãƒ“ã‚¸ãƒ§ãƒ³ã‚’æˆåŠŸãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã«å¤‰ãˆã‚‹ã“ã¨ãŒã§ãã‚‹ã®ã‹ã€‚
+ã©ã®ã‚ˆã†ã«ã™ã‚Œã°æ±‚ã‚ã‚‰ã‚Œã‚‹é¡§å®¢æº€è¶³ã‚„ROIã‚’æº€ãŸã™ï¼ˆã‚ã‚‹ã„ã¯è¶…ãˆã‚‹ï¼‰ã“ã¨ãŒã§ãã‚‹ã®ã‹ã€‚
+ã€
+ã¨ã„ã£ãŸç–‘å•ã«ç­”ãˆã‚‹ã‚‚ã®ã§ã‚ã‚‹ã€‚
+ãƒªãƒªãƒ¼ã‚¹è¨ˆç”»ã§ã¯ã€ãƒªãƒªãƒ¼ã‚¹ã‚´ãƒ¼ãƒ«ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®æœ€å„ªå…ˆé …ç›®ã€ä¸»ãªãƒªã‚¹ã‚¯ã€å…¨èˆ¬çš„ãªãƒ•ã‚£ãƒ¼ãƒãƒ£ã€ãŠã‚ˆã³ãƒªãƒªãƒ¼ã‚¹ã«å«ã‚€æ©Ÿèƒ½ã‚’æ±ºã‚ã‚‹ã€‚
+ã•ã‚‰ã«ã€ç´å“äºˆå®šæ—¥ã€ä½•ã‚‚å¤‰æ›´ãŒç™ºç”Ÿã—ãªã‹ã£ãŸå ´åˆã«ã‹ã‹ã‚‹ã‚³ã‚¹ãƒˆã‚‚æ±ºã‚ã¦ãŠãã€‚
+çµ„ç¹”ã¯é€²æ—ã‚’æ¤œæŸ»ã—ã¦ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆã”ã¨ã«ãƒªãƒªãƒ¼ã‚¹è¨ˆç”»ã‚’å¤‰æ›´ã§ãã‚‹ã€‚
 
 
 //Products are built iteratively using Scrum, wherein each Sprint creates an increment of the product, starting with the most valuable and riskiest. More and more Sprints create additional increments of the product. Each increment is a potentially shippable slice of the entire product. When enough increments have been created for the Product to be of value, of use to its investors, the product is released. 
 
-ƒXƒNƒ‰ƒ€‚ğg—p‚µ‚Äƒvƒƒ_ƒNƒg‚ğ”½•œ“I‚É\’z‚·‚é‚É‚ÍAƒXƒvƒŠƒ“ƒg‚Åƒvƒƒ_ƒNƒg‚ÌƒCƒ“ƒNƒŠƒƒ“ƒg‚ğì¬‚·‚é‚±‚Æ‚É‚È‚éB
-‚±‚Ì‚Æ‚«AÅ‚à‰¿’l‚ª‚ ‚èAÅ‚àƒŠƒXƒN‚Ì‚‚¢‚à‚Ì‚©‚ç’…è‚·‚éB
-ƒXƒvƒŠƒ“ƒg‚Ì‚½‚Ñ‚ÉAƒvƒƒ_ƒNƒg‚ÌƒCƒ“ƒNƒŠƒƒ“ƒg‚ª’Ç‰Á‚³‚ê‚éB
-ƒCƒ“ƒNƒŠƒƒ“ƒg‚ÍAƒvƒƒ_ƒNƒg‚Ìo‰×”»’f‰Â”\‚È’f•Ğ‚Å‚ ‚éB
-\•ª‚ÉƒCƒ“ƒNƒŠƒƒ“ƒg‚ğì¬‚µAo‘Ò‚É‚Æ‚Á‚Ä‰¿’l‚Ì‚ ‚é–ğ—§‚Â‚à‚Ì‚Æ‚È‚Á‚½‚çAƒvƒƒ_ƒNƒg‚ğƒŠƒŠ[ƒX‚·‚éB
+ã‚¹ã‚¯ãƒ©ãƒ ã‚’ä½¿ç”¨ã—ã¦ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚’åå¾©çš„ã«æ§‹ç¯‰ã™ã‚‹ã«ã¯ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆã§ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã®ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã‚’ä½œæˆã™ã‚‹ã“ã¨ã«ãªã‚‹ã€‚
+ã“ã®ã¨ãã€æœ€ã‚‚ä¾¡å€¤ãŒã‚ã‚Šã€æœ€ã‚‚ãƒªã‚¹ã‚¯ã®é«˜ã„ã‚‚ã®ã‹ã‚‰ç€æ‰‹ã™ã‚‹ã€‚
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆã®ãŸã³ã«ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã®ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆãŒè¿½åŠ ã•ã‚Œã‚‹ã€‚
+ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã¯ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã®å‡ºè·åˆ¤æ–­å¯èƒ½ãªæ–­ç‰‡ã§ã‚ã‚‹ã€‚
+ååˆ†ã«ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã‚’ä½œæˆã—ã€å‡ºè³‡è€…ã«ã¨ã£ã¦ä¾¡å€¤ã®ã‚ã‚‹å½¹ç«‹ã¤ã‚‚ã®ã¨ãªã£ãŸã‚‰ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚’ãƒªãƒªãƒ¼ã‚¹ã™ã‚‹ã€‚
 
 //Most organizations already have a release planning process, and in most of these processes most of the planning is done at the beginning of the release and left unchanged as time passes. In Scrum release planning, an overall goal and probable outcomes are defined. This release planning usually requires no more than 15-20% of the time an organization consumed to build a traditional release plan. However, a Scrum release performs just-in-time planning every Sprint Review and Sprint Planning meeting, as well as daily just-in-time planning at every Daily Scrum meeting. Overall, Scrum release efforts probably consume slightly more effort than traditional release planning efforts.
 
-‚Ù‚Æ‚ñ‚Ç‚Ì‘gD‚É‚ÍAŠù‚ÉƒŠƒŠ[ƒXŒv‰æƒvƒƒZƒX‚ª‘¶İ‚·‚é‚¾‚ë‚¤B
-‚µ‚©‚µ‘½‚­‚Ìê‡A‚»‚ÌŒv‰æ‚ÍƒŠƒŠ[ƒX‚Ì‰Šú‚És‚¢AŠÔ‚ª‚½‚Á‚Ä‚à•ÏX‚·‚é‚±‚Æ‚Í‚È‚¢B
-ƒXƒNƒ‰ƒ€ƒŠƒŠ[ƒXŒv‰æ‚Å‚ÍA‘S‘Ì‚ÌƒS[ƒ‹‚â¬‰Ê•¨‚ğ’è‹`‚·‚éB
-’ÊíA‚±‚ÌƒŠƒŠ[ƒXŒv‰æ‚É‚ÍA]—ˆ‚ÌƒŠƒŠ[ƒXŒv‰æ‚É”ï‚â‚·‚í‚¸‚©15`20%‚ÌŠÔ‚µ‚©‚©‚©‚ç‚È‚¢B
-‚½‚¾‚µAƒXƒNƒ‰ƒ€‚ÌƒŠƒŠ[ƒX‚ÍAƒXƒvƒŠƒ“ƒgƒŒƒrƒ…[‚âƒXƒvƒŠƒ“ƒgŒv‰æƒ~[ƒeƒBƒ“ƒO‚Ì‚½‚Ñ‚ÉƒWƒƒƒXƒgƒCƒ“ƒ^ƒCƒ€‚ÅŒv‰æ‚ğ—§‚Ä‚éB
-‚³‚ç‚ÉAƒfƒCƒŠ[ƒXƒNƒ‰ƒ€ƒ~[ƒeƒBƒ“ƒO‚Å‚ÍA–ˆ“úƒWƒƒƒXƒgƒCƒ“ƒ^ƒCƒ€‚ÅŒv‰æ‚ğ—§‚Ä‚éB
-‡Œv‚·‚é‚ÆAƒXƒNƒ‰ƒ€‚ÌƒŠƒŠ[ƒX‚Ö‚Ìæ‚è‘g‚İ‚ÍA‚¨‚»‚ç‚­“`““I‚ÈƒŠƒŠ[ƒXŒv‰æ‚Ö‚Ìæ‚è‘g‚İ‚æ‚è‚àA‚í‚¸‚©‚ÉèŠÔ‚ª‚©‚©‚é‚±‚Æ‚É‚È‚éB
+ã»ã¨ã‚“ã©ã®çµ„ç¹”ã«ã¯ã€æ—¢ã«ãƒªãƒªãƒ¼ã‚¹è¨ˆç”»ãƒ—ãƒ­ã‚»ã‚¹ãŒå­˜åœ¨ã™ã‚‹ã ã‚ã†ã€‚
+ã—ã‹ã—å¤šãã®å ´åˆã€ãã®è¨ˆç”»ã¯ãƒªãƒªãƒ¼ã‚¹ã®åˆæœŸã«è¡Œã„ã€æ™‚é–“ãŒãŸã£ã¦ã‚‚å¤‰æ›´ã™ã‚‹ã“ã¨ã¯ãªã„ã€‚
+ã‚¹ã‚¯ãƒ©ãƒ ãƒªãƒªãƒ¼ã‚¹è¨ˆç”»ã§ã¯ã€å…¨ä½“ã®ã‚´ãƒ¼ãƒ«ã‚„æˆæœç‰©ã‚’å®šç¾©ã™ã‚‹ã€‚
+é€šå¸¸ã€ã“ã®ãƒªãƒªãƒ¼ã‚¹è¨ˆç”»ã«ã¯ã€å¾“æ¥ã®ãƒªãƒªãƒ¼ã‚¹è¨ˆç”»ã«è²»ã‚„ã™ã‚ãšã‹15ã€œ20%ã®æ™‚é–“ã—ã‹ã‹ã‹ã‚‰ãªã„ã€‚
+ãŸã ã—ã€ã‚¹ã‚¯ãƒ©ãƒ ã®ãƒªãƒªãƒ¼ã‚¹ã¯ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒ¬ãƒ“ãƒ¥ãƒ¼ã‚„ã‚¹ãƒ—ãƒªãƒ³ãƒˆè¨ˆç”»ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã®ãŸã³ã«ã‚¸ãƒ£ã‚¹ãƒˆã‚¤ãƒ³ã‚¿ã‚¤ãƒ ã§è¨ˆç”»ã‚’ç«‹ã¦ã‚‹ã€‚
+ã•ã‚‰ã«ã€ãƒ‡ã‚¤ãƒªãƒ¼ã‚¹ã‚¯ãƒ©ãƒ ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã§ã¯ã€æ¯æ—¥ã‚¸ãƒ£ã‚¹ãƒˆã‚¤ãƒ³ã‚¿ã‚¤ãƒ ã§è¨ˆç”»ã‚’ç«‹ã¦ã‚‹ã€‚
+åˆè¨ˆã™ã‚‹ã¨ã€ã‚¹ã‚¯ãƒ©ãƒ ã®ãƒªãƒªãƒ¼ã‚¹ã¸ã®å–ã‚Šçµ„ã¿ã¯ã€ãŠãã‚‰ãä¼çµ±çš„ãªãƒªãƒªãƒ¼ã‚¹è¨ˆç”»ã¸ã®å–ã‚Šçµ„ã¿ã‚ˆã‚Šã‚‚ã€ã‚ãšã‹ã«æ‰‹é–“ãŒã‹ã‹ã‚‹ã“ã¨ã«ãªã‚‹ã€‚
 
 //Release planning requires estimating and prioritizing the Product Backlog for the Release. There are many techniques for doing so that lie outside the purview of Scrum but are nonetheless useful when used with it. 
 
-ƒŠƒŠ[ƒXŒv‰æ‚Å‚ÍAƒŠƒŠ[ƒX‚ÉŒü‚¯‚Äƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚ğŒ©Ï‚à‚èA—Dæ“x•t‚¯‚ğ‚µ‚È‚¯‚ê‚Î‚È‚ç‚È‚¢B
-‚»‚Ì‚½‚ß‚É—LŒø‚ÈƒeƒNƒjƒbƒN‚ÍƒXƒNƒ‰ƒ€ˆÈŠO‚É‚à”‘½‚­‚ ‚èA‚»‚ê‚ç‚ğg‚¤‚±‚Æ‚à—L—p‚Å‚ ‚éB
+ãƒªãƒªãƒ¼ã‚¹è¨ˆç”»ã§ã¯ã€ãƒªãƒªãƒ¼ã‚¹ã«å‘ã‘ã¦ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã‚’è¦‹ç©ã‚‚ã‚Šã€å„ªå…ˆåº¦ä»˜ã‘ã‚’ã—ãªã‘ã‚Œã°ãªã‚‰ãªã„ã€‚
+ãã®ãŸã‚ã«æœ‰åŠ¹ãªãƒ†ã‚¯ãƒ‹ãƒƒã‚¯ã¯ã‚¹ã‚¯ãƒ©ãƒ ä»¥å¤–ã«ã‚‚æ•°å¤šãã‚ã‚Šã€ãã‚Œã‚‰ã‚’ä½¿ã†ã“ã¨ã‚‚æœ‰ç”¨ã§ã‚ã‚‹ã€‚
 
 //THE SPRINT 
 //A Sprint is an iteration. Sprints are time-boxed. During the Sprint, the ScrumMaster ensures that no changes are made that would affect the Sprint Goal. Both Team composition and quality goals remain constant throughout the Sprint. Sprints contain and consist of the Sprint Planning meeting, the development work, the Sprint Review, and the Sprint Retrospective. Sprints occur one after another, with no time in between Sprints. 
 
 
-!!ƒXƒvƒŠƒ“ƒg
-ƒXƒvƒŠƒ“ƒg‚Í1‚Â‚ÌƒCƒeƒŒ[ƒVƒ‡ƒ“‚Å‚ ‚éB
-ƒXƒvƒŠƒ“ƒg‚Íƒ^ƒCƒ€ƒ{ƒbƒNƒX‚É‚È‚Á‚Ä‚¢‚éB
-ƒXƒNƒ‰ƒ€ƒ}ƒXƒ^[‚ÍAƒXƒvƒŠƒ“ƒg’†‚ÉƒXƒvƒŠƒ“ƒgƒS[ƒ‹‚É‰e‹¿‚·‚é•ÏX‚ªs‚í‚ê‚È‚¢‚±‚Æ‚ğ•ÛØ‚·‚éB
-ƒ`[ƒ€\¬‚Æ•i¿–Ú•W‚ÍA‚Ç‚¿‚ç‚àƒXƒvƒŠƒ“ƒg’†‚Íˆê’è‚Å‚ ‚éB
-ƒXƒvƒŠƒ“ƒg‚ÍAƒXƒvƒŠƒ“ƒgŒv‰æƒ~[ƒeƒBƒ“ƒOAŠJ”­ì‹ÆAƒXƒvƒŠƒ“ƒgƒŒƒrƒ…[A‚¨‚æ‚ÑƒXƒvƒŠƒ“ƒgƒŒƒgƒƒXƒyƒNƒeƒBƒu‚ÅŠÜ‚ñ‚Å‚¨‚èA‚»‚ê‚ç‚Å\¬‚³‚ê‚Ä‚¢‚éB
-ƒXƒvƒŠƒ“ƒg‚ÍŠÔŠu‚ğ’u‚©‚¸‚ÉŸX‚ÆŠJn‚·‚éB
+!!ã‚¹ãƒ—ãƒªãƒ³ãƒˆ
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆã¯1ã¤ã®ã‚¤ãƒ†ãƒ¬ãƒ¼ã‚·ãƒ§ãƒ³ã§ã‚ã‚‹ã€‚
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆã¯ã‚¿ã‚¤ãƒ ãƒœãƒƒã‚¯ã‚¹ã«ãªã£ã¦ã„ã‚‹ã€‚
+ã‚¹ã‚¯ãƒ©ãƒ ãƒã‚¹ã‚¿ãƒ¼ã¯ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆä¸­ã«ã‚¹ãƒ—ãƒªãƒ³ãƒˆã‚´ãƒ¼ãƒ«ã«å½±éŸ¿ã™ã‚‹å¤‰æ›´ãŒè¡Œã‚ã‚Œãªã„ã“ã¨ã‚’ä¿è¨¼ã™ã‚‹ã€‚
+ãƒãƒ¼ãƒ æ§‹æˆã¨å“è³ªç›®æ¨™ã¯ã€ã©ã¡ã‚‰ã‚‚ã‚¹ãƒ—ãƒªãƒ³ãƒˆä¸­ã¯ä¸€å®šã§ã‚ã‚‹ã€‚
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆã¯ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆè¨ˆç”»ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã€é–‹ç™ºä½œæ¥­ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒ¬ãƒ“ãƒ¥ãƒ¼ã€ãŠã‚ˆã³ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒ¬ãƒˆãƒ­ã‚¹ãƒšã‚¯ãƒ†ã‚£ãƒ–ã§å«ã‚“ã§ãŠã‚Šã€ãã‚Œã‚‰ã§æ§‹æˆã•ã‚Œã¦ã„ã‚‹ã€‚
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆã¯é–“éš”ã‚’ç½®ã‹ãšã«æ¬¡ã€…ã¨é–‹å§‹ã™ã‚‹ã€‚
 
 //A project is used to accomplish something; in software development, it is used to build a product or system. Every project consists of a definition of what is to be built, a plan to build it, the work done according to the plan, and the resultant product. Every project has a horizon, which is to say the time frame for which the plan is good. If the horizon is too long, the definition may have changed, too many variables may have entered in, the risk may be too great, etc. Scrum is a framework for a project whose horizon is no more than one month long, where there is enough complexity that a longer horizon is too risky. The predictability of the project has to be controlled at least each month, and the risk that the project may go out of control or become unpredictable is contained at least each month. 
 
-ƒvƒƒWƒFƒNƒg‚Æ‚ÍA‰½‚©‚ğ’B¬‚·‚é‚½‚ß‚Ég—p‚·‚é‚à‚Ì‚¾B
-ƒ\ƒtƒgƒEƒFƒAŠJ”­‚Å‚ÍAƒvƒƒ_ƒNƒg‚Ü‚½‚ÍƒVƒXƒeƒ€‚ğ\’z‚·‚é‚½‚ß‚Ég—p‚·‚éB
-‚·‚×‚Ä‚ÌƒvƒƒWƒFƒNƒg‚ÍA\’z‚·‚é‚à‚Ì‚Ì’è‹`A\’z‚·‚éŒv‰æAŒv‰æ‚É‰ˆ‚Á‚Äs‚¤ì‹ÆA‚¨‚æ‚ÑÅIƒvƒƒ_ƒNƒg‚Å\¬‚³‚ê‚éB
-‚·‚×‚Ä‚ÌƒvƒƒWƒFƒNƒg‚É‚Í’n•½ü‚ª‚ ‚éB
-‚Â‚Ü‚èAŒv‰æ‚É“K‚µ‚½ŠÔ˜g‚Å‚ ‚éB
-’n•½ü‚ª‰“‚·‚¬‚é‚ÆA’è‹`‚ª•Ï‚í‚Á‚½‚èA—lX‚È•Ï”‚ª“ü‚Á‚Ä‚«‚½‚èAƒŠƒXƒN‚ª‘å‚«‚­‚È‚è‚·‚¬‚½‚è‚·‚éB
-ƒXƒNƒ‰ƒ€‚ÍAÅ‘å1ƒ–Œ‚ÌƒvƒƒWƒFƒNƒg‚Ì‚½‚ß‚ÌƒtƒŒ[ƒ€ƒ[ƒN‚Å‚ ‚éB
-‚±‚ê‚Å‚à\•ª‚É•¡G‚Å‚ ‚èA‚±‚êˆÈã’·‚­‚È‚é‚ÆƒŠƒXƒN‚ª‚‚¢B
-ƒvƒƒWƒFƒNƒg‚Ì—\‘ª‰Â”\«‚ÍA­‚È‚­‚Æ‚àŒŸ‚ÅƒRƒ“ƒgƒ[ƒ‹‚µ‚È‚¯‚ê‚Î‚È‚ç‚È‚¢B
-ƒRƒ“ƒgƒ[ƒ‹•s”\‚â—\‘ª•s”\‚ÌƒŠƒXƒN‚ÍA­‚È‚­‚Æ‚àŒŸ‚Å—}‚¦‚é‚æ‚¤‚É‚µ‚È‚¯‚ê‚Î‚È‚ç‚È‚¢B
+ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã¨ã¯ã€ä½•ã‹ã‚’é”æˆã™ã‚‹ãŸã‚ã«ä½¿ç”¨ã™ã‚‹ã‚‚ã®ã ã€‚
+ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢é–‹ç™ºã§ã¯ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã¾ãŸã¯ã‚·ã‚¹ãƒ†ãƒ ã‚’æ§‹ç¯‰ã™ã‚‹ãŸã‚ã«ä½¿ç”¨ã™ã‚‹ã€‚
+ã™ã¹ã¦ã®ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã¯ã€æ§‹ç¯‰ã™ã‚‹ã‚‚ã®ã®å®šç¾©ã€æ§‹ç¯‰ã™ã‚‹è¨ˆç”»ã€è¨ˆç”»ã«æ²¿ã£ã¦è¡Œã†ä½œæ¥­ã€ãŠã‚ˆã³æœ€çµ‚ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã§æ§‹æˆã•ã‚Œã‚‹ã€‚
+ã™ã¹ã¦ã®ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã«ã¯åœ°å¹³ç·šãŒã‚ã‚‹ã€‚
+ã¤ã¾ã‚Šã€è¨ˆç”»ã«é©ã—ãŸæ™‚é–“æ ã§ã‚ã‚‹ã€‚
+åœ°å¹³ç·šãŒé ã™ãã‚‹ã¨ã€å®šç¾©ãŒå¤‰ã‚ã£ãŸã‚Šã€æ§˜ã€…ãªå¤‰æ•°ãŒå…¥ã£ã¦ããŸã‚Šã€ãƒªã‚¹ã‚¯ãŒå¤§ãããªã‚Šã™ããŸã‚Šã™ã‚‹ã€‚
+ã‚¹ã‚¯ãƒ©ãƒ ã¯ã€æœ€å¤§1ãƒ¶æœˆã®ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã®ãŸã‚ã®ãƒ•ãƒ¬ãƒ¼ãƒ ãƒ¯ãƒ¼ã‚¯ã§ã‚ã‚‹ã€‚
+ã“ã‚Œã§ã‚‚ååˆ†ã«è¤‡é›‘ã§ã‚ã‚Šã€ã“ã‚Œä»¥ä¸Šé•·ããªã‚‹ã¨ãƒªã‚¹ã‚¯ãŒé«˜ã„ã€‚
+ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã®äºˆæ¸¬å¯èƒ½æ€§ã¯ã€å°‘ãªãã¨ã‚‚æœˆæ¬¡ã§ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã—ãªã‘ã‚Œã°ãªã‚‰ãªã„ã€‚
+ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ä¸èƒ½ã‚„äºˆæ¸¬ä¸èƒ½ã®ãƒªã‚¹ã‚¯ã¯ã€å°‘ãªãã¨ã‚‚æœˆæ¬¡ã§æŠ‘ãˆã‚‹ã‚ˆã†ã«ã—ãªã‘ã‚Œã°ãªã‚‰ãªã„ã€‚
 
 //Tip: If the Team senses that it has overcommitted, it meets with the Product Owner to removeor reduce the scope of Product Backlog selected for the Sprint. If the Team senses that it may have extra time, it can work with the Product Owner to select additional Product Backlog. 
 
-""Tip: ƒ`[ƒ€‚ªì‹Æ‚ª‘½‚·‚¬‚é‚±‚Æ‚É‹C‚Ã‚¢‚½‚Æ‚«‚ÍAƒvƒƒ_ƒNƒgƒI[ƒi[‚É‰ï‚Á‚ÄAƒXƒvƒŠƒ“ƒg‚É‘I‚ñ‚¾ƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚ÌƒXƒR[ƒv‚ğíœ‚µ‚½‚èk¬‚µ‚½‚è‚µ‚Ä‚à‚ç‚¤‚±‚ÆB‹t‚ÉŠÔ‚ª—]‚é‚±‚Æ‚É‹C‚Ã‚¢‚½‚Æ‚«‚ÍAƒvƒƒ_ƒNƒgƒI[ƒi[‚Æ’Ç‰Á‚·‚éƒoƒbƒNƒƒO‚ğ‘I‚Ô‚±‚ÆB
+""Tip: ãƒãƒ¼ãƒ ãŒä½œæ¥­ãŒå¤šã™ãã‚‹ã“ã¨ã«æ°—ã¥ã„ãŸã¨ãã¯ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ã«ä¼šã£ã¦ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆã«é¸ã‚“ã ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®ã‚¹ã‚³ãƒ¼ãƒ—ã‚’å‰Šé™¤ã—ãŸã‚Šç¸®å°ã—ãŸã‚Šã—ã¦ã‚‚ã‚‰ã†ã“ã¨ã€‚é€†ã«æ™‚é–“ãŒä½™ã‚‹ã“ã¨ã«æ°—ã¥ã„ãŸã¨ãã¯ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ã¨è¿½åŠ ã™ã‚‹ãƒãƒƒã‚¯ãƒ­ã‚°ã‚’é¸ã¶ã“ã¨ã€‚
 
 //Tip: When a Team begins Scrum, two-week Sprints allow it to learn without wallowing in uncertainty. Sprints of this length can be synchronized with other Teams by adding two increments together. 
 
-""Tip: ƒ`[ƒ€‚ªƒXƒNƒ‰ƒ€‚ğn‚ß‚é‚Æ‚«‚ÍA•sŠmÀ‚È‚±‚Æ‚É˜f‚í‚³‚ê‚È‚¢ŠwKŠúŠÔ‚ğ2TŠÔ‚Æ‚é‚Æ‚æ‚¢B2TŠÔ‚ÌƒXƒvƒŠƒ“ƒg‚Å‚ ‚ê‚ÎAƒCƒ“ƒNƒŠƒƒ“ƒg‚ğ2‚Â‡‚í‚¹‚é‚±‚Æ‚ÅA‘¼‚Ìƒ`[ƒ€‚Æ“¯Šú‚ğ‚Æ‚é‚±‚Æ‚à‚Å‚«‚éB
+""Tip: ãƒãƒ¼ãƒ ãŒã‚¹ã‚¯ãƒ©ãƒ ã‚’å§‹ã‚ã‚‹ã¨ãã¯ã€ä¸ç¢ºå®Ÿãªã“ã¨ã«æƒ‘ã‚ã•ã‚Œãªã„å­¦ç¿’æœŸé–“ã‚’2é€±é–“ã¨ã‚‹ã¨ã‚ˆã„ã€‚2é€±é–“ã®ã‚¹ãƒ—ãƒªãƒ³ãƒˆã§ã‚ã‚Œã°ã€ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã‚’2ã¤åˆã‚ã›ã‚‹ã“ã¨ã§ã€ä»–ã®ãƒãƒ¼ãƒ ã¨åŒæœŸã‚’ã¨ã‚‹ã“ã¨ã‚‚ã§ãã‚‹ã€‚
 
 //Sprints can be cancelled before the Sprint time box is over. Only the Product Owner has the authority to cancel the Sprint, although he or she may do so under influence from the stakeholders, the Team, or the ScrumMaster. Under what kind of circumstances might a Sprint need to be cancelled? Management may need to cancel a Sprint if the Sprint Goal becomes obsolete. This could occur if the company changes direction or if market or technology conditions change. In general, a Sprint should be cancelled if it no longer makes sense given the circumstances. However, because of the short duration of Sprints, it rarely makes sense to do so. 
 
-ƒXƒvƒŠƒ“ƒg‚Íƒ^ƒCƒ€ƒ{ƒbƒNƒX‚ªI‚í‚é‘O‚É’†~‚Å‚«‚éB
-ƒvƒƒ_ƒNƒgƒI[ƒi[‚¾‚¯‚ªƒXƒvƒŠƒ“ƒg‚ğ’†~‚·‚éŒ ŒÀ‚ğ‚ÂB
-‚±‚Ì‚Æ‚«AƒXƒe[ƒNƒzƒ‹ƒ_[Aƒ`[ƒ€A‚ ‚é‚¢‚ÍƒXƒNƒ‰ƒ€ƒ}ƒXƒ^[‚ÌˆÓŒ©‚ğ•·‚¢‚Ä‚à‚æ‚¢B
-‚»‚ê‚Å‚ÍAƒXƒvƒŠƒ“ƒg‚ª’†~‚³‚ê‚é‚Ì‚Í‚Ç‚ñ‚Èó‹µ‚¾‚ë‚¤‚©H
-ƒXƒvƒŠƒ“ƒgƒS[ƒ‹‚ªŒÃ‚­‚È‚Á‚½ê‡‚É‚ÍAƒ}ƒlƒWƒƒ“ƒg‚ªƒXƒvƒŠƒ“ƒg‚ğ’†~‚·‚é‚©‚à‚µ‚ê‚È‚¢B
-‰ïĞ‚Ì•ûŒü«‚ª•Ï‚í‚Á‚½‚èAsê‚â‹Zp‚Ìó‹µ‚ª•Ï‚í‚Á‚½‚è‚·‚éê‡‚É‚àA’†~‚·‚é•K—v‚ª‚ ‚é‚©‚à‚µ‚ê‚È‚¢B
-ˆê”Ê“I‚ÉA‚Â‚¶‚Â‚Ü‚ª‡‚í‚È‚¢ó‹µ‚É‚È‚Á‚½‚çAƒXƒvƒŠƒ“ƒg‚ğ’†~‚µ‚½‚Ù‚¤‚ª‚æ‚¢B
-‚µ‚©‚µAƒXƒvƒŠƒ“ƒg‚ÌŠúŠÔ‚Í’Z‚­A’†~‚µ‚½‚©‚ç‚Æ‚¢‚Á‚Ä‚»‚ê‚Ù‚ÇˆÓ–¡‚ğ‚È‚·‚±‚Æ‚Í‚È‚¢‚¾‚ë‚¤B
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆã¯ã‚¿ã‚¤ãƒ ãƒœãƒƒã‚¯ã‚¹ãŒçµ‚ã‚ã‚‹å‰ã«ä¸­æ­¢ã§ãã‚‹ã€‚
+ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ã ã‘ãŒã‚¹ãƒ—ãƒªãƒ³ãƒˆã‚’ä¸­æ­¢ã™ã‚‹æ¨©é™ã‚’æŒã¤ã€‚
+ã“ã®ã¨ãã€ã‚¹ãƒ†ãƒ¼ã‚¯ãƒ›ãƒ«ãƒ€ãƒ¼ã€ãƒãƒ¼ãƒ ã€ã‚ã‚‹ã„ã¯ã‚¹ã‚¯ãƒ©ãƒ ãƒã‚¹ã‚¿ãƒ¼ã®æ„è¦‹ã‚’èã„ã¦ã‚‚ã‚ˆã„ã€‚
+ãã‚Œã§ã¯ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆãŒä¸­æ­¢ã•ã‚Œã‚‹ã®ã¯ã©ã‚“ãªçŠ¶æ³ã ã‚ã†ã‹ï¼Ÿ
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆã‚´ãƒ¼ãƒ«ãŒå¤ããªã£ãŸå ´åˆã«ã¯ã€ãƒãƒã‚¸ãƒ¡ãƒ³ãƒˆãŒã‚¹ãƒ—ãƒªãƒ³ãƒˆã‚’ä¸­æ­¢ã™ã‚‹ã‹ã‚‚ã—ã‚Œãªã„ã€‚
+ä¼šç¤¾ã®æ–¹å‘æ€§ãŒå¤‰ã‚ã£ãŸã‚Šã€å¸‚å ´ã‚„æŠ€è¡“ã®çŠ¶æ³ãŒå¤‰ã‚ã£ãŸã‚Šã™ã‚‹å ´åˆã«ã‚‚ã€ä¸­æ­¢ã™ã‚‹å¿…è¦ãŒã‚ã‚‹ã‹ã‚‚ã—ã‚Œãªã„ã€‚
+ä¸€èˆ¬çš„ã«ã€ã¤ã˜ã¤ã¾ãŒåˆã‚ãªã„çŠ¶æ³ã«ãªã£ãŸã‚‰ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆã‚’ä¸­æ­¢ã—ãŸã»ã†ãŒã‚ˆã„ã€‚
+ã—ã‹ã—ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆã®æœŸé–“ã¯çŸ­ãã€ä¸­æ­¢ã—ãŸã‹ã‚‰ã¨ã„ã£ã¦ãã‚Œã»ã©æ„å‘³ã‚’ãªã™ã“ã¨ã¯ãªã„ã ã‚ã†ã€‚
 
-//When a Sprint is cancelled, any completed and gdoneh Product Backlog items are reviewed. They are accepted if they represent a potentially shippable increment. All other Product Backlog items are put back on the Product Backlog with their initial estimates. Any work done on them is assumed to be lost. Sprint terminations consume resources, since everyone has to regroup in another Sprint planning meeting to start another Sprint. Sprint terminations are often traumatic to the Team, and they are very uncommon.
+//When a Sprint is cancelled, any completed and â€œdoneâ€ Product Backlog items are reviewed. They are accepted if they represent a potentially shippable increment. All other Product Backlog items are put back on the Product Backlog with their initial estimates. Any work done on them is assumed to be lost. Sprint terminations consume resources, since everyone has to regroup in another Sprint planning meeting to start another Sprint. Sprint terminations are often traumatic to the Team, and they are very uncommon.
 
-ƒXƒvƒŠƒ“ƒg‚ª’†~‚É‚È‚Á‚½‚çAƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚ÌŠ®¬‚ ‚é‚¢‚ÍuŠ®—¹idonejv‚µ‚½€–Ú‚ğƒŒƒrƒ…[‚·‚éB
-o‰×”»’f‰Â”\‚ÈƒCƒ“ƒNƒŠƒƒ“ƒg‚É‚È‚Á‚Ä‚¢‚ê‚ÎAó‚¯“ü‚ê‚ç‚ê‚éB
-‚»‚Ì‘¼‚Ì€–Ú‚ÍAÅ‰‚ÌŒ©Ï‚à‚è”’l‚Ì‚Ü‚Üƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚É–ß‚³‚ê‚éB
-‚»‚ê‚ç‚É‚©‚©‚Á‚½ì‹Æ‚Í¸‚í‚ê‚½‚à‚Ì‚Æ‚È‚éB
-ƒXƒvƒŠƒ“ƒg‚Ì’†~‚ÍA•Ê‚ÌƒXƒvƒŠƒ“ƒg‚ğŠJn‚·‚é‚½‚ß‚ÉƒXƒvƒŠƒ“ƒgŒv‰æƒ~[ƒeƒBƒ“ƒO‚ğŠJ‚©‚È‚¯‚ê‚Î‚È‚ç‚È‚¢‚½‚ßAƒŠƒ\[ƒX‚ğÁ”ï‚·‚éB
-ƒXƒvƒŠƒ“ƒg‚Ì’†~‚Íƒ`[ƒ€‚É‚Æ‚Á‚Äƒgƒ‰ƒEƒ}‚É‚È‚é‚±‚Æ‚ª‘½‚¢B
-‚µ‚©‚µA’†~‚Í‚ß‚Á‚½‚É‹N‚«‚È‚¢‚±‚Æ‚Å‚ ‚éB
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆãŒä¸­æ­¢ã«ãªã£ãŸã‚‰ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®å®Œæˆã‚ã‚‹ã„ã¯ã€Œå®Œäº†ï¼ˆdoneï¼‰ã€ã—ãŸé …ç›®ã‚’ãƒ¬ãƒ“ãƒ¥ãƒ¼ã™ã‚‹ã€‚
+å‡ºè·åˆ¤æ–­å¯èƒ½ãªã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã«ãªã£ã¦ã„ã‚Œã°ã€å—ã‘å…¥ã‚Œã‚‰ã‚Œã‚‹ã€‚
+ãã®ä»–ã®é …ç›®ã¯ã€æœ€åˆã®è¦‹ç©ã‚‚ã‚Šæ•°å€¤ã®ã¾ã¾ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã«æˆ»ã•ã‚Œã‚‹ã€‚
+ãã‚Œã‚‰ã«ã‹ã‹ã£ãŸä½œæ¥­ã¯å¤±ã‚ã‚ŒãŸã‚‚ã®ã¨ãªã‚‹ã€‚
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆã®ä¸­æ­¢ã¯ã€åˆ¥ã®ã‚¹ãƒ—ãƒªãƒ³ãƒˆã‚’é–‹å§‹ã™ã‚‹ãŸã‚ã«ã‚¹ãƒ—ãƒªãƒ³ãƒˆè¨ˆç”»ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã‚’é–‹ã‹ãªã‘ã‚Œã°ãªã‚‰ãªã„ãŸã‚ã€ãƒªã‚½ãƒ¼ã‚¹ã‚’æ¶ˆè²»ã™ã‚‹ã€‚
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆã®ä¸­æ­¢ã¯ãƒãƒ¼ãƒ ã«ã¨ã£ã¦ãƒˆãƒ©ã‚¦ãƒã«ãªã‚‹ã“ã¨ãŒå¤šã„ã€‚
+ã—ã‹ã—ã€ä¸­æ­¢ã¯ã‚ã£ãŸã«èµ·ããªã„ã“ã¨ã§ã‚ã‚‹ã€‚
 
 //SPRINT PLANNING MEETING 
 //The Sprint Planning meeting is when the iteration is planned. It is time-boxed to eight hours for a one month Sprint. For shorter Sprints, allocate approximately 5% of the total Sprint length to this meeting and consists of two parts. The first part, a four hour time-box, is when what will be done in the Sprint is decided upon. The second part, another four-hour time box, is when the Team figures out how it is going to build this functionality into a product increment during the Sprint. 
 
 
-!!ƒXƒvƒŠƒ“ƒgŒv‰æƒ~[ƒeƒBƒ“ƒO
-ƒXƒvƒŠƒ“ƒgŒv‰æƒ~[ƒeƒBƒ“ƒO‚Å‚ÍAƒCƒeƒŒ[ƒVƒ‡ƒ“‚ğŒv‰æ‚·‚éB
-1ƒ–Œ‚ÌƒXƒvƒŠƒ“ƒg‚Ìê‡Aƒ~[ƒeƒBƒ“ƒO‚Í8ŠÔ‚Ìƒ^ƒCƒ€ƒ{ƒbƒNƒX‚Æ‚È‚éB
-‚à‚Á‚Æ’Z‚¢ƒXƒvƒŠƒ“ƒg‚Ìê‡‚ÍAƒXƒvƒŠƒ“ƒg‚Ì’·‚³‚Ì‚¨‚æ‚»5%‚ğŠ„‚è“–‚Ä‚éB
-ƒ~[ƒeƒBƒ“ƒO‚Í2•”\¬‚Å‚ ‚éB
-Å‰‚Ì•”•ªi4ŠÔ‚Ìƒ^ƒCƒ€ƒ{ƒbƒNƒXj‚Å‚ÍAƒXƒvƒŠƒ“ƒg‚Ås‚¤‚±‚Æ‚ğŒˆ‚ß‚éB
-‘æ2‚Ì•”•ªi‚Ü‚½•Ê‚Ì4ŠÔ‚Ìƒ^ƒCƒ€ƒ{ƒbƒNƒXj‚Å‚ÍAŒˆ‚Ü‚Á‚½‹@”\‚ğƒvƒƒ_ƒNƒgƒCƒ“ƒNƒŠƒƒ“ƒg‚É‚Ç‚Ì‚æ‚¤‚É‘g‚İ‚Ş‚©‚ğƒ`[ƒ€‚Ål‚¦‚éB
+!!ã‚¹ãƒ—ãƒªãƒ³ãƒˆè¨ˆç”»ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆè¨ˆç”»ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã§ã¯ã€ã‚¤ãƒ†ãƒ¬ãƒ¼ã‚·ãƒ§ãƒ³ã‚’è¨ˆç”»ã™ã‚‹ã€‚
+1ãƒ¶æœˆã®ã‚¹ãƒ—ãƒªãƒ³ãƒˆã®å ´åˆã€ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã¯8æ™‚é–“ã®ã‚¿ã‚¤ãƒ ãƒœãƒƒã‚¯ã‚¹ã¨ãªã‚‹ã€‚
+ã‚‚ã£ã¨çŸ­ã„ã‚¹ãƒ—ãƒªãƒ³ãƒˆã®å ´åˆã¯ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆã®é•·ã•ã®ãŠã‚ˆã5%ã‚’å‰²ã‚Šå½“ã¦ã‚‹ã€‚
+ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã¯2éƒ¨æ§‹æˆã§ã‚ã‚‹ã€‚
+æœ€åˆã®éƒ¨åˆ†ï¼ˆ4æ™‚é–“ã®ã‚¿ã‚¤ãƒ ãƒœãƒƒã‚¯ã‚¹ï¼‰ã§ã¯ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆã§è¡Œã†ã“ã¨ã‚’æ±ºã‚ã‚‹ã€‚
+ç¬¬2ã®éƒ¨åˆ†ï¼ˆã¾ãŸåˆ¥ã®4æ™‚é–“ã®ã‚¿ã‚¤ãƒ ãƒœãƒƒã‚¯ã‚¹ï¼‰ã§ã¯ã€æ±ºã¾ã£ãŸæ©Ÿèƒ½ã‚’ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã«ã©ã®ã‚ˆã†ã«çµ„ã¿è¾¼ã‚€ã‹ã‚’ãƒãƒ¼ãƒ ã§è€ƒãˆã‚‹ã€‚
 
-//There are two parts to the Sprint Planning Meeting: the gWhat?h part and the gHow?h part. Some Scrum Teams combine the two. In the first part, the Scrum Team addresses the question of gWhat?h Here, the Product Owner presents the top priority Product Backlog to the Team. They work together to figure out what functionality is to be developed during the next Sprint. The input to this meeting is the Product Backlog, the latest increment of product, the capacity of the Team, and past performance of the Team. The amount of backlog the Team selects is solely up to the Team. Only the Team can assess what it can accomplish over the upcoming Sprint.
+//There are two parts to the Sprint Planning Meeting: the â€œWhat?â€ part and the â€œHow?â€ part. Some Scrum Teams combine the two. In the first part, the Scrum Team addresses the question of â€œWhat?â€ Here, the Product Owner presents the top priority Product Backlog to the Team. They work together to figure out what functionality is to be developed during the next Sprint. The input to this meeting is the Product Backlog, the latest increment of product, the capacity of the Team, and past performance of the Team. The amount of backlog the Team selects is solely up to the Team. Only the Team can assess what it can accomplish over the upcoming Sprint.
 
-ƒXƒvƒŠƒ“ƒgŒv‰æƒ~[ƒeƒBƒ“ƒO‚Í2•”\¬‚Å‚ ‚éFuWhat?v•”‚ÆuHow?v•”‚¾B
-‚È‚©‚É‚ÍA‚±‚Ì2‚Â‚ğˆê‚És‚¤ƒXƒNƒ‰ƒ€ƒ`[ƒ€‚à‚ ‚éB
-Å‰‚Ì•”•ª‚Å‚ÍAƒXƒNƒ‰ƒ€ƒ`[ƒ€‚ÍuWhat?v‚Ì¿–â‚Éæ‚è‘g‚ŞB
-ƒvƒƒ_ƒNƒgƒI[ƒi[‚ÍAƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚ÌÅ—Dæ€–Ú‚ğƒ`[ƒ€‚É’ñ¦‚·‚éB
-‚±‚±‚Åˆê‚ÉŸ‚ÌƒXƒvƒŠƒ“ƒg‚ÅŠJ”­‚·‚é‹@”\‚ğl‚¦‚éB
-ƒ~[ƒeƒBƒ“ƒO‚Ö‚ÌƒCƒ“ƒvƒbƒg‚ÍAƒvƒƒ_ƒNƒgƒoƒbƒNƒƒOAƒvƒƒ_ƒNƒg‚ÌÅVƒCƒ“ƒNƒŠƒƒ“ƒgAƒ`[ƒ€‚Ì‹–—e—ÊA‚¨‚æ‚Ñƒ`[ƒ€‚Ì‰ß‹‚ÌÀÑ‚Å‚ ‚éB
-ƒoƒbƒNƒƒO‚Ì—Ê‚Íƒ`[ƒ€‚ÌÓ”C‚Å‘I‘ğ‚·‚éB
-Ÿ‚ÌƒXƒvƒŠƒ“ƒg‚Å‹s‚Å‚«‚é‚©‚Ç‚¤‚©‚ğ”»’f‚Å‚«‚é‚Ì‚Íƒ`[ƒ€‚¾‚¯‚Å‚ ‚éB
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆè¨ˆç”»ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã¯2éƒ¨æ§‹æˆã§ã‚ã‚‹ï¼šã€ŒWhat?ã€éƒ¨ã¨ã€ŒHow?ã€éƒ¨ã ã€‚
+ãªã‹ã«ã¯ã€ã“ã®2ã¤ã‚’ä¸€ç·’ã«è¡Œã†ã‚¹ã‚¯ãƒ©ãƒ ãƒãƒ¼ãƒ ã‚‚ã‚ã‚‹ã€‚
+æœ€åˆã®éƒ¨åˆ†ã§ã¯ã€ã‚¹ã‚¯ãƒ©ãƒ ãƒãƒ¼ãƒ ã¯ã€ŒWhat?ã€ã®è³ªå•ã«å–ã‚Šçµ„ã‚€ã€‚
+ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ã¯ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®æœ€å„ªå…ˆé …ç›®ã‚’ãƒãƒ¼ãƒ ã«æç¤ºã™ã‚‹ã€‚
+ã“ã“ã§ä¸€ç·’ã«æ¬¡ã®ã‚¹ãƒ—ãƒªãƒ³ãƒˆã§é–‹ç™ºã™ã‚‹æ©Ÿèƒ½ã‚’è€ƒãˆã‚‹ã€‚
+ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã¸ã®ã‚¤ãƒ³ãƒ—ãƒƒãƒˆã¯ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã®æœ€æ–°ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã€ãƒãƒ¼ãƒ ã®è¨±å®¹é‡ã€ãŠã‚ˆã³ãƒãƒ¼ãƒ ã®éå»ã®å®Ÿç¸¾ã§ã‚ã‚‹ã€‚
+ãƒãƒƒã‚¯ãƒ­ã‚°ã®é‡ã¯ãƒãƒ¼ãƒ ã®è²¬ä»»ã§é¸æŠã™ã‚‹ã€‚
+æ¬¡ã®ã‚¹ãƒ—ãƒªãƒ³ãƒˆã§é‚è¡Œã§ãã‚‹ã‹ã©ã†ã‹ã‚’åˆ¤æ–­ã§ãã‚‹ã®ã¯ãƒãƒ¼ãƒ ã ã‘ã§ã‚ã‚‹ã€‚
 
 //Having selected the Product Backlog, a Sprint Goal is crafted. The Sprint Goal is an objective that will be met through the implementation of the Product Backlog. This is a statement that provides guidance to the Team on why it is building the increment. The Sprint Goal is a subset of the release goal. 
 
-ƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚ğ‘I‘ğ‚µ‚½‚çAƒXƒvƒŠƒ“ƒgƒS[ƒ‹‚ğ’O”O‚Éİ’è‚·‚éB
-ƒXƒvƒŠƒ“ƒgƒS[ƒ‹‚Íƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚ğ“±“ü‚·‚é‚±‚Æ‚Å–‚½‚·–Ú“I‚Å‚ ‚éB
-‚±‚ê‚ÍAƒ`[ƒ€‚ªƒCƒ“ƒNƒŠƒƒ“ƒg‚ğ\’z‚·‚é——R‚ÌƒKƒCƒh‚Æ‚È‚éƒXƒe[ƒgƒƒ“ƒg‚Å‚ ‚éB
-ƒXƒvƒŠƒ“ƒgƒS[ƒ‹‚ÍƒŠƒŠ[ƒXƒS[ƒ‹‚Ì•”•ªW‡‚Å‚ ‚éB
+ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã‚’é¸æŠã—ãŸã‚‰ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆã‚´ãƒ¼ãƒ«ã‚’ä¸¹å¿µã«è¨­å®šã™ã‚‹ã€‚
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆã‚´ãƒ¼ãƒ«ã¯ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã‚’å°å…¥ã™ã‚‹ã“ã¨ã§æº€ãŸã™ç›®çš„ã§ã‚ã‚‹ã€‚
+ã“ã‚Œã¯ã€ãƒãƒ¼ãƒ ãŒã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã‚’æ§‹ç¯‰ã™ã‚‹ç†ç”±ã®ã‚¬ã‚¤ãƒ‰ã¨ãªã‚‹ã‚¹ãƒ†ãƒ¼ãƒˆãƒ¡ãƒ³ãƒˆã§ã‚ã‚‹ã€‚
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆã‚´ãƒ¼ãƒ«ã¯ãƒªãƒªãƒ¼ã‚¹ã‚´ãƒ¼ãƒ«ã®éƒ¨åˆ†é›†åˆã§ã‚ã‚‹ã€‚
 
-//The reason for having a Sprint Goal is to give the Team some wiggle room regarding the functionality. For example, the goal for the above Sprint could also be: gAutomate the client account modification functionality through a secure, recoverable transaction middleware capability.h As the Team works, it keeps this goal in mind. In order to satisfy the goal, it implements the functionality and technology. If the work turns out to be harder than the Team had expected, then the Team collaborates with the Product Owner and only partially implement the functionality. 
+//The reason for having a Sprint Goal is to give the Team some wiggle room regarding the functionality. For example, the goal for the above Sprint could also be: â€œAutomate the client account modification functionality through a secure, recoverable transaction middleware capability.â€ As the Team works, it keeps this goal in mind. In order to satisfy the goal, it implements the functionality and technology. If the work turns out to be harder than the Team had expected, then the Team collaborates with the Product Owner and only partially implement the functionality. 
 
-ƒXƒvƒŠƒ“ƒgƒS[ƒ‹‚ğİ’è‚·‚é‚Ì‚ÍAƒ`[ƒ€‚ª©—R‚É‹@”\‚ğˆµ‚¦‚é‚æ‚¤‚É‚·‚é‚½‚ß‚Å‚ ‚éB
-—á‚¦‚ÎAã‹L‚ÌƒXƒvƒŠƒ“ƒg‚ÌƒS[ƒ‹‚ÍŸ‚Ì‚æ‚¤‚ÈŠ´‚¶‚É‚È‚éF
-u
-ˆÀ‘S‚Å•œŒ³‰Â”\‚Èƒgƒ‰ƒ“ƒUƒNƒVƒ‡ƒ“ƒ~ƒhƒ‹ƒEƒFƒA‚ğg‚Á‚ÄA
-ƒNƒ‰ƒCƒAƒ“ƒgƒAƒJƒEƒ“ƒg‚ÌC³‹@”\‚ğ©“®‰»‚·‚é
-v
-ƒ`[ƒ€‚ªì‹Æ‚ğ‚·‚éã‚ÅA‚±‚ÌƒS[ƒ‹‚ğŠo‚¦‚Ä‚¨‚­B
-ƒS[ƒ‹‚ğ–‚½‚·‚½‚ß‚ÉAƒ`[ƒ€‚Í‹@”\‚Æ‹Zp‚ğÀ‘•‚·‚éB
-—\‘ª‚µ‚½‚æ‚è‚àì‹Æ‚ª¢“ï‚Å‚ ‚é‚Æ”»–¾‚µ‚½ê‡A
-ƒ`[ƒ€‚Íƒvƒƒ_ƒNƒgƒI[ƒi[‚Æ‘Š’k‚µ‚ÄAˆê•”‚Ì‹@”\‚ğÀ‘•‚·‚éB
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆã‚´ãƒ¼ãƒ«ã‚’è¨­å®šã™ã‚‹ã®ã¯ã€ãƒãƒ¼ãƒ ãŒè‡ªç”±ã«æ©Ÿèƒ½ã‚’æ‰±ãˆã‚‹ã‚ˆã†ã«ã™ã‚‹ãŸã‚ã§ã‚ã‚‹ã€‚
+ä¾‹ãˆã°ã€ä¸Šè¨˜ã®ã‚¹ãƒ—ãƒªãƒ³ãƒˆã®ã‚´ãƒ¼ãƒ«ã¯æ¬¡ã®ã‚ˆã†ãªæ„Ÿã˜ã«ãªã‚‹ï¼š
+ã€Œ
+å®‰å…¨ã§å¾©å…ƒå¯èƒ½ãªãƒˆãƒ©ãƒ³ã‚¶ã‚¯ã‚·ãƒ§ãƒ³ãƒŸãƒ‰ãƒ«ã‚¦ã‚§ã‚¢ã‚’ä½¿ã£ã¦ã€
+ã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®ä¿®æ­£æ©Ÿèƒ½ã‚’è‡ªå‹•åŒ–ã™ã‚‹
+ã€
+ãƒãƒ¼ãƒ ãŒä½œæ¥­ã‚’ã™ã‚‹ä¸Šã§ã€ã“ã®ã‚´ãƒ¼ãƒ«ã‚’è¦šãˆã¦ãŠãã€‚
+ã‚´ãƒ¼ãƒ«ã‚’æº€ãŸã™ãŸã‚ã«ã€ãƒãƒ¼ãƒ ã¯æ©Ÿèƒ½ã¨æŠ€è¡“ã‚’å®Ÿè£…ã™ã‚‹ã€‚
+äºˆæ¸¬ã—ãŸã‚ˆã‚Šã‚‚ä½œæ¥­ãŒå›°é›£ã§ã‚ã‚‹ã¨åˆ¤æ˜ã—ãŸå ´åˆã€
+ãƒãƒ¼ãƒ ã¯ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ã¨ç›¸è«‡ã—ã¦ã€ä¸€éƒ¨ã®æ©Ÿèƒ½ã‚’å®Ÿè£…ã™ã‚‹ã€‚
 
-//In the second part of the Sprint Planning Meeting, the Team addresses the question of gHow?h During the second four hours of the Sprint Planning Meeting, the Team figures out how it will turn the Product Backlog selected during Sprint Planning Meeting (What) into a done increment. The Team usually starts by designing the work. While designing, the Team identifies tasks. These tasks are the detailed pieces of work needed to convert the Product Backlog into working software. Tasks should have decomposed so they can be done in less than one day. This task list is called the Sprint Backlog. The Team self-organizes to assign and undertake the work in the Sprint Backlog, either during the Sprint Planning meeting or just-in-time during the Sprint. 
+//In the second part of the Sprint Planning Meeting, the Team addresses the question of â€œHow?â€ During the second four hours of the Sprint Planning Meeting, the Team figures out how it will turn the Product Backlog selected during Sprint Planning Meeting (What) into a done increment. The Team usually starts by designing the work. While designing, the Team identifies tasks. These tasks are the detailed pieces of work needed to convert the Product Backlog into working software. Tasks should have decomposed so they can be done in less than one day. This task list is called the Sprint Backlog. The Team self-organizes to assign and undertake the work in the Sprint Backlog, either during the Sprint Planning meeting or just-in-time during the Sprint. 
 
-ƒXƒvƒŠƒ“ƒgŒv‰æƒ~[ƒeƒBƒ“ƒO‚Ì‘æ2•”‚Å‚ÍAƒ`[ƒ€‚ÍuHow?v‚Ì¿–â‚Éæ‚è‘g‚ŞB
-‚±‚ÌV‚½‚È4ŠÔ‚Åƒ`[ƒ€‚ÍAƒXƒvƒŠƒ“ƒgŒv‰æƒ~[ƒeƒBƒ“ƒOiWhatj‚Å‘I‘ğ‚µ‚½ƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚ğ‚Ç‚Ì‚æ‚¤‚ÉŠ®—¹ƒCƒ“ƒNƒŠƒƒ“ƒg‚É•Ï‚¦‚é‚©‚ğl‚¦‚éB
-’ÊíAƒ`[ƒ€‚ÍAì‹Æ‚ÌİŒv‚©‚çn‚ß‚éB‚»‚µ‚ÄAƒ^ƒXƒN‚ğŒ©‚Â‚¯o‚·B
-‚±‚ê‚ç‚Ìƒ^ƒXƒN‚ÍAƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚ğ“®‚­ƒ\ƒtƒgƒEƒFƒA‚É•Ï‚¦‚½‚ß‚É•K—v‚Æ‚È‚éÚ×‚Èì‹Æ‚Å‚ ‚éB
-ƒ^ƒXƒN‚ÍA1“ú–¢–‚Ås‚¤‚±‚Æ‚ª‚Å‚«‚é‚æ‚¤‚É•ª‰ğ‚·‚×‚«‚¾B
-ƒ^ƒXƒNˆê——‚ÍƒXƒvƒŠƒ“ƒgƒoƒbƒNƒƒO‚ÆŒÄ‚Î‚ê‚éB
-ƒ`[ƒ€‚Í©ŒÈ‘gD‰»‚µAƒXƒvƒŠƒ“ƒgŒv‰æƒ~[ƒeƒBƒ“ƒO‚Ü‚½‚ÍƒXƒvƒŠƒ“ƒg’†‚ÉƒWƒƒƒXƒgƒCƒ“ƒ^ƒCƒ€‚ÅAƒXƒvƒŠƒ“ƒgƒoƒbƒNƒƒO‚Ìì‹Æ‚ğ¿‚¯‚ÂB
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆè¨ˆç”»ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã®ç¬¬2éƒ¨ã§ã¯ã€ãƒãƒ¼ãƒ ã¯ã€ŒHow?ã€ã®è³ªå•ã«å–ã‚Šçµ„ã‚€ã€‚
+ã“ã®æ–°ãŸãª4æ™‚é–“ã§ãƒãƒ¼ãƒ ã¯ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆè¨ˆç”»ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ï¼ˆWhatï¼‰ã§é¸æŠã—ãŸãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã‚’ã©ã®ã‚ˆã†ã«å®Œäº†ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã«å¤‰ãˆã‚‹ã‹ã‚’è€ƒãˆã‚‹ã€‚
+é€šå¸¸ã€ãƒãƒ¼ãƒ ã¯ã€ä½œæ¥­ã®è¨­è¨ˆã‹ã‚‰å§‹ã‚ã‚‹ã€‚ãã—ã¦ã€ã‚¿ã‚¹ã‚¯ã‚’è¦‹ã¤ã‘å‡ºã™ã€‚
+ã“ã‚Œã‚‰ã®ã‚¿ã‚¹ã‚¯ã¯ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã‚’å‹•ãã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã«å¤‰ãˆãŸã‚ã«å¿…è¦ã¨ãªã‚‹è©³ç´°ãªä½œæ¥­ã§ã‚ã‚‹ã€‚
+ã‚¿ã‚¹ã‚¯ã¯ã€1æ—¥æœªæº€ã§è¡Œã†ã“ã¨ãŒã§ãã‚‹ã‚ˆã†ã«åˆ†è§£ã™ã¹ãã ã€‚
+ã‚¿ã‚¹ã‚¯ä¸€è¦§ã¯ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã¨å‘¼ã°ã‚Œã‚‹ã€‚
+ãƒãƒ¼ãƒ ã¯è‡ªå·±çµ„ç¹”åŒ–ã—ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆè¨ˆç”»ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã¾ãŸã¯ã‚¹ãƒ—ãƒªãƒ³ãƒˆä¸­ã«ã‚¸ãƒ£ã‚¹ãƒˆã‚¤ãƒ³ã‚¿ã‚¤ãƒ ã§ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®ä½œæ¥­ã‚’è«‹ã‘æŒã¤ã€‚
 
 //Tip: Usually, only 60-70% of the total Sprint Backlog will be devised in the Sprint Planning meeting. The rest are stubbed out for later detailing, or given large estimates that will be decomposed later in the Sprint.
 
-""Tip: ’ÊíAƒXƒvƒŠƒ“ƒgŒv‰æƒ~[ƒeƒBƒ“ƒO‚Å‚ÍAƒXƒvƒŠƒ“ƒgƒoƒbƒNƒƒO‚Ì60`70%‚µ‚©o‚Ä‚±‚È‚¢‚¾‚ë‚¤Bc‚è‚Í‚ ‚Æ‚Å‘Î‰‚·‚éB‚ ‚é‚¢‚ÍA‚Æ‚è‚ ‚¦‚¸‘å‚«‚ÈŒ©Ï‚à‚è‚ğ‚µ‚Ä‚¨‚¢‚ÄA‚ ‚Æ‚Å•ª‰ğ‚·‚éB
+""Tip: é€šå¸¸ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆè¨ˆç”»ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã§ã¯ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®60ã€œ70%ã—ã‹å‡ºã¦ã“ãªã„ã ã‚ã†ã€‚æ®‹ã‚Šã¯ã‚ã¨ã§å¯¾å¿œã™ã‚‹ã€‚ã‚ã‚‹ã„ã¯ã€ã¨ã‚Šã‚ãˆãšå¤§ããªè¦‹ç©ã‚‚ã‚Šã‚’ã—ã¦ãŠã„ã¦ã€ã‚ã¨ã§åˆ†è§£ã™ã‚‹ã€‚
 
 //The Product Owner is present during the second part of the Sprint Planning Meeting to clarify the Product Backlog and to help make trade-offs. If the Team determines that it has too much or too little work, it may renegotiate the Product Backlog with the Product Owner. The Team may also invite other people to attend in order to provide technical or domain advice. A new Team often first realizes that it will either sink or swim as a Team, not individually, in this meeting. The Team realizes that it must rely on itself. As it realizes this, it starts to self-organize to take on the characteristics and behavior of a real Team. 
 
-ƒXƒvƒŠƒ“ƒgŒv‰æƒ~[ƒeƒBƒ“ƒO‚Ì‘æ2•”‚Å‚ÍAƒvƒƒ_ƒNƒgƒI[ƒi[‚Íƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚ğ–¾Šm‚É‚µAƒgƒŒ[ƒhƒIƒt‚ğx‰‡‚·‚éB
-ì‹Æ‚ª‘½‚·‚¬‚½‚è­‚È‚·‚¬‚½‚è‚µ‚½ê‡‚ÍAƒ`[ƒ€‚Íƒvƒƒ_ƒNƒgƒI[ƒi[‚ÆŒğÂ‚µ‚ÄAƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚ğ’²®‚·‚éB
-‹Zp‚âƒhƒƒCƒ“‚ÌƒAƒhƒoƒCƒX‚ğ‹‚ß‚é‚½‚ß‚ÉAƒ`[ƒ€‚Í‘¼‚Ìl‚ğƒ~[ƒeƒBƒ“ƒO‚Éµ‘Ò‚·‚é‚©‚à‚µ‚ê‚È‚¢B
-V‚µ‚¢ƒ`[ƒ€‚Ìê‡Aƒ`[ƒ€‚Æ‚µ‚Ä‚¤‚Ü‚­‚â‚Á‚Ä‚¢‚¯‚é‚©‚Ç‚¤‚©‚ÍA‚±‚Ìƒ~[ƒeƒBƒ“ƒO‚Å•ª‚©‚éB
-ƒ`[ƒ€‚Íƒ`[ƒ€‚ğ—Š‚ç‚È‚¯‚ê‚Î‚È‚ç‚È‚¢‚±‚Æ‚É‹C‚Ã‚­B
-‚±‚ê‚É‹C‚Ã‚¯‚ÎAƒ`[ƒ€‚Í©ŒÈ‘gD‚ğn‚ßA^‚Ìƒ`[ƒ€‚Æ‚µ‚Ä‚Ì“Á«‚ğ‚¿A‚»‚Ì‚æ‚¤‚ÉU‚é•‘‚¦‚é‚æ‚¤‚É‚È‚éB
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆè¨ˆç”»ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã®ç¬¬2éƒ¨ã§ã¯ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ã¯ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã‚’æ˜ç¢ºã«ã—ã€ãƒˆãƒ¬ãƒ¼ãƒ‰ã‚ªãƒ•ã‚’æ”¯æ´ã™ã‚‹ã€‚
+ä½œæ¥­ãŒå¤šã™ããŸã‚Šå°‘ãªã™ããŸã‚Šã—ãŸå ´åˆã¯ã€ãƒãƒ¼ãƒ ã¯ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ã¨äº¤æ¸‰ã—ã¦ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã‚’èª¿æ•´ã™ã‚‹ã€‚
+æŠ€è¡“ã‚„ãƒ‰ãƒ¡ã‚¤ãƒ³ã®ã‚¢ãƒ‰ãƒã‚¤ã‚¹ã‚’æ±‚ã‚ã‚‹ãŸã‚ã«ã€ãƒãƒ¼ãƒ ã¯ä»–ã®äººã‚’ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã«æ‹›å¾…ã™ã‚‹ã‹ã‚‚ã—ã‚Œãªã„ã€‚
+æ–°ã—ã„ãƒãƒ¼ãƒ ã®å ´åˆã€ãƒãƒ¼ãƒ ã¨ã—ã¦ã†ã¾ãã‚„ã£ã¦ã„ã‘ã‚‹ã‹ã©ã†ã‹ã¯ã€ã“ã®ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã§åˆ†ã‹ã‚‹ã€‚
+ãƒãƒ¼ãƒ ã¯ãƒãƒ¼ãƒ ã‚’é ¼ã‚‰ãªã‘ã‚Œã°ãªã‚‰ãªã„ã“ã¨ã«æ°—ã¥ãã€‚
+ã“ã‚Œã«æ°—ã¥ã‘ã°ã€ãƒãƒ¼ãƒ ã¯è‡ªå·±çµ„ç¹”ã‚’å§‹ã‚ã€çœŸã®ãƒãƒ¼ãƒ ã¨ã—ã¦ã®ç‰¹æ€§ã‚’æŒã¡ã€ãã®ã‚ˆã†ã«æŒ¯ã‚‹èˆãˆã‚‹ã‚ˆã†ã«ãªã‚‹ã€‚
 
 //SPRINT REVIEW 
 //At the end of the Sprint, a Sprint Review meeting is held. This is a four hour time-boxed meeting for one month Sprints. For Sprints of lesser duration, this meeting must not consume more than 5% of the total Sprint. During the Sprint Review, the Scrum Team and stakeholders collaborate about what was just done. Based on that and changes to the Product Backlog during the Sprint, they collaborate about what are the next things that could be done. This is an informal meeting, with the presentation of the functionality intended to foster collaboration about what to do next. 
 
-!!ƒXƒvƒŠƒ“ƒgƒŒƒrƒ…[
-ƒXƒvƒŠƒ“ƒg‚ÌÅŒã‚ÉƒXƒvƒŠƒ“ƒgƒŒƒrƒ…[‚ğŠJ‚­B
-1ƒ–Œ‚ÌƒXƒvƒŠƒ“ƒg‚Ìê‡Aƒ^ƒCƒ€ƒ{ƒbƒNƒX‚Í4ŠÔ‚Æ‚È‚éB
-‚à‚Á‚Æ’Z‚¢ƒXƒvƒŠƒ“ƒg‚Ìê‡AƒXƒvƒŠƒ“ƒg‚Ì5%ˆÈã‚ğ”ï‚â‚µ‚Ä‚Í‚È‚ç‚È‚¢B
-ƒXƒvƒŠƒ“ƒgƒŒƒrƒ…[‚Å‚ÍAƒXƒNƒ‰ƒ€ƒ`[ƒ€‚ÆƒXƒe[ƒNƒzƒ‹ƒ_[‚ªAŠ®—¹‚µ‚½€–Ú‚É‚Â‚¢‚Ä‹¦‹c‚·‚éB
-‚±‚ÌŒ‹‰Ê‚ÆƒXƒvƒŠƒ“ƒg’†‚Ìƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚Ö‚Ì•ÏX‚ÉŠî‚Ã‚¢‚ÄAŸ‚ÉŠ®—¹‚·‚×‚«‚±‚Æ‚ğ‹¦‹c‚·‚éB
-‚±‚ê‚Í”ñŒö®‚Ìƒ~[ƒeƒBƒ“ƒO‚Å‚ ‚èA
-‹@”\‚ÌƒvƒŒƒ[ƒ“ƒe[ƒVƒ‡ƒ“‚È‚Ç‚ğs‚Á‚ÄA
-Ÿ‚És‚¤‚±‚Æ‚Ì‹¦“­‚ğ‘£i‚·‚éB
+!!ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒ¬ãƒ“ãƒ¥ãƒ¼
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆã®æœ€å¾Œã«ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒ¬ãƒ“ãƒ¥ãƒ¼ã‚’é–‹ãã€‚
+1ãƒ¶æœˆã®ã‚¹ãƒ—ãƒªãƒ³ãƒˆã®å ´åˆã€ã‚¿ã‚¤ãƒ ãƒœãƒƒã‚¯ã‚¹ã¯4æ™‚é–“ã¨ãªã‚‹ã€‚
+ã‚‚ã£ã¨çŸ­ã„ã‚¹ãƒ—ãƒªãƒ³ãƒˆã®å ´åˆã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆã®5%ä»¥ä¸Šã‚’è²»ã‚„ã—ã¦ã¯ãªã‚‰ãªã„ã€‚
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒ¬ãƒ“ãƒ¥ãƒ¼ã§ã¯ã€ã‚¹ã‚¯ãƒ©ãƒ ãƒãƒ¼ãƒ ã¨ã‚¹ãƒ†ãƒ¼ã‚¯ãƒ›ãƒ«ãƒ€ãƒ¼ãŒã€å®Œäº†ã—ãŸé …ç›®ã«ã¤ã„ã¦å”è­°ã™ã‚‹ã€‚
+ã“ã®çµæœã¨ã‚¹ãƒ—ãƒªãƒ³ãƒˆä¸­ã®ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã¸ã®å¤‰æ›´ã«åŸºã¥ã„ã¦ã€æ¬¡ã«å®Œäº†ã™ã¹ãã“ã¨ã‚’å”è­°ã™ã‚‹ã€‚
+ã“ã‚Œã¯éå…¬å¼ã®ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã§ã‚ã‚Šã€
+æ©Ÿèƒ½ã®ãƒ—ãƒ¬ã‚¼ãƒ³ãƒ†ãƒ¼ã‚·ãƒ§ãƒ³ãªã©ã‚’è¡Œã£ã¦ã€
+æ¬¡ã«è¡Œã†ã“ã¨ã®å”åƒã‚’ä¿ƒé€²ã™ã‚‹ã€‚
 
-//The meeting includes at least the following elements. The Product Owner identifies what has been done and what hasnft been done. The Team discusses what went well during the Sprint and what problems it ran into, and how it solved these problems. The Team then demonstrates the work that is done and answers questions. The Product Owner then discusses the Product Backlog as it stands. He or she projects likely completion dates with various velocity assumptions. The entire group then collaborates about what it has seen and what this means regarding what to do next. The Sprint Review provides valuable input to subsequent Sprint Planning meeting. 
+//The meeting includes at least the following elements. The Product Owner identifies what has been done and what hasnâ€™t been done. The Team discusses what went well during the Sprint and what problems it ran into, and how it solved these problems. The Team then demonstrates the work that is done and answers questions. The Product Owner then discusses the Product Backlog as it stands. He or she projects likely completion dates with various velocity assumptions. The entire group then collaborates about what it has seen and what this means regarding what to do next. The Sprint Review provides valuable input to subsequent Sprint Planning meeting. 
 
-‚±‚Ìƒ~[ƒeƒBƒ“ƒO‚É‚ÍA­‚È‚­‚Æ‚àŸ‚Ì—v‘f‚ªŠÜ‚Ü‚ê‚Ä‚¢‚éB
-ƒvƒƒ_ƒNƒgƒI[ƒi[‚ÍA‰½‚ªŠ®—¹‚µ‚½‚©A‰½‚ªŠ®—¹‚µ‚È‚©‚Á‚½‚©‚ğ¯•Ê‚·‚éB
-ƒ`[ƒ€‚ÍAƒXƒvƒŠƒ“ƒg’†‚É‚¤‚Ü‚­‚¢‚Á‚½‚±‚ÆA‘˜‹ö‚µ‚½–â‘è“_A‚¨‚æ‚Ñ‚Ç‚¤‚â‚Á‚Ä–â‘è‚ğ‰ğŒˆ‚µ‚½‚©‚ğ‹c˜_‚·‚éB
-‚»‚ÌŒãƒ`[ƒ€‚ÍAŠ®—¹‚µ‚½ì‹Æ‚Ìƒfƒ‚ƒ“ƒXƒgƒŒ[ƒVƒ‡ƒ“‚ğs‚¢A¿–â‚É“š‚¦‚éB
-ƒvƒƒ_ƒNƒgƒI[ƒi[‚ÍAŒ»ó‚Ìƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚É‚Â‚¢‚Ä˜b‚µ‚ ‚¤B
-‚»‚µ‚ÄA—lX‚ÈƒxƒƒVƒeƒB‚ğ‰¼’è‚µ‚ÄA—L–]‚ÈŠ®¬“ú‚ğ—\‘ª‚·‚éB
-‚»‚ÌŒã‚İ‚ñ‚È‚ÅA‚±‚ê‚Ü‚ÅŒ©‚½‚±‚ÆA‚»‚µ‚Ä‚»‚ê‚ªŸ‚És‚¤‚×‚«‚±‚Æ‚É‚Ç‚ñ‚ÈˆÓ–¡‚ª‚ ‚é‚©‚ğ‹c˜_‚·‚éB
-ƒXƒvƒŠƒ“ƒgƒŒƒrƒ…[‚ÍAŒã‚ÌƒXƒvƒŠƒ“ƒgŒv‰æƒ~[ƒeƒBƒ“ƒO‚É‚Æ‚Á‚Ä‰¿’l‚Ì‚ ‚éƒCƒ“ƒvƒbƒg‚Æ‚È‚éB
+ã“ã®ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã«ã¯ã€å°‘ãªãã¨ã‚‚æ¬¡ã®è¦ç´ ãŒå«ã¾ã‚Œã¦ã„ã‚‹ã€‚
+ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ã¯ã€ä½•ãŒå®Œäº†ã—ãŸã‹ã€ä½•ãŒå®Œäº†ã—ãªã‹ã£ãŸã‹ã‚’è­˜åˆ¥ã™ã‚‹ã€‚
+ãƒãƒ¼ãƒ ã¯ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆä¸­ã«ã†ã¾ãã„ã£ãŸã“ã¨ã€é­é‡ã—ãŸå•é¡Œç‚¹ã€ãŠã‚ˆã³ã©ã†ã‚„ã£ã¦å•é¡Œã‚’è§£æ±ºã—ãŸã‹ã‚’è­°è«–ã™ã‚‹ã€‚
+ãã®å¾Œãƒãƒ¼ãƒ ã¯ã€å®Œäº†ã—ãŸä½œæ¥­ã®ãƒ‡ãƒ¢ãƒ³ã‚¹ãƒˆãƒ¬ãƒ¼ã‚·ãƒ§ãƒ³ã‚’è¡Œã„ã€è³ªå•ã«ç­”ãˆã‚‹ã€‚
+ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ã¯ã€ç¾çŠ¶ã®ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã«ã¤ã„ã¦è©±ã—ã‚ã†ã€‚
+ãã—ã¦ã€æ§˜ã€…ãªãƒ™ãƒ­ã‚·ãƒ†ã‚£ã‚’ä»®å®šã—ã¦ã€æœ‰æœ›ãªå®Œæˆæ—¥ã‚’äºˆæ¸¬ã™ã‚‹ã€‚
+ãã®å¾Œã¿ã‚“ãªã§ã€ã“ã‚Œã¾ã§è¦‹ãŸã“ã¨ã€ãã—ã¦ãã‚ŒãŒæ¬¡ã«è¡Œã†ã¹ãã“ã¨ã«ã©ã‚“ãªæ„å‘³ãŒã‚ã‚‹ã‹ã‚’è­°è«–ã™ã‚‹ã€‚
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒ¬ãƒ“ãƒ¥ãƒ¼ã¯ã€å¾Œã®ã‚¹ãƒ—ãƒªãƒ³ãƒˆè¨ˆç”»ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã«ã¨ã£ã¦ä¾¡å€¤ã®ã‚ã‚‹ã‚¤ãƒ³ãƒ—ãƒƒãƒˆã¨ãªã‚‹ã€‚
 
 //SPRINT RETROSPECTIVE 
 //After the Sprint Review and prior to the next Sprint Planning meeting, the Scrum Team has a Sprint Retrospective meeting. At this three hour, time-boxed meeting the ScrumMaster encourages the Scrum Team to revise, within the Scrum process framework and practices, their development process to make it more effective and enjoyable for the next Sprint. Many books document techniques that are helpful to use in Retrospectives. 
 
 
-!!ƒXƒvƒŠƒ“ƒgƒŒƒgƒƒXƒyƒNƒeƒBƒu
-ƒXƒvƒŠƒ“ƒgƒŒƒrƒ…[‚ÆŸ‚ÌƒXƒvƒŠƒ“ƒgŒv‰æƒ~[ƒeƒBƒ“ƒO‚ÌŠÔ‚ÉA
-ƒXƒNƒ‰ƒ€ƒ`[ƒ€‚ÍƒXƒvƒŠƒ“ƒgƒŒƒgƒƒXƒyƒNƒeƒBƒu‚ğŠJ‚­B
-ƒXƒNƒ‰ƒ€ƒ}ƒXƒ^[‚ÍA‚±‚Ì3ŠÔ‚Ìƒ^ƒCƒ€ƒ{ƒbƒNƒX‚Ìƒ~[ƒeƒBƒ“ƒO‚ÅAŸ‚ÌƒXƒvƒŠƒ“ƒg‚ª‚æ‚è—LŒø‚ÅA‚æ‚è–ù‰õ‚É‚·‚é‚½‚ß‚ÉAƒXƒNƒ‰ƒ€ƒvƒƒZƒXƒtƒŒ[ƒ€ƒ[ƒN‚Æƒvƒ‰ƒNƒeƒBƒX‚Åƒ`[ƒ€‚ªŠJ”­ƒvƒƒZƒX‚ğ‰ü‘P‚·‚é‚æ‚¤‚É‘£‚·B
-ƒŒƒgƒƒXƒyƒNƒeƒBƒu‚Åg—p‚·‚é‚Ì‚É—L—p‚È‹Zp‚ªA‘½‚­‚Ì‘Ğ‚Åq‚×‚ç‚ê‚Ä‚¢‚éB
+!!ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒ¬ãƒˆãƒ­ã‚¹ãƒšã‚¯ãƒ†ã‚£ãƒ–
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒ¬ãƒ“ãƒ¥ãƒ¼ã¨æ¬¡ã®ã‚¹ãƒ—ãƒªãƒ³ãƒˆè¨ˆç”»ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã®é–“ã«ã€
+ã‚¹ã‚¯ãƒ©ãƒ ãƒãƒ¼ãƒ ã¯ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒ¬ãƒˆãƒ­ã‚¹ãƒšã‚¯ãƒ†ã‚£ãƒ–ã‚’é–‹ãã€‚
+ã‚¹ã‚¯ãƒ©ãƒ ãƒã‚¹ã‚¿ãƒ¼ã¯ã€ã“ã®3æ™‚é–“ã®ã‚¿ã‚¤ãƒ ãƒœãƒƒã‚¯ã‚¹ã®ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã§ã€æ¬¡ã®ã‚¹ãƒ—ãƒªãƒ³ãƒˆãŒã‚ˆã‚Šæœ‰åŠ¹ã§ã€ã‚ˆã‚Šæ„‰å¿«ã«ã™ã‚‹ãŸã‚ã«ã€ã‚¹ã‚¯ãƒ©ãƒ ãƒ—ãƒ­ã‚»ã‚¹ãƒ•ãƒ¬ãƒ¼ãƒ ãƒ¯ãƒ¼ã‚¯ã¨ãƒ—ãƒ©ã‚¯ãƒ†ã‚£ã‚¹ã§ãƒãƒ¼ãƒ ãŒé–‹ç™ºãƒ—ãƒ­ã‚»ã‚¹ã‚’æ”¹å–„ã™ã‚‹ã‚ˆã†ã«ä¿ƒã™ã€‚
+ãƒ¬ãƒˆãƒ­ã‚¹ãƒšã‚¯ãƒ†ã‚£ãƒ–ã§ä½¿ç”¨ã™ã‚‹ã®ã«æœ‰ç”¨ãªæŠ€è¡“ãŒã€å¤šãã®æ›¸ç±ã§è¿°ã¹ã‚‰ã‚Œã¦ã„ã‚‹ã€‚
 
-//The purpose of the Retrospective is to inspect how the last Sprint went in regards to people, relationships, process and tools. The inspection should identify and prioritize the major items that went well and those items that-if done differently-could make things even better. These include Scrum Team composition, meeting arrangements, tools, definition of gdone,h methods of communication, and processes for turning Product Backlog items into something gdone.h By the end of the Sprint Retrospective, the Scrum Team should have identified actionable improvement measures that it implements in the next Sprint. These changes become the adaptation to the empirical inspection.
+//The purpose of the Retrospective is to inspect how the last Sprint went in regards to people, relationships, process and tools. The inspection should identify and prioritize the major items that went well and those items that-if done differently-could make things even better. These include Scrum Team composition, meeting arrangements, tools, definition of â€œdone,â€ methods of communication, and processes for turning Product Backlog items into something â€œdone.â€ By the end of the Sprint Retrospective, the Scrum Team should have identified actionable improvement measures that it implements in the next Sprint. These changes become the adaptation to the empirical inspection.
 
 
-ƒŒƒgƒƒXƒyƒNƒeƒBƒu‚Ì–Ú“I‚ÍAæ‚ÌƒXƒvƒŠƒ“ƒg‚ğlXAŠÖŒWAƒvƒƒZƒXAƒc[ƒ‹‚Ì–Ê‚©‚çŒŸ¸‚·‚é‚±‚Æ‚Å‚ ‚éB
-ŒŸ¸‚ÍA‚¤‚Ü‚­‚¢‚Á‚½å—v‚È€–Ú‚ÆAˆá‚Á‚½‚â‚è•û‚ğ‚·‚ê‚Î‚à‚Á‚Æ—Ç‚­‚È‚Á‚½‚©‚à‚µ‚ê‚È‚¢€–Ú‚ğ¯•Ê‚µ‚Ä—Dæ•t‚¯‚ğ‚·‚×‚«‚Å‚ ‚éB
-‚±‚±‚É‚ÍAƒXƒNƒ‰ƒ€ƒ`[ƒ€‚Ì\¬Aƒ~[ƒeƒBƒ“ƒO‹K–ñAƒc[ƒ‹AuŠ®—¹v‚Ì’è‹`AƒRƒ~ƒ…ƒjƒP[ƒVƒ‡ƒ“‚Ì•û–@A‚¨‚æ‚Ñƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚Ì€–Ú‚ğuŠ®—¹v‚É•Ï‚¦‚éƒvƒƒZƒX‚ªŠÜ‚Ü‚ê‚éB
-ƒXƒvƒŠƒ“ƒgƒŒƒgƒƒXƒyƒNƒeƒBƒu‚ÌI—¹‚Ü‚Å‚ÉAƒXƒNƒ‰ƒ€ƒ`[ƒ€‚ÍAŸ‚ÌƒXƒvƒŠƒ“ƒg‚Å“±“ü‚Å‚«‚éÀs‰Â”\‚È‰ü‘P‚ğ“Á’è‚·‚×‚«‚¾B
-‚±‚¤‚µ‚½‰ü‘P‚ªŒoŒ±“I‚ÈŒŸ¸‚Ö‚Ì“K‰‚Æ‚È‚éB
+ãƒ¬ãƒˆãƒ­ã‚¹ãƒšã‚¯ãƒ†ã‚£ãƒ–ã®ç›®çš„ã¯ã€å…ˆã®ã‚¹ãƒ—ãƒªãƒ³ãƒˆã‚’äººã€…ã€é–¢ä¿‚ã€ãƒ—ãƒ­ã‚»ã‚¹ã€ãƒ„ãƒ¼ãƒ«ã®é¢ã‹ã‚‰æ¤œæŸ»ã™ã‚‹ã“ã¨ã§ã‚ã‚‹ã€‚
+æ¤œæŸ»ã¯ã€ã†ã¾ãã„ã£ãŸä¸»è¦ãªé …ç›®ã¨ã€é•ã£ãŸã‚„ã‚Šæ–¹ã‚’ã™ã‚Œã°ã‚‚ã£ã¨è‰¯ããªã£ãŸã‹ã‚‚ã—ã‚Œãªã„é …ç›®ã‚’è­˜åˆ¥ã—ã¦å„ªå…ˆä»˜ã‘ã‚’ã™ã¹ãã§ã‚ã‚‹ã€‚
+ã“ã“ã«ã¯ã€ã‚¹ã‚¯ãƒ©ãƒ ãƒãƒ¼ãƒ ã®æ§‹æˆã€ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°è¦ç´„ã€ãƒ„ãƒ¼ãƒ«ã€ã€Œå®Œäº†ã€ã®å®šç¾©ã€ã‚³ãƒŸãƒ¥ãƒ‹ã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã®æ–¹æ³•ã€ãŠã‚ˆã³ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®é …ç›®ã‚’ã€Œå®Œäº†ã€ã«å¤‰ãˆã‚‹ãƒ—ãƒ­ã‚»ã‚¹ãŒå«ã¾ã‚Œã‚‹ã€‚
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒ¬ãƒˆãƒ­ã‚¹ãƒšã‚¯ãƒ†ã‚£ãƒ–ã®çµ‚äº†ã¾ã§ã«ã€ã‚¹ã‚¯ãƒ©ãƒ ãƒãƒ¼ãƒ ã¯ã€æ¬¡ã®ã‚¹ãƒ—ãƒªãƒ³ãƒˆã§å°å…¥ã§ãã‚‹å®Ÿè¡Œå¯èƒ½ãªæ”¹å–„ã‚’ç‰¹å®šã™ã¹ãã ã€‚
+ã“ã†ã—ãŸæ”¹å–„ãŒçµŒé¨“çš„ãªæ¤œæŸ»ã¸ã®é©å¿œã¨ãªã‚‹ã€‚
 
 //DAILY SCRUM 
 //Each Team meets daily for a 15-minute status meeting called the Daily Scrum. The Daily Scrum is at the same time and same place throughout the Sprints. During the meeting, each Team member explains: 
 
-!!ƒfƒCƒŠ[ƒXƒNƒ‰ƒ€
-ƒ`[ƒ€‚ÍAƒfƒCƒŠ[ƒXƒNƒ‰ƒ€‚ÆŒÄ‚Î‚ê‚é15•ª‚ÌƒXƒe[ƒ^ƒXƒ~[ƒeƒBƒ“ƒO‚Å–ˆ“úŠç‚ğ‡‚í‚¹‚éBƒXƒvƒŠƒ“ƒg’†‚ÌƒfƒCƒŠ[ƒXƒNƒ‰ƒ€‚ÍA“¯‚¶ŠÔA“¯‚¶êŠ‚ÅŠJ‚©‚ê‚éB
-ƒ`[ƒ€ƒƒ“ƒo[‚ÍŸ‚Ì‚±‚Æ‚ğà–¾‚·‚é:
+!!ãƒ‡ã‚¤ãƒªãƒ¼ã‚¹ã‚¯ãƒ©ãƒ 
+ãƒãƒ¼ãƒ ã¯ã€ãƒ‡ã‚¤ãƒªãƒ¼ã‚¹ã‚¯ãƒ©ãƒ ã¨å‘¼ã°ã‚Œã‚‹15åˆ†ã®ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã§æ¯æ—¥é¡”ã‚’åˆã‚ã›ã‚‹ã€‚ã‚¹ãƒ—ãƒªãƒ³ãƒˆä¸­ã®ãƒ‡ã‚¤ãƒªãƒ¼ã‚¹ã‚¯ãƒ©ãƒ ã¯ã€åŒã˜æ™‚é–“ã€åŒã˜å ´æ‰€ã§é–‹ã‹ã‚Œã‚‹ã€‚
+ãƒãƒ¼ãƒ ãƒ¡ãƒ³ãƒãƒ¼ã¯æ¬¡ã®ã“ã¨ã‚’èª¬æ˜ã™ã‚‹:
 
 //What he or she has accomplished since the last meeting; 
 //What he or she is going to do before the next meeting; and 
 //What obstacles are in his or her way. 
 
 
-* ‘O‚Ìƒ~[ƒeƒBƒ“ƒO‚©‚ç¡“ú‚Ü‚Å‚És‚Á‚½‚±‚Æ
-* Ÿ‚Ìƒ~[ƒeƒBƒ“ƒO‚Ü‚Å‚És‚¤‚±‚Æ
-* ‰½‚©‚ğs‚¤ã‚ÅáŠQ‚Æ‚È‚é‚±‚Æ
+* å‰ã®ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã‹ã‚‰ä»Šæ—¥ã¾ã§ã«è¡Œã£ãŸã“ã¨
+* æ¬¡ã®ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã¾ã§ã«è¡Œã†ã“ã¨
+* ä½•ã‹ã‚’è¡Œã†ä¸Šã§éšœå®³ã¨ãªã‚‹ã“ã¨
 
-//Daily Scrums improve communications, eliminate other meetings, identify and remove impediments to development, highlight and promote quick decision-making, and improve everyonefs level of project knowledge. 
+//Daily Scrums improve communications, eliminate other meetings, identify and remove impediments to development, highlight and promote quick decision-making, and improve everyoneâ€™s level of project knowledge. 
 
-ƒfƒCƒŠ[ƒXƒNƒ‰ƒ€‚ÍAƒRƒ~ƒ…ƒjƒP[ƒVƒ‡ƒ“‚ğ‰ü‘P‚µA‚»‚Ì‘¼‚Ìƒ~[ƒeƒBƒ“ƒO‚ğœ‹‚µAŠJ”­‚ÌáŠQ‚ğ“Á’è‚µ‚Ä”rœ‚µAv‘¬‚ÈˆÓuŒˆ’è‚ğ‹­’²‚µ‚Ä‘£i‚µA‚İ‚ñ‚È‚ÌƒvƒƒWƒFƒNƒg’m¯‚ÌƒŒƒxƒ‹‚ğŒüã‚·‚é‚à‚Ì‚Å‚ ‚éB
+ãƒ‡ã‚¤ãƒªãƒ¼ã‚¹ã‚¯ãƒ©ãƒ ã¯ã€ã‚³ãƒŸãƒ¥ãƒ‹ã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã‚’æ”¹å–„ã—ã€ãã®ä»–ã®ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã‚’é™¤å»ã—ã€é–‹ç™ºã®éšœå®³ã‚’ç‰¹å®šã—ã¦æ’é™¤ã—ã€è¿…é€Ÿãªæ„å¿—æ±ºå®šã‚’å¼·èª¿ã—ã¦ä¿ƒé€²ã—ã€ã¿ã‚“ãªã®ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆçŸ¥è­˜ã®ãƒ¬ãƒ™ãƒ«ã‚’å‘ä¸Šã™ã‚‹ã‚‚ã®ã§ã‚ã‚‹ã€‚
 
 //The ScrumMaster ensures that the Team has the meeting. The Team is responsible for conducting the Daily Scrum. The ScrumMaster teaches the Team to keep the Daily Scrum short by enforcing the rules and making sure that people speak briefly. The ScrumMaster also enforces the rule that chickens are not allowed to talk or in anyway interfere with the Daily Scrum. 
 
-ƒXƒNƒ‰ƒ€ƒ}ƒXƒ^[‚ÍAƒ`[ƒ€‚ªŠmÀ‚Éƒ~[ƒeƒBƒ“ƒO‚ğŠJ‚­‚æ‚¤‚É‚·‚éB
-ƒ`[ƒ€‚ÍAƒfƒCƒŠ[ƒXƒNƒ‰ƒ€‚ğs‚¤‚±‚Æ‚ÉÓ”C‚ğ•‰‚¤B
-ƒXƒNƒ‰ƒ€ƒ}ƒXƒ^[‚ÍuŠÈŒ‰‚É˜b‚·v‚Æ‚¢‚¤ƒ‹[ƒ‹‚ğÀ{‚µAƒfƒCƒŠ[ƒXƒNƒ‰ƒ€‚ª’Z‚­‚È‚é‚æ‚¤‚Éƒ`[ƒ€‚É“`‚¦‚éB
-‚³‚ç‚ÉƒXƒNƒ‰ƒ€ƒ}ƒXƒ^[‚ÍAuƒfƒCƒŠ[ƒXƒNƒ‰ƒ€‚Å‚ÍAŒ{‚Í˜b‚·‚±‚Æ‚ğ‹–‚³‚ê‚È‚¢B‚Ç‚Ì‚æ‚¤‚È•û–@‚Å‚àŒûo‚µ‚Í‹–‚³‚ê‚È‚¢v‚Æ‚¢‚¤ƒ‹[ƒ‹‚àÀ{‚·‚éB
+ã‚¹ã‚¯ãƒ©ãƒ ãƒã‚¹ã‚¿ãƒ¼ã¯ã€ãƒãƒ¼ãƒ ãŒç¢ºå®Ÿã«ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã‚’é–‹ãã‚ˆã†ã«ã™ã‚‹ã€‚
+ãƒãƒ¼ãƒ ã¯ã€ãƒ‡ã‚¤ãƒªãƒ¼ã‚¹ã‚¯ãƒ©ãƒ ã‚’è¡Œã†ã“ã¨ã«è²¬ä»»ã‚’è² ã†ã€‚
+ã‚¹ã‚¯ãƒ©ãƒ ãƒã‚¹ã‚¿ãƒ¼ã¯ã€Œç°¡æ½”ã«è©±ã™ã€ã¨ã„ã†ãƒ«ãƒ¼ãƒ«ã‚’å®Ÿæ–½ã—ã€ãƒ‡ã‚¤ãƒªãƒ¼ã‚¹ã‚¯ãƒ©ãƒ ãŒçŸ­ããªã‚‹ã‚ˆã†ã«ãƒãƒ¼ãƒ ã«ä¼ãˆã‚‹ã€‚
+ã•ã‚‰ã«ã‚¹ã‚¯ãƒ©ãƒ ãƒã‚¹ã‚¿ãƒ¼ã¯ã€ã€Œãƒ‡ã‚¤ãƒªãƒ¼ã‚¹ã‚¯ãƒ©ãƒ ã§ã¯ã€é¶ã¯è©±ã™ã“ã¨ã‚’è¨±ã•ã‚Œãªã„ã€‚ã©ã®ã‚ˆã†ãªæ–¹æ³•ã§ã‚‚å£å‡ºã—ã¯è¨±ã•ã‚Œãªã„ã€ã¨ã„ã†ãƒ«ãƒ¼ãƒ«ã‚‚å®Ÿæ–½ã™ã‚‹ã€‚
 
 //The Daily Scrum is not a status meeting. It is not for anyone but the people transforming the Product Backlog items into an increment (the Team). The Team has committed to a Sprint Goal, and to these Product Backlog items. The Daily Scrum is an inspection of the progress toward that Sprint Goal (the three questions). Follow-on meetings usually occur to make adaptations to the upcoming work in the Sprint. The intent is to optimize the probability that the Team will meet its Goal. This is a key inspect and adapt meeting in the Scrum empirical process. 
 
-ƒfƒCƒŠ[ƒXƒNƒ‰ƒ€‚Íi’»•ñ‰ï‹c‚Å‚Í‚È‚¢B
-ƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚Ì€–Ú‚ğƒCƒ“ƒNƒŠƒƒ“ƒg‚É•Ï‚¦‚élXi‚·‚È‚í‚¿ƒ`[ƒ€jˆÈŠO‚Ì‚½‚ß‚Ì‚à‚Ì‚Å‚Í‚È‚¢‚Ì‚¾B
-ƒ`[ƒ€‚ÍAƒXƒvƒŠƒ“ƒgƒS[ƒ‹‚Æƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚Ì€–Ú‚ÉƒRƒ~ƒbƒg‚·‚éB
-ƒfƒCƒŠ[ƒXƒNƒ‰ƒ€‚ÍAƒXƒvƒŠƒ“ƒgƒS[ƒ‹‚ÉŒü‚¯‚½i’»‚ÌŒŸ¸‚Å‚ ‚éi3‚Â‚Ì¿–âjB
-’ÊíAƒXƒvƒŠƒ“ƒg‚Ås‚¤ì‹Æ‚É“K‰‚·‚é‚½‚ß‚Ìƒ~[ƒeƒBƒ“ƒO‚ğ‚±‚ÌŸ‚ÉŠJ‚­B
-ƒ`[ƒ€‚ªƒS[ƒ‹‚ğ’B¬‚·‚éŒ©‚İ‚ğÅ“K‰»‚·‚é‚½‚ß‚Å‚ ‚éB
-‚±‚ê‚ªAƒXƒNƒ‰ƒ€‚ÌŒoŒ±“IƒvƒƒZƒX‚É‚¨‚¯‚éƒJƒM‚Æ‚È‚éŒŸ¸‚Æ“K‰‚Ìƒ~[ƒeƒBƒ“ƒO‚Å‚ ‚éB
+ãƒ‡ã‚¤ãƒªãƒ¼ã‚¹ã‚¯ãƒ©ãƒ ã¯é€²æ—å ±å‘Šä¼šè­°ã§ã¯ãªã„ã€‚
+ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®é …ç›®ã‚’ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã«å¤‰ãˆã‚‹äººã€…ï¼ˆã™ãªã‚ã¡ãƒãƒ¼ãƒ ï¼‰ä»¥å¤–ã®ãŸã‚ã®ã‚‚ã®ã§ã¯ãªã„ã®ã ã€‚
+ãƒãƒ¼ãƒ ã¯ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆã‚´ãƒ¼ãƒ«ã¨ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®é …ç›®ã«ã‚³ãƒŸãƒƒãƒˆã™ã‚‹ã€‚
+ãƒ‡ã‚¤ãƒªãƒ¼ã‚¹ã‚¯ãƒ©ãƒ ã¯ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆã‚´ãƒ¼ãƒ«ã«å‘ã‘ãŸé€²æ—ã®æ¤œæŸ»ã§ã‚ã‚‹ï¼ˆ3ã¤ã®è³ªå•ï¼‰ã€‚
+é€šå¸¸ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆã§è¡Œã†ä½œæ¥­ã«é©å¿œã™ã‚‹ãŸã‚ã®ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã‚’ã“ã®æ¬¡ã«é–‹ãã€‚
+ãƒãƒ¼ãƒ ãŒã‚´ãƒ¼ãƒ«ã‚’é”æˆã™ã‚‹è¦‹è¾¼ã¿ã‚’æœ€é©åŒ–ã™ã‚‹ãŸã‚ã§ã‚ã‚‹ã€‚
+ã“ã‚ŒãŒã€ã‚¹ã‚¯ãƒ©ãƒ ã®çµŒé¨“çš„ãƒ—ãƒ­ã‚»ã‚¹ã«ãŠã‘ã‚‹ã‚«ã‚®ã¨ãªã‚‹æ¤œæŸ»ã¨é©å¿œã®ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã§ã‚ã‚‹ã€‚
 
 //SCRUM ARTIFACTS 
 //Scrum Artifacts include the Product Backlog, the Release Burndown, the Sprint Backlog, and the Sprint Burndown. 
 
-!ƒXƒNƒ‰ƒ€‚Ì¬‰Ê•¨
-ƒXƒNƒ‰ƒ€‚Ì¬‰Ê•¨‚ÍA
-'''ƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO'''A
-'''ƒŠƒŠ[ƒXƒo[ƒ“ƒ_ƒEƒ“'''A
-'''ƒXƒvƒŠƒ“ƒgƒoƒbƒNƒƒO'''A
-‚¨‚æ‚Ñ'''ƒXƒvƒŠƒ“ƒgƒo[ƒ“ƒ_ƒEƒ“'''
-‚Å‚ ‚éB
+!ã‚¹ã‚¯ãƒ©ãƒ ã®æˆæœç‰©
+ã‚¹ã‚¯ãƒ©ãƒ ã®æˆæœç‰©ã¯ã€
+'''ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°'''ã€
+'''ãƒªãƒªãƒ¼ã‚¹ãƒãƒ¼ãƒ³ãƒ€ã‚¦ãƒ³'''ã€
+'''ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°'''ã€
+ãŠã‚ˆã³'''ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒãƒ¼ãƒ³ãƒ€ã‚¦ãƒ³'''
+ã§ã‚ã‚‹ã€‚
 
 //PRODUCT BACKLOG AND RELEASE BURNDOWN 
 //The requirements for the product that the Team(s) is developing are listed in the Product Backlog. The Product Owner is responsible for the Product Backlog, its contents, its availability, and its prioritization. Product Backlog is never complete. The initial cut at developing it only lays out the initially known and best-understood requirements. The Product Backlog evolves as the product and the environment in which it will be used evolves. The Backlog is dynamic in that it constantly changes to identify what the product needs to be appropriate, competitive, and useful. As long as a product exists, Product Backlog also exists. 
 
-!!ƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚ÆƒŠƒŠ[ƒXƒo[ƒ“ƒ_ƒEƒ“
-ƒ`[ƒ€‚ªŠJ”­‚µ‚Ä‚¢‚éƒvƒƒ_ƒNƒg‚Ö‚Ì—v‹‚Íƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚Éˆê——‚³‚ê‚Ä‚¢‚éB
-ƒvƒƒ_ƒNƒgƒI[ƒi[‚ÍAƒvƒƒ_ƒNƒgƒoƒbƒNƒƒOA‚»‚Ì“à—eA—˜—p‰Â”\«A‚¨‚æ‚Ñ—Dæ“x‚ÉÓ”C‚ğ•‰‚¤B
-ƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚Í‰i‰“‚ÉŠ®¬‚µ‚È‚¢B
-Å‰‚É’…è‚·‚é‚Æ‚«‚ÍA‚æ‚­’m‚ç‚ê‚ÄA‚æ‚­—‰ğ‚³‚ê‚Ä‚¢‚é—v‹‚¾‚¯‚ª•À‚×‚ç‚ê‚Ä‚¢‚éB
-ƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚ÍAƒvƒƒ_ƒNƒg‚âŠÂ‹«‚É‡‚í‚¹‚Äi‰»‚·‚éB
-ƒvƒƒ_ƒNƒg‚ª“KØ‚ÅA‹£‘ˆ—Í‚Ì‚ ‚éA—L—p‚È‚à‚Ì‚É‚È‚é‚É‚Í‰½‚ª•K—v‚©‚ğ“Á’è‚·‚é‚½‚ß‚ÉAƒoƒbƒNƒƒO‚Íâ‚¦‚¸•Ï‰»‚µ‚È‚¯‚ê‚Î‚È‚ç‚È‚¢“®“I‚È‚à‚Ì‚Å‚ ‚éB
-ƒvƒƒ_ƒNƒg‚ª‘¶İ‚·‚éŒÀ‚èAƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚à‘¶İ‚·‚éB
+!!ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã¨ãƒªãƒªãƒ¼ã‚¹ãƒãƒ¼ãƒ³ãƒ€ã‚¦ãƒ³
+ãƒãƒ¼ãƒ ãŒé–‹ç™ºã—ã¦ã„ã‚‹ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã¸ã®è¦æ±‚ã¯ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã«ä¸€è¦§ã•ã‚Œã¦ã„ã‚‹ã€‚
+ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ã¯ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã€ãã®å†…å®¹ã€åˆ©ç”¨å¯èƒ½æ€§ã€ãŠã‚ˆã³å„ªå…ˆåº¦ã«è²¬ä»»ã‚’è² ã†ã€‚
+ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã¯æ°¸é ã«å®Œæˆã—ãªã„ã€‚
+æœ€åˆã«ç€æ‰‹ã™ã‚‹ã¨ãã¯ã€ã‚ˆãçŸ¥ã‚‰ã‚Œã¦ã€ã‚ˆãç†è§£ã•ã‚Œã¦ã„ã‚‹è¦æ±‚ã ã‘ãŒä¸¦ã¹ã‚‰ã‚Œã¦ã„ã‚‹ã€‚
+ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã¯ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚„ç’°å¢ƒã«åˆã‚ã›ã¦é€²åŒ–ã™ã‚‹ã€‚
+ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãŒé©åˆ‡ã§ã€ç«¶äº‰åŠ›ã®ã‚ã‚‹ã€æœ‰ç”¨ãªã‚‚ã®ã«ãªã‚‹ã«ã¯ä½•ãŒå¿…è¦ã‹ã‚’ç‰¹å®šã™ã‚‹ãŸã‚ã«ã€ãƒãƒƒã‚¯ãƒ­ã‚°ã¯çµ¶ãˆãšå¤‰åŒ–ã—ãªã‘ã‚Œã°ãªã‚‰ãªã„å‹•çš„ãªã‚‚ã®ã§ã‚ã‚‹ã€‚
+ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãŒå­˜åœ¨ã™ã‚‹é™ã‚Šã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã‚‚å­˜åœ¨ã™ã‚‹ã€‚
 
 //The Product Backlog represents everything necessary to develop and launch a successful product. It is a list of all features, functions, technologies, enhancements, and bug fixes that constitute the changes that will be made to the product for future releases. Product Backlog items have the attributes of a description, priority, and estimate. Priority is driven by risk, value, and necessity. There are many techniques for assessing these attributes.
 
 
-ƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚É‚ÍA¬Œ÷‚·‚éƒvƒƒ_ƒNƒg‚ğŠJ”­‚µAƒ[ƒ“ƒ`‚·‚é‚½‚ß‚É•K—v‚È‚à‚Ì‚ğ‚·‚×‚Ä‚ğ•\‚³‚ê‚Ä‚¢‚éB
-‚·‚×‚Ä‚ÌƒtƒB[ƒ`ƒƒA‹@”\A‹ZpA—v–]A‚¨‚æ‚ÑƒoƒOƒtƒBƒbƒNƒX‚È‚ÇA«—ˆ‚ÌƒŠƒŠ[ƒX‚Åƒvƒƒ_ƒNƒg‚É‰Á‚¦‚ç‚ê‚é•ÏX‚Ìˆê——‚Æ‚È‚Á‚Ä‚¢‚éB
-ƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚Ì€–Ú‚É‚ÍAÚ×A—Dæ“xAŒ©Ï‚à‚è‚Ì‘®«‚ª‚ ‚éB
-—Dæ“x‚ÍAƒŠƒXƒNA‰¿’lA‚¨‚æ‚Ñ•K—v«‚ğl—¶‚µ‚ÄŒˆ’è‚·‚éB
-‚±‚¤‚µ‚½‘®«‚ğZ’è‚·‚é‚½‚ß‚Ì‹Zp‚ª”‘½‚­‚ ‚éB
+ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã«ã¯ã€æˆåŠŸã™ã‚‹ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚’é–‹ç™ºã—ã€ãƒ­ãƒ¼ãƒ³ãƒã™ã‚‹ãŸã‚ã«å¿…è¦ãªã‚‚ã®ã‚’ã™ã¹ã¦ã‚’è¡¨ã•ã‚Œã¦ã„ã‚‹ã€‚
+ã™ã¹ã¦ã®ãƒ•ã‚£ãƒ¼ãƒãƒ£ã€æ©Ÿèƒ½ã€æŠ€è¡“ã€è¦æœ›ã€ãŠã‚ˆã³ãƒã‚°ãƒ•ã‚£ãƒƒã‚¯ã‚¹ãªã©ã€å°†æ¥ã®ãƒªãƒªãƒ¼ã‚¹ã§ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã«åŠ ãˆã‚‰ã‚Œã‚‹å¤‰æ›´ã®ä¸€è¦§ã¨ãªã£ã¦ã„ã‚‹ã€‚
+ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®é …ç›®ã«ã¯ã€è©³ç´°ã€å„ªå…ˆåº¦ã€è¦‹ç©ã‚‚ã‚Šã®å±æ€§ãŒã‚ã‚‹ã€‚
+å„ªå…ˆåº¦ã¯ã€ãƒªã‚¹ã‚¯ã€ä¾¡å€¤ã€ãŠã‚ˆã³å¿…è¦æ€§ã‚’è€ƒæ…®ã—ã¦æ±ºå®šã™ã‚‹ã€‚
+ã“ã†ã—ãŸå±æ€§ã‚’ç®—å®šã™ã‚‹ãŸã‚ã®æŠ€è¡“ãŒæ•°å¤šãã‚ã‚‹ã€‚
 
 //Tip: Product Backlog items are usually stated as User Stories. Use Cases are appropriate as well, but they are better for use in developing life- or mission- critical software. 
 
-""Tip: ’ÊíAƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚Ì€–Ú‚ÍAƒ†[ƒU[ƒXƒg[ƒŠ[‚Å‹Lq‚·‚éBƒ†[ƒXƒP[ƒX‚Ìg—p‚à“KØ‚¾‚ªA‚»‚ê‚Í¶–½‚ÉŠÖ‚·‚éƒ\ƒtƒgƒEƒFƒA‚âŠîŠ²ƒ\ƒtƒgƒEƒFƒA‚Ég—p‚·‚é‚Æ‚æ‚¢B
+""Tip: é€šå¸¸ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®é …ç›®ã¯ã€ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚¹ãƒˆãƒ¼ãƒªãƒ¼ã§è¨˜è¿°ã™ã‚‹ã€‚ãƒ¦ãƒ¼ã‚¹ã‚±ãƒ¼ã‚¹ã®ä½¿ç”¨ã‚‚é©åˆ‡ã ãŒã€ãã‚Œã¯ç”Ÿå‘½ã«é–¢ã™ã‚‹ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã‚„åŸºå¹¹ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã«ä½¿ç”¨ã™ã‚‹ã¨ã‚ˆã„ã€‚
 
 //Product Backlog is sorted in order of priority. Top priority Product Backlog drives immediate development activities. The higher the priority, the more urgent it is, the more it has been thought about, and the more consensus there is regarding its value. Higher priority backlog is clearer and has more detailed information than lower priority backlog. Better estimates are made based on the greater clarity and increased detail. The lower the priority, the less the detail, until you can barely make out the item. 
 
-ƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚Í—Dæ“x‚Åƒ\[ƒg‚·‚éB
-—Dæ“x‚Ì‚‚¢ƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚Í‚·‚®ŠJ”­‚É“ü‚é‚±‚Æ‚ª‚Å‚«‚éB
-—Dæ“x‚ª‚‚¢‚Ù‚ÇA‹Ù‹}“x‚ª‚‚¢‚Ù‚ÇA‚æ‚èl‚¦‚ç‚ê‚½‚à‚Ì‚Ù‚ÇA‚æ‚è‘½‚­‚Ì“¯ˆÓ‚ª“¾‚ç‚ê‚½‚à‚Ì‚Ù‚ÇA‰¿’l‚ª‚ ‚é‚Æ”»’f‚·‚éB
-—Dæ“x‚Ì‚‚¢ƒoƒbƒNƒƒO‚É‚ÍA—Dæ“x‚Ì’á‚¢ƒoƒbƒNƒƒO‚æ‚è‚à–¾Šm‚ÅAî•ñ‚Ì‹Lq‚ª‘½‚¢B
-‚æ‚è—Ç‚¢Œ©Ï‚à‚è‚Æ‚ÍA–¾Šm‚³‚Æî•ñ‚Ì‘½‚³‚ÅŒˆ‚ß‚ç‚ê‚éB
-€–Ú‚Ì‹Lq‚ª‚Å‚«‚é‚æ‚¤‚É‚È‚é‚Ü‚ÅA—Dæ“x‚Í’á‚­Aî•ñ‚Í­‚È‚¢‚Ü‚Ü‚Å‚ ‚éB
+ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã¯å„ªå…ˆåº¦ã§ã‚½ãƒ¼ãƒˆã™ã‚‹ã€‚
+å„ªå…ˆåº¦ã®é«˜ã„ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã¯ã™ãé–‹ç™ºã«å…¥ã‚‹ã“ã¨ãŒã§ãã‚‹ã€‚
+å„ªå…ˆåº¦ãŒé«˜ã„ã»ã©ã€ç·Šæ€¥åº¦ãŒé«˜ã„ã»ã©ã€ã‚ˆã‚Šè€ƒãˆã‚‰ã‚ŒãŸã‚‚ã®ã»ã©ã€ã‚ˆã‚Šå¤šãã®åŒæ„ãŒå¾—ã‚‰ã‚ŒãŸã‚‚ã®ã»ã©ã€ä¾¡å€¤ãŒã‚ã‚‹ã¨åˆ¤æ–­ã™ã‚‹ã€‚
+å„ªå…ˆåº¦ã®é«˜ã„ãƒãƒƒã‚¯ãƒ­ã‚°ã«ã¯ã€å„ªå…ˆåº¦ã®ä½ã„ãƒãƒƒã‚¯ãƒ­ã‚°ã‚ˆã‚Šã‚‚æ˜ç¢ºã§ã€æƒ…å ±ã®è¨˜è¿°ãŒå¤šã„ã€‚
+ã‚ˆã‚Šè‰¯ã„è¦‹ç©ã‚‚ã‚Šã¨ã¯ã€æ˜ç¢ºã•ã¨æƒ…å ±ã®å¤šã•ã§æ±ºã‚ã‚‰ã‚Œã‚‹ã€‚
+é …ç›®ã®è¨˜è¿°ãŒã§ãã‚‹ã‚ˆã†ã«ãªã‚‹ã¾ã§ã€å„ªå…ˆåº¦ã¯ä½ãã€æƒ…å ±ã¯å°‘ãªã„ã¾ã¾ã§ã‚ã‚‹ã€‚
 
-//As a product is used, as its value increases, and as the marketplace provides feedback, the productfs backlog emerges into a larger and more exhaustive list. Requirements never stop changing. Product Backlog is a living document. Changes in business requirements, market conditions, technology, and staffing cause changes in the Product Backlog. To minimize rework, only the highest priority items need to be detailed out. The Product Backlog items that will occupy the Teams for the upcoming several Sprints are fine-grained, having been decomposed so that any one item can be done within the duration of the Sprint. 
+//As a product is used, as its value increases, and as the marketplace provides feedback, the productâ€™s backlog emerges into a larger and more exhaustive list. Requirements never stop changing. Product Backlog is a living document. Changes in business requirements, market conditions, technology, and staffing cause changes in the Product Backlog. To minimize rework, only the highest priority items need to be detailed out. The Product Backlog items that will occupy the Teams for the upcoming several Sprints are fine-grained, having been decomposed so that any one item can be done within the duration of the Sprint. 
 
-ƒvƒƒ_ƒNƒg‚ªg—p‚³‚êA‰¿’l‚ª‘‰Á‚µAsê‚ªƒtƒB[ƒhƒoƒbƒN‚ğ’ñ‹Ÿ‚·‚é‚æ‚¤‚É‚È‚é‚ÆAƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚Í‘å‚«‚­‚Ä–Ô—…“I‚Èˆê——‚É•Ï‚í‚éB
-—v‹‚Ì•Ï‰»‚Í‚Æ‚Ç‚Ü‚é‚±‚Æ‚ğ’m‚ç‚È‚¢B
-ƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚Í¶‚«‚½ƒhƒLƒ…ƒƒ“ƒg‚È‚Ì‚¾B
-ƒrƒWƒlƒX—v‹AsêA‹ZpA‚¨‚æ‚ÑlŞ‚Ì•Ï‰»‚ÍAƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚Ì•Ï‰»‚ğˆø‚«‹N‚±‚·B
-è–ß‚è‚ğÅ¬‰»‚·‚é‚É‚ÍAÅ—Dæ€–Ú‚¾‚¯‚ğ‹Lq‚µ‚È‚¯‚ê‚Î‚È‚ç‚È‚¢B
-Ÿ‚ÌƒXƒvƒŠƒ“ƒg‚Åƒ`[ƒ€‚ªŒg‚í‚éƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚Ì€–Ú‚ÍAƒXƒvƒŠƒ“ƒgŠúŠÔ“à‚ÉŠ®—¹‚·‚é‚æ‚¤•ª‰ğ‚³‚ê‚Ä‚¨‚èA’ö‚æ‚¢—±“x‚É‚È‚Á‚Ä‚¢‚éB
+ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãŒä½¿ç”¨ã•ã‚Œã€ä¾¡å€¤ãŒå¢—åŠ ã—ã€å¸‚å ´ãŒãƒ•ã‚£ãƒ¼ãƒ‰ãƒãƒƒã‚¯ã‚’æä¾›ã™ã‚‹ã‚ˆã†ã«ãªã‚‹ã¨ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã¯å¤§ããã¦ç¶²ç¾…çš„ãªä¸€è¦§ã«å¤‰ã‚ã‚‹ã€‚
+è¦æ±‚ã®å¤‰åŒ–ã¯ã¨ã©ã¾ã‚‹ã“ã¨ã‚’çŸ¥ã‚‰ãªã„ã€‚
+ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã¯ç”ŸããŸãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆãªã®ã ã€‚
+ãƒ“ã‚¸ãƒã‚¹è¦æ±‚ã€å¸‚å ´ã€æŠ€è¡“ã€ãŠã‚ˆã³äººæã®å¤‰åŒ–ã¯ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®å¤‰åŒ–ã‚’å¼•ãèµ·ã“ã™ã€‚
+æ‰‹æˆ»ã‚Šã‚’æœ€å°åŒ–ã™ã‚‹ã«ã¯ã€æœ€å„ªå…ˆé …ç›®ã ã‘ã‚’è¨˜è¿°ã—ãªã‘ã‚Œã°ãªã‚‰ãªã„ã€‚
+æ¬¡ã®ã‚¹ãƒ—ãƒªãƒ³ãƒˆã§ãƒãƒ¼ãƒ ãŒæºã‚ã‚‹ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®é …ç›®ã¯ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆæœŸé–“å†…ã«å®Œäº†ã™ã‚‹ã‚ˆã†åˆ†è§£ã•ã‚Œã¦ãŠã‚Šã€ç¨‹ã‚ˆã„ç²’åº¦ã«ãªã£ã¦ã„ã‚‹ã€‚
 
 //Tip: Scrum Teams often spend 10% of each Sprint grooming the product backlog to meet the above definition of the Product Backlog. When groomed to this level of granularity, the Product Backlog items at the top of the Product Backlog (highest priority, greatest value) are decomposed so they fit within one Sprint. They have been analyzed and thought through during the grooming process. When the Sprint Planning meeting occurs, these top priority Product Backlog items are well understood and easily selected. 
 
-""Tip: ’ÊíAƒXƒNƒ‰ƒ€ƒ`[ƒ€‚ÍAƒXƒvƒŠƒ“ƒg‚Ì10%‚ÌŠÔ‚ğg‚Á‚Äƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚ğã‹L‚Ì’è‹`‚É‡‚¤‚æ‚¤‚É’²®‚·‚éB’ö‚æ‚¢—±“x‚É‚È‚Á‚½‚çAƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚ÌÅãˆÊ‚É‚ ‚é€–Úi—Dæ“x‚ªÅ‚à‚‚­A‰¿’l‚ªÅ‚à‚‚¢€–Új‚ğA1‚Â‚ÌƒXƒvƒŠƒ“ƒg‚É“ü‚é‚æ‚¤‚É•ª‰ğ‚·‚éB‚±‚Ì’²®ƒvƒƒZƒX‚ÅA€–Ú‚ğ•ªÍ‚µA‹á–¡‚·‚éBƒXƒvƒŠƒ“ƒgŒv‰æƒ~[ƒeƒBƒ“ƒO‚Å‚ÍA‚±‚ê‚ç‚ÌÅ—Dæ€–Ú‚Í\•ª‚É—‰ğ‚³‚ê‚Ä‚¨‚èAŠÈ’P‚É‘I‚Ô‚±‚Æ‚ª‚Å‚«‚éB
+""Tip: é€šå¸¸ã€ã‚¹ã‚¯ãƒ©ãƒ ãƒãƒ¼ãƒ ã¯ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆã®10%ã®æ™‚é–“ã‚’ä½¿ã£ã¦ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã‚’ä¸Šè¨˜ã®å®šç¾©ã«åˆã†ã‚ˆã†ã«èª¿æ•´ã™ã‚‹ã€‚ç¨‹ã‚ˆã„ç²’åº¦ã«ãªã£ãŸã‚‰ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®æœ€ä¸Šä½ã«ã‚ã‚‹é …ç›®ï¼ˆå„ªå…ˆåº¦ãŒæœ€ã‚‚é«˜ãã€ä¾¡å€¤ãŒæœ€ã‚‚é«˜ã„é …ç›®ï¼‰ã‚’ã€1ã¤ã®ã‚¹ãƒ—ãƒªãƒ³ãƒˆã«å…¥ã‚‹ã‚ˆã†ã«åˆ†è§£ã™ã‚‹ã€‚ã“ã®èª¿æ•´ãƒ—ãƒ­ã‚»ã‚¹ã§ã€é …ç›®ã‚’åˆ†æã—ã€åŸå‘³ã™ã‚‹ã€‚ã‚¹ãƒ—ãƒªãƒ³ãƒˆè¨ˆç”»ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã§ã¯ã€ã“ã‚Œã‚‰ã®æœ€å„ªå…ˆé …ç›®ã¯ååˆ†ã«ç†è§£ã•ã‚Œã¦ãŠã‚Šã€ç°¡å˜ã«é¸ã¶ã“ã¨ãŒã§ãã‚‹ã€‚
 
 //Multiple Scrum Teams often work together on the same product. One Product Backlog is used to describe the upcoming work on the Product. A Product Backlog attribute that groups items is then employed. Grouping can occur by feature set, technology, or architecture, and it is often used as a way to organize work by Scrum Team. 
 
-•¡”‚ÌƒXƒNƒ‰ƒ€ƒ`[ƒ€‚ª“¯‚¶ƒvƒƒ_ƒNƒg‚Éæ‚è‘g‚Ş‚±‚Æ‚ª‚æ‚­‚ ‚éB
-‚±‚Ìê‡‚àA1‚Â‚Ìƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚ÅA‚±‚ê‚©‚çè‚ª‚¯‚éƒvƒƒ_ƒNƒg‚Ìì‹Æ‚ğ‹Lq‚·‚éB
-‚±‚Ì‚Æ‚«Aƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚Ì€–Ú‚ğƒOƒ‹[ƒv‰»‚·‚é‘®«‚ğÌ—p‚·‚éB
-ƒOƒ‹[ƒv‰»‚É‚ÍAƒtƒB[ƒ`ƒƒƒZƒbƒgA‹ZpA‚ ‚é‚¢‚ÍƒA[ƒLƒeƒNƒ`ƒƒ‚ğg‚¢AƒXƒNƒ‰ƒ€ƒ`[ƒ€‚Ìì‹Æ‚ğ®—‚·‚éB
+è¤‡æ•°ã®ã‚¹ã‚¯ãƒ©ãƒ ãƒãƒ¼ãƒ ãŒåŒã˜ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã«å–ã‚Šçµ„ã‚€ã“ã¨ãŒã‚ˆãã‚ã‚‹ã€‚
+ã“ã®å ´åˆã‚‚ã€1ã¤ã®ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã§ã€ã“ã‚Œã‹ã‚‰æ‰‹ãŒã‘ã‚‹ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã®ä½œæ¥­ã‚’è¨˜è¿°ã™ã‚‹ã€‚
+ã“ã®ã¨ãã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®é …ç›®ã‚’ã‚°ãƒ«ãƒ¼ãƒ—åŒ–ã™ã‚‹å±æ€§ã‚’æ¡ç”¨ã™ã‚‹ã€‚
+ã‚°ãƒ«ãƒ¼ãƒ—åŒ–ã«ã¯ã€ãƒ•ã‚£ãƒ¼ãƒãƒ£ã‚»ãƒƒãƒˆã€æŠ€è¡“ã€ã‚ã‚‹ã„ã¯ã‚¢ãƒ¼ã‚­ãƒ†ã‚¯ãƒãƒ£ã‚’ä½¿ã„ã€ã‚¹ã‚¯ãƒ©ãƒ ãƒãƒ¼ãƒ ã®ä½œæ¥­ã‚’æ•´ç†ã™ã‚‹ã€‚
 
 //Tip: Acceptance tests are often used as another Product Backlog item attribute. They can often supplant more detailed text descriptions with a testable description of what the Product Backlog item must do when completed. 
 
-""Tip: ó“üƒeƒXƒg‚àƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚Ì€–Ú‚Ì‘®«‚Æ‚µ‚Ä‚æ‚­g—p‚·‚éB‚±‚ê‚ÍAƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚Ì€–Ú‚ªŠ®¬‚µ‚½‚Æ‚«‚És‚í‚È‚¯‚ê‚Î‚È‚ç‚È‚¢ƒeƒXƒg‰Â”\‚ÈÚ×‚ÈƒeƒLƒXƒg‹Lq‚Å‚ ‚éB
+""Tip: å—å…¥ãƒ†ã‚¹ãƒˆã‚‚ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®é …ç›®ã®å±æ€§ã¨ã—ã¦ã‚ˆãä½¿ç”¨ã™ã‚‹ã€‚ã“ã‚Œã¯ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®é …ç›®ãŒå®Œæˆã—ãŸã¨ãã«è¡Œã‚ãªã‘ã‚Œã°ãªã‚‰ãªã„ãƒ†ã‚¹ãƒˆå¯èƒ½ãªè©³ç´°ãªãƒ†ã‚­ã‚¹ãƒˆè¨˜è¿°ã§ã‚ã‚‹ã€‚
 
 //The Release Burndown graph records the sum of remaining Product Backlog estimated effort across time. The estimated effort is in whatever unit of work the Scrum Team and organization have decided upon. The units of time are usually Sprints. 
 
-ƒŠƒŠ[ƒXƒo[ƒ“ƒ_ƒEƒ“‚ÍAƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚ÌcH”‚Ì‡Œv‚ğAŠÔ²‚ÅƒOƒ‰ƒt‰»‚µ‚½‚à‚Ì‚Å‚ ‚éB
-H”‚Ì’PˆÊ‚ÍAƒ`[ƒ€‚â‘gD‚ªŒˆ’è‚µ‚½ì‹Æ‚Ì’PˆÊ‚É‚È‚éB
-ŠÔ²‚Ì’PˆÊ‚ÍA’Êí‚ÍƒXƒvƒŠƒ“ƒg‚É‚È‚éB
+ãƒªãƒªãƒ¼ã‚¹ãƒãƒ¼ãƒ³ãƒ€ã‚¦ãƒ³ã¯ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®æ®‹å·¥æ•°ã®åˆè¨ˆã‚’ã€æ™‚é–“è»¸ã§ã‚°ãƒ©ãƒ•åŒ–ã—ãŸã‚‚ã®ã§ã‚ã‚‹ã€‚
+å·¥æ•°ã®å˜ä½ã¯ã€ãƒãƒ¼ãƒ ã‚„çµ„ç¹”ãŒæ±ºå®šã—ãŸä½œæ¥­ã®å˜ä½ã«ãªã‚‹ã€‚
+æ™‚é–“è»¸ã®å˜ä½ã¯ã€é€šå¸¸ã¯ã‚¹ãƒ—ãƒªãƒ³ãƒˆã«ãªã‚‹ã€‚
 
 //Product Backlog item estimates are calculated initially during Release Planning, and thereafter as they are created. During Product Backlog grooming they are reviewed and revised. However, they can be updated at any time. The Team is responsible for all estimates. The Product Owner may influence the Team by helping understand and select trade-offs, but the final estimate is made by the Team. The Product Owner keeps an updated Product Backlog list/ Release Backlog Burndown posted at all times. A trend line can be drawn based on the change in remaining work. 
 
-ƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚Ì€–Ú‚ÌŒ©Ï‚à‚è‚ÍAÅ‰‚ÍƒŠƒŠ[ƒXŒv‰æ‚ÅZo‚µA‚ ‚Æ‚Åì‚è‚È‚ª‚çZo‚µ‚Ä‚¢‚­B
-ƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚Ì’²®‚Å‚ÍA‚»‚ê‚ğƒŒƒrƒ…[‚µA‰ü’ù‚·‚éB
-‚½‚¾‚µA•ÏX‚Í‚¢‚Â‚Å‚às‚¤‚±‚Æ‚ª‚Å‚«‚éB
-ƒ`[ƒ€‚ÍA‚·‚×‚Ä‚ÌŒ©Ï‚à‚è‚ÉÓ”C‚ğ•‰‚Á‚Ä‚¢‚éB
-—‰ğ‚âƒgƒŒ[ƒhƒIƒt‚ğ•‚¯‚é‚±‚Æ‚ÅAƒvƒƒ_ƒNƒgƒI[ƒi[‚ªƒ`[ƒ€‚É‰e‹¿‚ğ‹y‚Ú‚·‚±‚Æ‚ª‚ ‚é‚©‚à‚µ‚ê‚È‚¢B
-‚µ‚©‚µAÅI“I‚ÈŒ©Ï‚à‚è‚Íƒ`[ƒ€‚ªs‚¤B
-ƒvƒƒ_ƒNƒgƒI[ƒi[‚ÍAí‚ÉXV‚³‚ê‚éƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚âƒŠƒŠ[ƒXƒoƒbƒNƒƒOƒo[ƒ“ƒ_ƒEƒ“‚ğÅVó‘Ô‚ÅˆÛŠÇ—‚µ‚Ä‚¨‚©‚Ë‚Î‚È‚ç‚È‚¢B
-ƒgƒŒƒ“ƒhü‚É‚Â‚¢‚Ä‚ÍAcì‹Æ‚ÉŠî‚Ã‚¢‚Äˆø‚­‚±‚Æ‚ª‚Å‚«‚éB
+ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®é …ç›®ã®è¦‹ç©ã‚‚ã‚Šã¯ã€æœ€åˆã¯ãƒªãƒªãƒ¼ã‚¹è¨ˆç”»ã§ç®—å‡ºã—ã€ã‚ã¨ã§ä½œã‚ŠãªãŒã‚‰ç®—å‡ºã—ã¦ã„ãã€‚
+ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®èª¿æ•´ã§ã¯ã€ãã‚Œã‚’ãƒ¬ãƒ“ãƒ¥ãƒ¼ã—ã€æ”¹è¨‚ã™ã‚‹ã€‚
+ãŸã ã—ã€å¤‰æ›´ã¯ã„ã¤ã§ã‚‚è¡Œã†ã“ã¨ãŒã§ãã‚‹ã€‚
+ãƒãƒ¼ãƒ ã¯ã€ã™ã¹ã¦ã®è¦‹ç©ã‚‚ã‚Šã«è²¬ä»»ã‚’è² ã£ã¦ã„ã‚‹ã€‚
+ç†è§£ã‚„ãƒˆãƒ¬ãƒ¼ãƒ‰ã‚ªãƒ•ã‚’åŠ©ã‘ã‚‹ã“ã¨ã§ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ãŒãƒãƒ¼ãƒ ã«å½±éŸ¿ã‚’åŠã¼ã™ã“ã¨ãŒã‚ã‚‹ã‹ã‚‚ã—ã‚Œãªã„ã€‚
+ã—ã‹ã—ã€æœ€çµ‚çš„ãªè¦‹ç©ã‚‚ã‚Šã¯ãƒãƒ¼ãƒ ãŒè¡Œã†ã€‚
+ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ã¯ã€å¸¸ã«æ›´æ–°ã•ã‚Œã‚‹ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã‚„ãƒªãƒªãƒ¼ã‚¹ãƒãƒƒã‚¯ãƒ­ã‚°ãƒãƒ¼ãƒ³ãƒ€ã‚¦ãƒ³ã‚’æœ€æ–°çŠ¶æ…‹ã§ç¶­æŒç®¡ç†ã—ã¦ãŠã‹ã­ã°ãªã‚‰ãªã„ã€‚
+ãƒˆãƒ¬ãƒ³ãƒ‰ç·šã«ã¤ã„ã¦ã¯ã€æ®‹ä½œæ¥­ã«åŸºã¥ã„ã¦å¼•ãã“ã¨ãŒã§ãã‚‹ã€‚
 
 //Tip: In some organizations, more work is added to the backlog than is completed. This may create a trend line that is flat or even slopes upwards. To compensate for this and retain transparency, a new floor may be created when work is added or subtracted. The floor should add or remove only significant changes and should be well documented. 
 
-""Tip: ‘gD‚É‚æ‚Á‚Ä‚ÍAŠ®—¹‚·‚é‚æ‚è‚à‘½‚­‚Ìì‹Æ‚ªƒoƒbƒNƒƒO‚É‰Á‚¦‚ç‚ê‚é‚±‚Æ‚à‚ ‚éB‚±‚Ì‚Æ‚«‚ÌƒgƒŒƒ“ƒhü‚ÍA…•½‚©A‚ ‚é‚¢‚Íã•û‚ÖŒXÎ‚·‚é‚±‚Æ‚É‚È‚éB‚±‚ê‚ğ•â‚¢A‚©‚Â“§–¾«‚ğŠm•Û‚·‚é‚É‚ÍAì‹Æ‚Ì‘Œ¸‚É‰‚¶‚ÄAV‚µ‚¢‰ºŒÀ‚ğİ‚¯‚é‚Æ‚æ‚¢B‰ºŒÀ‚ÍA•ÏX‚ª’˜‚µ‚¢‚Æ‚«‚É‚¾‚¯è‚ğ‰Á‚¦‚é‚æ‚¤‚É‚µA\•ª‚ÉƒhƒLƒ…ƒƒ“ƒg‰»‚µ‚Ä‚¨‚­‚æ‚¤‚É‚·‚éB
+""Tip: çµ„ç¹”ã«ã‚ˆã£ã¦ã¯ã€å®Œäº†ã™ã‚‹ã‚ˆã‚Šã‚‚å¤šãã®ä½œæ¥­ãŒãƒãƒƒã‚¯ãƒ­ã‚°ã«åŠ ãˆã‚‰ã‚Œã‚‹ã“ã¨ã‚‚ã‚ã‚‹ã€‚ã“ã®ã¨ãã®ãƒˆãƒ¬ãƒ³ãƒ‰ç·šã¯ã€æ°´å¹³ã‹ã€ã‚ã‚‹ã„ã¯ä¸Šæ–¹ã¸å‚¾æ–œã™ã‚‹ã“ã¨ã«ãªã‚‹ã€‚ã“ã‚Œã‚’è£œã„ã€ã‹ã¤é€æ˜æ€§ã‚’ç¢ºä¿ã™ã‚‹ã«ã¯ã€ä½œæ¥­ã®å¢—æ¸›ã«å¿œã˜ã¦ã€æ–°ã—ã„ä¸‹é™ã‚’è¨­ã‘ã‚‹ã¨ã‚ˆã„ã€‚ä¸‹é™ã¯ã€å¤‰æ›´ãŒè‘—ã—ã„ã¨ãã«ã ã‘æ‰‹ã‚’åŠ ãˆã‚‹ã‚ˆã†ã«ã—ã€ååˆ†ã«ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆåŒ–ã—ã¦ãŠãã‚ˆã†ã«ã™ã‚‹ã€‚
 
 //Tip: The trend line may be unreliable for the first two to three Sprints of a release unless the Teams have worked together before, know the product well, and understand the underlying technology. 
 
-""Tip: ‰‚ß‚Äˆê‚É‚È‚éƒ`[ƒ€‚¾‚Á‚½‚èAƒvƒƒ_ƒNƒg‚ğ‚æ‚­’m‚ç‚È‚©‚Á‚½‚èAŠî”Õ‹Zp‚ğ‚ ‚Ü‚è—‰ğ‚µ‚Ä‚¢‚È‚©‚Á‚½‚è‚·‚é‚ÆAƒŠƒŠ[ƒX‰Šú‚Ì2`3ƒXƒvƒŠƒ“ƒg‚ÌƒgƒŒƒ“ƒhü‚É‚Â‚¢‚Ä‚ÍAM—Š“x‚ª’á‚¢‚©‚à‚µ‚ê‚È‚¢B
+""Tip: åˆã‚ã¦ä¸€ç·’ã«ãªã‚‹ãƒãƒ¼ãƒ ã ã£ãŸã‚Šã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚’ã‚ˆãçŸ¥ã‚‰ãªã‹ã£ãŸã‚Šã€åŸºç›¤æŠ€è¡“ã‚’ã‚ã¾ã‚Šç†è§£ã—ã¦ã„ãªã‹ã£ãŸã‚Šã™ã‚‹ã¨ã€ãƒªãƒªãƒ¼ã‚¹åˆæœŸã®2ã€œ3ã‚¹ãƒ—ãƒªãƒ³ãƒˆã®ãƒˆãƒ¬ãƒ³ãƒ‰ç·šã«ã¤ã„ã¦ã¯ã€ä¿¡é ¼åº¦ãŒä½ã„ã‹ã‚‚ã—ã‚Œãªã„ã€‚
 
 //SPRINT BACKLOG AND SPRINT BURNDOWN 
-//The Sprint Backlog consists of the tasks the Team performs to turn Product Backlog items into a gdoneh increment. Many are developed during the Sprint Planning Meeting. It is all of the work that the Team identifies as necessary to meet the Sprint goal. Sprint Backlog items must be decomposed. The decomposition is enough so changes in progress can be understood in the Daily Scrum. 
+//The Sprint Backlog consists of the tasks the Team performs to turn Product Backlog items into a â€œdoneâ€ increment. Many are developed during the Sprint Planning Meeting. It is all of the work that the Team identifies as necessary to meet the Sprint goal. Sprint Backlog items must be decomposed. The decomposition is enough so changes in progress can be understood in the Daily Scrum. 
 
-!!ƒXƒvƒŠƒ“ƒgƒoƒbƒNƒƒO‚ÆƒXƒvƒŠƒ“ƒgƒo[ƒ“ƒ_ƒEƒ“
-ƒXƒvƒŠƒ“ƒgƒoƒbƒNƒƒO‚ÍAƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚Ì€–Ú‚ğuŠ®—¹vƒCƒ“ƒNƒŠƒƒ“ƒg‚É•Ï‚¦‚é‚½‚ß‚Éƒ`[ƒ€‚ªs‚¤ƒ^ƒXƒN‚Å\¬‚³‚ê‚éB
-‚»‚Ì‘½‚­‚ÍAƒXƒvƒŠƒ“ƒgŒv‰æƒ~[ƒeƒBƒ“ƒO‚Åì‚ç‚ê‚éB
-‚±‚ê‚ÍAƒXƒvƒŠƒ“ƒgƒS[ƒ‹‚ğ’B¬‚·‚é‚Ì‚Éƒ`[ƒ€‚ª•K—v‚Æl‚¦‚½ì‹Æ‚Ì‚·‚×‚Ä‚Å‚ ‚éB
-ƒXƒvƒŠƒ“ƒgƒoƒbƒNƒƒO‚Ì€–Ú‚Í•ª‰ğ‚³‚ê‚Ä‚¢‚È‚­‚Ä‚Í‚È‚ç‚È‚¢B
-•Ï‰»‚Ì‹ï‡‚ªƒfƒCƒŠ[ƒXƒNƒ‰ƒ€‚Å—‰ğ‚Å‚«‚ê‚ÎA\•ª‚É•ª‰ğ‚Å‚«‚Ä‚¢‚é‚Æ‚¢‚¦‚éB
+!!ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã¨ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒãƒ¼ãƒ³ãƒ€ã‚¦ãƒ³
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã¯ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®é …ç›®ã‚’ã€Œå®Œäº†ã€ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã«å¤‰ãˆã‚‹ãŸã‚ã«ãƒãƒ¼ãƒ ãŒè¡Œã†ã‚¿ã‚¹ã‚¯ã§æ§‹æˆã•ã‚Œã‚‹ã€‚
+ãã®å¤šãã¯ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆè¨ˆç”»ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã§ä½œã‚‰ã‚Œã‚‹ã€‚
+ã“ã‚Œã¯ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆã‚´ãƒ¼ãƒ«ã‚’é”æˆã™ã‚‹ã®ã«ãƒãƒ¼ãƒ ãŒå¿…è¦ã¨è€ƒãˆãŸä½œæ¥­ã®ã™ã¹ã¦ã§ã‚ã‚‹ã€‚
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®é …ç›®ã¯åˆ†è§£ã•ã‚Œã¦ã„ãªãã¦ã¯ãªã‚‰ãªã„ã€‚
+å¤‰åŒ–ã®å…·åˆãŒãƒ‡ã‚¤ãƒªãƒ¼ã‚¹ã‚¯ãƒ©ãƒ ã§ç†è§£ã§ãã‚Œã°ã€ååˆ†ã«åˆ†è§£ã§ãã¦ã„ã‚‹ã¨ã„ãˆã‚‹ã€‚
 
 //The Team modifies Sprint Backlog throughout the Sprint, as well as Sprint Backlog emerging during the Sprint. As it gets into individual tasks, it may find out that more or fewer tasks are needed, or that a given task will take more or less time than had been expected. As new work is required, the Team adds it to the Sprint Backlog. As tasks are worked on or completed, the hours of estimated remaining work for each task is updated. When tasks are deemed unnecessary, they are removed. Only the Team can change its Sprint Backlog during a Sprint. Only the Team can change the contents or the estimates. The Sprint Backlog is a highly visible, real-time picture of the work that the Team plans to accomplish during the Sprint, and it belongs solely to the Team. 
 
-ƒ`[ƒ€‚ÍAƒXƒvƒŠƒ“ƒg’†‚É’Ç‰Á‚³‚ê‚éƒXƒvƒŠƒ“ƒgƒoƒbƒNƒƒO‚¾‚¯‚Å‚È‚­AƒXƒvƒŠƒ“ƒgƒoƒbƒNƒƒO‘S‘Ì‚É‘Î‚µ‚Äí‚ÉC³‚ğ‰Á‚¦‚Ä‚¢‚­B
-ŒÂ•Ê‚Ìƒ^ƒXƒN‚É—‚Æ‚µ‚Ş‚È‚©‚ÅA•K—v‚Èƒ^ƒXƒN‚âŠÔ‚Ì‘½‰Ç‚É‹C‚Ã‚­‚©‚à‚µ‚ê‚È‚¢B
-V‚µ‚¢ì‹Æ‚ª•K—v‚É‚È‚Á‚½‚çAƒ`[ƒ€‚ÍƒXƒvƒŠƒ“ƒgƒoƒbƒNƒƒO‚Éì‹Æ‚ğ‰Á‚¦‚éB
-ƒ^ƒXƒN‚É’…è‚µ‚½‚èƒ^ƒXƒN‚ğŠ®—¹‚µ‚½‚è‚·‚ê‚ÎAŒ©Ï‚à‚ècì‹Æ‚ÌŠÔ‚ğXV‚·‚éB
-ƒ^ƒXƒN‚ª•s•K—v‚Å‚ ‚ê‚Îíœ‚·‚éB
-ƒXƒvƒŠƒ“ƒg’†‚ÉƒXƒvƒŠƒ“ƒgƒoƒbƒNƒƒO‚ğ•ÏX‚·‚é‚±‚Æ‚ª‚Å‚«‚é‚Ì‚Íƒ`[ƒ€‚¾‚¯‚Å‚ ‚éB
-“à—e‚âŒ©Ï‚à‚è‚ğ•ÏX‚·‚é‚±‚Æ‚ª‚Å‚«‚é‚Ì‚àƒ`[ƒ€‚¾‚¯‚Å‚ ‚éB
-ƒXƒvƒŠƒ“ƒgƒoƒbƒNƒƒO‚ÍA
-‚æ‚­–Ú—§‚Â‚Æ‚±‚ë‚É’u‚©‚êA
-ƒXƒvƒŠƒ“ƒg’†‚Éƒ`[ƒ€‚ª‹s‚·‚éì‹Æ‚ğƒŠƒAƒ‹ƒ^ƒCƒ€‚É”½‰f‚µ‚½‚à‚Ì‚Å‚ ‚èA
-ƒ`[ƒ€‚ªè—L‚·‚é‚à‚Ì‚Å‚ ‚éB
+ãƒãƒ¼ãƒ ã¯ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆä¸­ã«è¿½åŠ ã•ã‚Œã‚‹ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã ã‘ã§ãªãã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°å…¨ä½“ã«å¯¾ã—ã¦å¸¸ã«ä¿®æ­£ã‚’åŠ ãˆã¦ã„ãã€‚
+å€‹åˆ¥ã®ã‚¿ã‚¹ã‚¯ã«è½ã¨ã—è¾¼ã‚€ãªã‹ã§ã€å¿…è¦ãªã‚¿ã‚¹ã‚¯ã‚„æ™‚é–“ã®å¤šå¯¡ã«æ°—ã¥ãã‹ã‚‚ã—ã‚Œãªã„ã€‚
+æ–°ã—ã„ä½œæ¥­ãŒå¿…è¦ã«ãªã£ãŸã‚‰ã€ãƒãƒ¼ãƒ ã¯ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã«ä½œæ¥­ã‚’åŠ ãˆã‚‹ã€‚
+ã‚¿ã‚¹ã‚¯ã«ç€æ‰‹ã—ãŸã‚Šã‚¿ã‚¹ã‚¯ã‚’å®Œäº†ã—ãŸã‚Šã™ã‚Œã°ã€è¦‹ç©ã‚‚ã‚Šæ®‹ä½œæ¥­ã®æ™‚é–“ã‚’æ›´æ–°ã™ã‚‹ã€‚
+ã‚¿ã‚¹ã‚¯ãŒä¸å¿…è¦ã§ã‚ã‚Œã°å‰Šé™¤ã™ã‚‹ã€‚
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆä¸­ã«ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã‚’å¤‰æ›´ã™ã‚‹ã“ã¨ãŒã§ãã‚‹ã®ã¯ãƒãƒ¼ãƒ ã ã‘ã§ã‚ã‚‹ã€‚
+å†…å®¹ã‚„è¦‹ç©ã‚‚ã‚Šã‚’å¤‰æ›´ã™ã‚‹ã“ã¨ãŒã§ãã‚‹ã®ã‚‚ãƒãƒ¼ãƒ ã ã‘ã§ã‚ã‚‹ã€‚
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã¯ã€
+ã‚ˆãç›®ç«‹ã¤ã¨ã“ã‚ã«ç½®ã‹ã‚Œã€
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆä¸­ã«ãƒãƒ¼ãƒ ãŒé‚è¡Œã™ã‚‹ä½œæ¥­ã‚’ãƒªã‚¢ãƒ«ã‚¿ã‚¤ãƒ ã«åæ˜ ã—ãŸã‚‚ã®ã§ã‚ã‚Šã€
+ãƒãƒ¼ãƒ ãŒå æœ‰ã™ã‚‹ã‚‚ã®ã§ã‚ã‚‹ã€‚
 
-//Sprint Backlog Burndown is a graph of the amount of Sprint Backlog work remaining in a Sprint across time in the Sprint. To create this graph, determine how much work remains by summing the backlog estimates every day of the Sprint. The amount of work remaining for a Sprint is the sum of the work remaining for all of Sprint Backlog. Keep track of these sums by day and use them to create a graph that shows the work remaining over time. By drawing a line through the points on the graph, the Team can manage its progress in completing a Sprintfs work.  Duration is not considered in Scrum. Work remaining and date are the only variables of interest. 
-
-
-ƒvƒŠƒ“ƒgƒoƒbƒNƒƒOƒo[ƒ“ƒ_ƒEƒ“‚ÍAƒXƒvƒŠƒ“ƒgƒoƒbƒNƒƒO‚Ìcì‹Æ‚Ì—Ê‚ğŠÔ²‚Å•\‚µ‚½ƒOƒ‰ƒt‚Å‚ ‚éB
-‚±‚ÌƒOƒ‰ƒt‚ğì¬‚·‚é‚É‚ÍA
-ƒoƒbƒNƒƒO‚ÌŒ©Ï‚à‚è‚ğ–ˆ“ú‡Œv‚µ‚ÄA
-cì‹Æ‚ğZo‚µ‚È‚¯‚ê‚Î‚È‚ç‚È‚¢B
-ƒXƒvƒŠƒ“ƒg‚Ìcì‹Æ‚ÍAƒXƒvƒŠƒ“ƒgƒoƒbƒNƒƒO‚Éc‚³‚ê‚½ì‹Æ‚Ì‡Œv‚Å‚ ‚éB
-‚±‚Ì‡Œv’l‚ğ–ˆ“ú’ÇÕ‚µ‚ÄAcì‹Æ‚ğ¦‚·ƒOƒ‰ƒt‚ğì‚éB
-ƒOƒ‰ƒtã‚Ì“_‚ğü‚ÅŒ‹‚Ô‚±‚Æ‚ÅA
-ƒ`[ƒ€‚ÍƒXƒvƒŠƒ“ƒg‚Ìi’»‚ğŠÇ—‚·‚é‚±‚Æ‚ª‚Å‚«‚éB
-ƒXƒNƒ‰ƒ€‚Å‚ÍAŠúŠÔ‚Íl—¶‚µ‚È‚¢B
-cì‹Æ‚Æ“ú•t‚¾‚¯‚ª‘ÎÛ‚Æ‚È‚é•Ï”‚Å‚ ‚éB
+//Sprint Backlog Burndown is a graph of the amount of Sprint Backlog work remaining in a Sprint across time in the Sprint. To create this graph, determine how much work remains by summing the backlog estimates every day of the Sprint. The amount of work remaining for a Sprint is the sum of the work remaining for all of Sprint Backlog. Keep track of these sums by day and use them to create a graph that shows the work remaining over time. By drawing a line through the points on the graph, the Team can manage its progress in completing a Sprintâ€™s work.  Duration is not considered in Scrum. Work remaining and date are the only variables of interest. 
 
 
-//Tip: Whenever possible, hand draw the burndown chart on a big sheet of paper displayed in the Teamfs work area. Teams are more likely to see a big, visible chart than they are to look at Sprint burndown chart in Excel or a tool.
+ãƒ—ãƒªãƒ³ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ãƒãƒ¼ãƒ³ãƒ€ã‚¦ãƒ³ã¯ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®æ®‹ä½œæ¥­ã®é‡ã‚’æ™‚é–“è»¸ã§è¡¨ã—ãŸã‚°ãƒ©ãƒ•ã§ã‚ã‚‹ã€‚
+ã“ã®ã‚°ãƒ©ãƒ•ã‚’ä½œæˆã™ã‚‹ã«ã¯ã€
+ãƒãƒƒã‚¯ãƒ­ã‚°ã®è¦‹ç©ã‚‚ã‚Šã‚’æ¯æ—¥åˆè¨ˆã—ã¦ã€
+æ®‹ä½œæ¥­ã‚’ç®—å‡ºã—ãªã‘ã‚Œã°ãªã‚‰ãªã„ã€‚
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆã®æ®‹ä½œæ¥­ã¯ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã«æ®‹ã•ã‚ŒãŸä½œæ¥­ã®åˆè¨ˆã§ã‚ã‚‹ã€‚
+ã“ã®åˆè¨ˆå€¤ã‚’æ¯æ—¥è¿½è·¡ã—ã¦ã€æ®‹ä½œæ¥­ã‚’ç¤ºã™ã‚°ãƒ©ãƒ•ã‚’ä½œã‚‹ã€‚
+ã‚°ãƒ©ãƒ•ä¸Šã®ç‚¹ã‚’ç·šã§çµã¶ã“ã¨ã§ã€
+ãƒãƒ¼ãƒ ã¯ã‚¹ãƒ—ãƒªãƒ³ãƒˆã®é€²æ—ã‚’ç®¡ç†ã™ã‚‹ã“ã¨ãŒã§ãã‚‹ã€‚
+ã‚¹ã‚¯ãƒ©ãƒ ã§ã¯ã€æœŸé–“ã¯è€ƒæ…®ã—ãªã„ã€‚
+æ®‹ä½œæ¥­ã¨æ—¥ä»˜ã ã‘ãŒå¯¾è±¡ã¨ãªã‚‹å¤‰æ•°ã§ã‚ã‚‹ã€‚
 
-""Tip: ƒo[ƒ“ƒ_ƒEƒ“ƒ`ƒƒ[ƒg‚ÍA‰Â”\‚ÈŒÀ‚èA‘å‚«‚È–Í‘¢†‚Éè‘‚«‚Å•`‚¢‚ÄAƒ`[ƒ€‚Ìì‹ÆêŠ‚É“\‚èo‚µ‚Ä‚¨‚­‚±‚ÆBExcel‚È‚Ç‚Ìƒc[ƒ‹‚æ‚è‚à‘å‚«‚­–Ú‚É‚Â‚­ƒ`ƒƒ[ƒg‚Ì‚Ù‚¤‚ªAƒ`[ƒ€‚ª–Ú‚É‚·‚é‰Â”\«‚ª‚‚¢B
 
-//One of Scrumfs rules pertains to the purpose of each Sprint, which is to deliver increments of potentially shippable functionality that adheres to a working definition of  gdone.h 
+//Tip: Whenever possible, hand draw the burndown chart on a big sheet of paper displayed in the Teamâ€™s work area. Teams are more likely to see a big, visible chart than they are to look at Sprint burndown chart in Excel or a tool.
 
-ƒXƒvƒŠƒ“ƒg‚Ì–Ú“I‚ÉŠÖŒW‚·‚éƒXƒNƒ‰ƒ€‚Ìƒ‹[ƒ‹‚ª‚ ‚éB
-‚»‚ê‚ÍAo‰×”»’f‰Â”\‚È‹@”\‚ÌƒCƒ“ƒNƒŠƒƒ“ƒg‚ğ”[•i‚·‚é‚½‚ß‚ÉAuŠ®—¹v‚Ì’è‹`‚ğì‚é‚±‚Æ‚Å‚ ‚éB
+""Tip: ãƒãƒ¼ãƒ³ãƒ€ã‚¦ãƒ³ãƒãƒ£ãƒ¼ãƒˆã¯ã€å¯èƒ½ãªé™ã‚Šã€å¤§ããªæ¨¡é€ ç´™ã«æ‰‹æ›¸ãã§æã„ã¦ã€ãƒãƒ¼ãƒ ã®ä½œæ¥­å ´æ‰€ã«è²¼ã‚Šå‡ºã—ã¦ãŠãã“ã¨ã€‚Excelãªã©ã®ãƒ„ãƒ¼ãƒ«ã‚ˆã‚Šã‚‚å¤§ããç›®ã«ã¤ããƒãƒ£ãƒ¼ãƒˆã®ã»ã†ãŒã€ãƒãƒ¼ãƒ ãŒç›®ã«ã™ã‚‹å¯èƒ½æ€§ãŒé«˜ã„ã€‚
+
+//One of Scrumâ€™s rules pertains to the purpose of each Sprint, which is to deliver increments of potentially shippable functionality that adheres to a working definition of  â€œdone.â€ 
+
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆã®ç›®çš„ã«é–¢ä¿‚ã™ã‚‹ã‚¹ã‚¯ãƒ©ãƒ ã®ãƒ«ãƒ¼ãƒ«ãŒã‚ã‚‹ã€‚
+ãã‚Œã¯ã€å‡ºè·åˆ¤æ–­å¯èƒ½ãªæ©Ÿèƒ½ã®ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã‚’ç´å“ã™ã‚‹ãŸã‚ã«ã€ã€Œå®Œäº†ã€ã®å®šç¾©ã‚’ä½œã‚‹ã“ã¨ã§ã‚ã‚‹ã€‚
 
 //DONE 
-//Scrum requires Teams to build an increment of product functionality every Sprint. This increment must be potentially shippable, for Product Owner may choose to immediately implement the functionality. To do so, the increment must be a complete slice of the product. It must be gdone.h Each increment should be additive to all prior increments and thoroughly tested, ensuring that all increments work together. 
+//Scrum requires Teams to build an increment of product functionality every Sprint. This increment must be potentially shippable, for Product Owner may choose to immediately implement the functionality. To do so, the increment must be a complete slice of the product. It must be â€œdone.â€ Each increment should be additive to all prior increments and thoroughly tested, ensuring that all increments work together. 
 
-!Š®—¹
-ƒXƒNƒ‰ƒ€‚Å‚ÍAƒ`[ƒ€‚Í‚·‚×‚Ä‚ÌƒXƒvƒŠƒ“ƒg‚Åƒvƒƒ_ƒNƒg‹@”\‚ÌƒCƒ“ƒNƒŠƒƒ“ƒg‚ğì‚ç‚È‚¯‚ê‚Î‚È‚ç‚È‚¢B
-‚±‚ÌƒCƒ“ƒNƒŠƒƒ“ƒg‚Ío‰×”»’f‰Â”\‚È‚à‚Ì‚Å‚È‚¯‚ê‚Î‚È‚ç‚¸A
-ƒvƒƒ_ƒNƒgƒI[ƒi[‚ª’¼‚¿‚É“±“ü‚ğŒˆ’è‚Å‚«‚é‚à‚Ì‚Å‚È‚¯‚ê‚Î‚È‚ç‚È‚¢B
-‚»‚Ì‚½‚ß‚É‚ÍAƒCƒ“ƒNƒŠƒƒ“ƒg‚Íƒvƒƒ_ƒNƒg‚ÌŠ®‘S‚È’f•Ğ‚Å‚È‚¯‚ê‚Î‚È‚ç‚È‚¢B
-‚»‚µ‚ÄA‚»‚ê‚ªuŠ®—¹v‚µ‚Ä‚¢‚È‚¯‚ê‚Î‚È‚ç‚È‚¢B
-ƒCƒ“ƒNƒŠƒƒ“ƒg‚ÍAæs‚·‚é‚·‚×‚Ä‚ÌƒCƒ“ƒNƒŠƒƒ“ƒg‚É•t‰Á‚·‚é‚à‚Ì‚Å‚ ‚èA\•ª‚ÉƒeƒXƒg‚³‚ê‚½‚à‚Ì‚Å‚ ‚èA‚·‚×‚Ä‚ªˆê‚É“®‚­‚à‚Ì‚Å‚È‚¯‚ê‚Î‚È‚ç‚È‚¢B
+!å®Œäº†
+ã‚¹ã‚¯ãƒ©ãƒ ã§ã¯ã€ãƒãƒ¼ãƒ ã¯ã™ã¹ã¦ã®ã‚¹ãƒ—ãƒªãƒ³ãƒˆã§ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆæ©Ÿèƒ½ã®ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã‚’ä½œã‚‰ãªã‘ã‚Œã°ãªã‚‰ãªã„ã€‚
+ã“ã®ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã¯å‡ºè·åˆ¤æ–­å¯èƒ½ãªã‚‚ã®ã§ãªã‘ã‚Œã°ãªã‚‰ãšã€
+ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ãŒç›´ã¡ã«å°å…¥ã‚’æ±ºå®šã§ãã‚‹ã‚‚ã®ã§ãªã‘ã‚Œã°ãªã‚‰ãªã„ã€‚
+ãã®ãŸã‚ã«ã¯ã€ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã¯ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã®å®Œå…¨ãªæ–­ç‰‡ã§ãªã‘ã‚Œã°ãªã‚‰ãªã„ã€‚
+ãã—ã¦ã€ãã‚ŒãŒã€Œå®Œäº†ã€ã—ã¦ã„ãªã‘ã‚Œã°ãªã‚‰ãªã„ã€‚
+ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã¯ã€å…ˆè¡Œã™ã‚‹ã™ã¹ã¦ã®ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã«ä»˜åŠ ã™ã‚‹ã‚‚ã®ã§ã‚ã‚Šã€ååˆ†ã«ãƒ†ã‚¹ãƒˆã•ã‚ŒãŸã‚‚ã®ã§ã‚ã‚Šã€ã™ã¹ã¦ãŒä¸€ç·’ã«å‹•ãã‚‚ã®ã§ãªã‘ã‚Œã°ãªã‚‰ãªã„ã€‚
 
-//In product development, asserting that functionality is done might lead someone to assume that it is at least cleanly coded, refactored, unit tested, built, and acceptance tested. Someone else might assume only that the code has been built. If everyone doesnft know what the definition of gdoneh is, the other two legs of empirical process control donft work. When someone describes something as gdoneh, everyone must understand what gdoneh means. 
+//In product development, asserting that functionality is done might lead someone to assume that it is at least cleanly coded, refactored, unit tested, built, and acceptance tested. Someone else might assume only that the code has been built. If everyone doesnâ€™t know what the definition of â€œdoneâ€ is, the other two legs of empirical process control donâ€™t work. When someone describes something as â€œdoneâ€, everyone must understand what â€œdoneâ€ means. 
 
-‹@”\‚ªŠ®—¹‚µ‚Ä‚¢‚é‚Æ‚¢‚¤‚Ì‚ÍAƒvƒƒ_ƒNƒgŠJ”­‚Ìê‡A­‚È‚­‚Æ‚àƒR[ƒh‚ªƒNƒŠ[ƒ“‚ÅAƒŠƒtƒ@ƒNƒ^ƒŠƒ“ƒO‚³‚ê‚Ä‚¢‚ÄAƒ†ƒjƒbƒgƒeƒXƒg‚ª’Ê‚èAÀ‘•‚ªI‚í‚èAó“üƒeƒXƒg‚ª’Ê‚Á‚½‚à‚Ì‚¾‚Æl‚¦‚é‚©‚à‚µ‚ê‚È‚¢B
-‚ ‚é‚¢‚ÍAÀ‘•‚ªI‚í‚Á‚½‚¾‚¯‚Ì‚à‚Ì‚¾‚Æl‚¦‚él‚ª‚¢‚é‚©‚à‚µ‚ê‚È‚¢B
-uŠ®—¹v‚Ì’è‹`‚ª•ª‚©‚ç‚È‚¢‚ÆAŒoŒ±“IƒvƒƒZƒX§Œä‚Ì2–{‚Ì‹r‚ª‹@”\‚µ‚È‚¢B
-’N‚©‚ªuŠ®—¹v‚É‚Â‚¢‚Äà–¾‚·‚ê‚ÎA‚İ‚ñ‚È‚ªuŠ®—¹v‚ÌˆÓ–¡‚ğ—‰ğ‚·‚é‚Í‚¸‚¾B
+æ©Ÿèƒ½ãŒå®Œäº†ã—ã¦ã„ã‚‹ã¨ã„ã†ã®ã¯ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆé–‹ç™ºã®å ´åˆã€å°‘ãªãã¨ã‚‚ã‚³ãƒ¼ãƒ‰ãŒã‚¯ãƒªãƒ¼ãƒ³ã§ã€ãƒªãƒ•ã‚¡ã‚¯ã‚¿ãƒªãƒ³ã‚°ã•ã‚Œã¦ã„ã¦ã€ãƒ¦ãƒ‹ãƒƒãƒˆãƒ†ã‚¹ãƒˆãŒé€šã‚Šã€å®Ÿè£…ãŒçµ‚ã‚ã‚Šã€å—å…¥ãƒ†ã‚¹ãƒˆãŒé€šã£ãŸã‚‚ã®ã ã¨è€ƒãˆã‚‹ã‹ã‚‚ã—ã‚Œãªã„ã€‚
+ã‚ã‚‹ã„ã¯ã€å®Ÿè£…ãŒçµ‚ã‚ã£ãŸã ã‘ã®ã‚‚ã®ã ã¨è€ƒãˆã‚‹äººãŒã„ã‚‹ã‹ã‚‚ã—ã‚Œãªã„ã€‚
+ã€Œå®Œäº†ã€ã®å®šç¾©ãŒåˆ†ã‹ã‚‰ãªã„ã¨ã€çµŒé¨“çš„ãƒ—ãƒ­ã‚»ã‚¹åˆ¶å¾¡ã®2æœ¬ã®è„šãŒæ©Ÿèƒ½ã—ãªã„ã€‚
+èª°ã‹ãŒã€Œå®Œäº†ã€ã«ã¤ã„ã¦èª¬æ˜ã™ã‚Œã°ã€ã¿ã‚“ãªãŒã€Œå®Œäº†ã€ã®æ„å‘³ã‚’ç†è§£ã™ã‚‹ã¯ãšã ã€‚
 
-//Done defines what the Team means when it commits to gdoingh a Product Backlog item in a Sprint. Some products do not contain documentation, so the definition of gdoneh does not include documentation. A completely gdoneh increment includes all of the analysis, design, refactoring, programming, documentation and testing for the increment and all Product Backlog items in the increment. Testing includes unit, system, user, and regression testing, as well as non-functional tests such as performance, stability, security, and integration. Done includes any internationalization. Some Teams arenft yet able to include everything required for implementation in their definition of done. This must be clear to the Product Owner. This remaining work will have to be done before the product can be implemented and used. 
+//Done defines what the Team means when it commits to â€œdoingâ€ a Product Backlog item in a Sprint. Some products do not contain documentation, so the definition of â€œdoneâ€ does not include documentation. A completely â€œdoneâ€ increment includes all of the analysis, design, refactoring, programming, documentation and testing for the increment and all Product Backlog items in the increment. Testing includes unit, system, user, and regression testing, as well as non-functional tests such as performance, stability, security, and integration. Done includes any internationalization. Some Teams arenâ€™t yet able to include everything required for implementation in their definition of done. This must be clear to the Product Owner. This remaining work will have to be done before the product can be implemented and used. 
 
-Š®—¹‚Æ‚ÍAƒ`[ƒ€‚ªƒXƒvƒŠƒ“ƒg‚Åƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚Ì€–Ú‚ğuì‹Æ’†idoingjv‚É‚·‚é‚Æ‚«‚ÌˆÓ–¡‚ğ’è‹`‚·‚é‚à‚Ì‚Å‚ ‚éB
-ƒhƒLƒ…ƒƒ“ƒg‚ªŠÜ‚Ü‚È‚¢ƒvƒƒ_ƒNƒg‚Å‚ÍAuŠ®—¹v‚Ì’è‹`‚ÉƒhƒLƒ…ƒƒ“ƒg‚ªŠÜ‚Ü‚ê‚Ä‚¢‚È‚¢B
-Š®‘S‚ÈuŠ®—¹vƒCƒ“ƒNƒŠƒƒ“ƒg‚Å‚ÍA‚·‚×‚Ä‚Ìƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚Ì€–Ú‚É‘Î‚µ‚ÄA•ªÍAİŒvAƒŠƒtƒ@ƒNƒ^ƒŠƒ“ƒOAƒvƒƒOƒ‰ƒ~ƒ“ƒOAƒhƒLƒ…ƒƒ“ƒgA‚¨‚æ‚ÑƒeƒXƒg‚ªs‚í‚ê‚éB
-ƒeƒXƒg‚É‚ÍAƒ†ƒjƒbƒgƒeƒXƒgAƒVƒXƒeƒ€ƒeƒXƒgAƒ†[ƒU[ƒeƒXƒgA‰ñ‹AƒeƒXƒgA‚»‚ê‚©‚çAƒpƒtƒH[ƒ}ƒ“ƒXƒeƒXƒgAƒXƒP[ƒ‰ƒrƒŠƒeƒBƒeƒXƒgAƒZƒLƒ…ƒŠƒeƒBƒeƒXƒgA“‡ƒeƒXƒg‚È‚Ç‚Ì‚æ‚¤‚È”ñ‹@”\ƒeƒXƒg‚àŠÜ‚Ü‚ê‚éB
-Š®—¹‚É‚Í‘Û‰»‚àŠÜ‚Ü‚ê‚éB
-‚È‚©‚É‚ÍŠ®—¹‚Ì’è‹`‚ğ‚·‚×‚Ä–‚½‚¹‚È‚¢ƒ`[ƒ€‚à‚ ‚éB
-‚»‚Ì‚Æ‚«‚ÍAƒvƒƒ_ƒNƒgƒI[ƒi[‚Éà–¾‚µ‚È‚¯‚ê‚Î‚È‚ç‚È‚¢B
-cì‹Æ‚É‚Â‚¢‚Ä‚ÍAƒvƒƒ_ƒNƒg‚ğ“±“ü‚·‚é‘O‚ÉŠ®—¹‚µ‚È‚¯‚ê‚Î‚È‚ç‚È‚¢‚¾‚ë‚¤B
+å®Œäº†ã¨ã¯ã€ãƒãƒ¼ãƒ ãŒã‚¹ãƒ—ãƒªãƒ³ãƒˆã§ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®é …ç›®ã‚’ã€Œä½œæ¥­ä¸­ï¼ˆdoingï¼‰ã€ã«ã™ã‚‹ã¨ãã®æ„å‘³ã‚’å®šç¾©ã™ã‚‹ã‚‚ã®ã§ã‚ã‚‹ã€‚
+ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆãŒå«ã¾ãªã„ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã§ã¯ã€ã€Œå®Œäº†ã€ã®å®šç¾©ã«ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆãŒå«ã¾ã‚Œã¦ã„ãªã„ã€‚
+å®Œå…¨ãªã€Œå®Œäº†ã€ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã§ã¯ã€ã™ã¹ã¦ã®ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®é …ç›®ã«å¯¾ã—ã¦ã€åˆ†æã€è¨­è¨ˆã€ãƒªãƒ•ã‚¡ã‚¯ã‚¿ãƒªãƒ³ã‚°ã€ãƒ—ãƒ­ã‚°ãƒ©ãƒŸãƒ³ã‚°ã€ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆã€ãŠã‚ˆã³ãƒ†ã‚¹ãƒˆãŒè¡Œã‚ã‚Œã‚‹ã€‚
+ãƒ†ã‚¹ãƒˆã«ã¯ã€ãƒ¦ãƒ‹ãƒƒãƒˆãƒ†ã‚¹ãƒˆã€ã‚·ã‚¹ãƒ†ãƒ ãƒ†ã‚¹ãƒˆã€ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒ†ã‚¹ãƒˆã€å›å¸°ãƒ†ã‚¹ãƒˆã€ãã‚Œã‹ã‚‰ã€ãƒ‘ãƒ•ã‚©ãƒ¼ãƒãƒ³ã‚¹ãƒ†ã‚¹ãƒˆã€ã‚¹ã‚±ãƒ¼ãƒ©ãƒ“ãƒªãƒ†ã‚£ãƒ†ã‚¹ãƒˆã€ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ãƒ†ã‚¹ãƒˆã€çµ±åˆãƒ†ã‚¹ãƒˆãªã©ã®ã‚ˆã†ãªéæ©Ÿèƒ½ãƒ†ã‚¹ãƒˆã‚‚å«ã¾ã‚Œã‚‹ã€‚
+å®Œäº†ã«ã¯å›½éš›åŒ–ã‚‚å«ã¾ã‚Œã‚‹ã€‚
+ãªã‹ã«ã¯å®Œäº†ã®å®šç¾©ã‚’ã™ã¹ã¦æº€ãŸã›ãªã„ãƒãƒ¼ãƒ ã‚‚ã‚ã‚‹ã€‚
+ãã®ã¨ãã¯ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ã«èª¬æ˜ã—ãªã‘ã‚Œã°ãªã‚‰ãªã„ã€‚
+æ®‹ä½œæ¥­ã«ã¤ã„ã¦ã¯ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚’å°å…¥ã™ã‚‹å‰ã«å®Œäº†ã—ãªã‘ã‚Œã°ãªã‚‰ãªã„ã ã‚ã†ã€‚
 
-//Tip: gUndoneh work is often accumulated in a Product Backlog item called gUndone Workh or gImplementation Work.h As this work accumulates, the Product Backlog burndown remains more accurate than if it werenft accumulated. 
+//Tip: â€œUndoneâ€ work is often accumulated in a Product Backlog item called â€œUndone Workâ€ or â€œImplementation Work.â€ As this work accumulates, the Product Backlog burndown remains more accurate than if it werenâ€™t accumulated. 
 
-""Tip: u–¢Š®—¹iUndonejvì‹Æ‚ÍAu–¢Š®—¹ì‹ÆiUndone Workjv‚ ‚é‚¢‚ÍuÀ{ŒŸ“¢ì‹ÆiImplementation Workjv‚ÆŒÄ‚Î‚ê‚éƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚Ì€–Ú‚É’~Ï‚·‚éB‚±‚¤‚µ‚½ì‹Æ‚ğ’~Ï‚µ‚Ä‚¨‚­‚ÆAƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚Ìƒo[ƒ“ƒ_ƒEƒ“‚ª‚«‚¿‚ñ‚Æ’â‘Ø‚·‚é‚æ‚¤‚É‚È‚éB
+""Tip: ã€Œæœªå®Œäº†ï¼ˆUndoneï¼‰ã€ä½œæ¥­ã¯ã€ã€Œæœªå®Œäº†ä½œæ¥­ï¼ˆUndone Workï¼‰ã€ã‚ã‚‹ã„ã¯ã€Œå®Ÿæ–½æ¤œè¨ä½œæ¥­ï¼ˆImplementation Workï¼‰ã€ã¨å‘¼ã°ã‚Œã‚‹ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®é …ç›®ã«è“„ç©ã™ã‚‹ã€‚ã“ã†ã—ãŸä½œæ¥­ã‚’è“„ç©ã—ã¦ãŠãã¨ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®ãƒãƒ¼ãƒ³ãƒ€ã‚¦ãƒ³ãŒãã¡ã‚“ã¨åœæ»ã™ã‚‹ã‚ˆã†ã«ãªã‚‹ã€‚
 
 //!FINAL THOUGHTS
-//Some organizations are incapable of building a complete increment within one Sprint. They may not yet have the automated testing infrastructure to complete all of the testing. In this case, two categories are created for each increment: the gdoneh work and the gundoneh work. The gundoneh work is the portion of each increment that will have to be completed at a later time. 
-//The Product Owner knows exactly what he or she is inspecting at the end of the Sprint because the increment meets the definition of gdoneh and the Product Owner understands the definition. 
-//gUndoneh work is added to a Product Backlog item named gundone workh so it accumulates and correctly reflects on the Release Burndown graph. 
+//Some organizations are incapable of building a complete increment within one Sprint. They may not yet have the automated testing infrastructure to complete all of the testing. In this case, two categories are created for each increment: the â€œdoneâ€ work and the â€œundoneâ€ work. The â€œundoneâ€ work is the portion of each increment that will have to be completed at a later time. 
+//The Product Owner knows exactly what he or she is inspecting at the end of the Sprint because the increment meets the definition of â€œdoneâ€ and the Product Owner understands the definition. 
+//â€œUndoneâ€ work is added to a Product Backlog item named â€œundone workâ€ so it accumulates and correctly reflects on the Release Burndown graph. 
 //This technique creates transparency in progress toward a release. 
 //The inspect and adapt in the Sprint Review is as accurate as this transparency. 
-//For instance, if a Team is not able to do performance, regression, stability, security, and integration testing for each Product Backlog item, the proportion of this work to the work that can be done (analysis, design, refactoring, programming, documentation, unit and user testing) is calculated. Letfs say that this proportion is six pieces of gdoneh and four pieces of gundone.h If the Team finishes a Product Backlog item of six units of work (the Team is estimating based on what it knows how to gdoh), four are added to the gundone workh Product Backlog item when they are finished. Sprint by Sprint, the gundoneh work of each increment is accumulated and must be addressed prior to releasing the product. This work is accumulated linearly although it actually has some sort of exponential accumulation that is dependent on each organizationfs characteristics. Release Sprints are added to the end of any release to complete this gundoneh work. The number of Sprints is unpredictable to the degree that the accumulation of gundoneh work is not linear. 
+//For instance, if a Team is not able to do performance, regression, stability, security, and integration testing for each Product Backlog item, the proportion of this work to the work that can be done (analysis, design, refactoring, programming, documentation, unit and user testing) is calculated. Letâ€™s say that this proportion is six pieces of â€œdoneâ€ and four pieces of â€œundone.â€ If the Team finishes a Product Backlog item of six units of work (the Team is estimating based on what it knows how to â€œdoâ€), four are added to the â€œundone workâ€ Product Backlog item when they are finished. Sprint by Sprint, the â€œundoneâ€ work of each increment is accumulated and must be addressed prior to releasing the product. This work is accumulated linearly although it actually has some sort of exponential accumulation that is dependent on each organizationâ€™s characteristics. Release Sprints are added to the end of any release to complete this â€œundoneâ€ work. The number of Sprints is unpredictable to the degree that the accumulation of â€œundoneâ€ work is not linear. 
 
-!‚Ü‚Æ‚ß
-1‚Â‚ÌƒXƒvƒŠƒ“ƒg‚ÅŠ®‘S‚ÈƒCƒ“ƒNƒŠƒƒ“ƒg‚ğ\’z‚·‚é‚±‚Æ‚ª‚Å‚«‚È‚¢‘gD‚à‚ ‚éB‚»‚ê‚ÍA©“®ƒeƒXƒg‚ÌƒCƒ“ƒtƒ‰‚ª‚È‚­‚ÄƒeƒXƒg‚ğI—¹‚Å‚«‚È‚¢‚©‚ç‚©‚à‚µ‚ê‚È‚¢B‚»‚Ìê‡AƒCƒ“ƒNƒŠƒƒ“ƒg‚É2‚Â‚ÌƒJƒeƒSƒŠ[‚ğì¬‚·‚éBuŠ®—¹vì‹Æ‚Æu–¢Š®—¹vì‹Æ‚Å‚ ‚éBu–¢Š®—¹vì‹Æ‚ÍAƒCƒ“ƒNƒŠƒƒ“ƒg‚Ìˆê•”‚Å‚ ‚èA‚ ‚Æ‚ÅŠ®—¹‚µ‚È‚¯‚ê‚Î‚È‚ç‚È‚¢Bƒvƒƒ_ƒNƒgƒI[ƒi[‚ÍAƒXƒvƒŠƒ“ƒg‚ÌI—¹‚ÉŒŸ¸‚·‚é‚à‚Ì‚ğ³Šm‚É’m‚Á‚Ä‚¢‚éBƒvƒƒ_ƒNƒgƒI[ƒi[‚ÍuŠ®—¹v‚Ì’è‹`‚ğ—‰ğ‚µ‚Ä‚¨‚èAƒCƒ“ƒNƒŠƒƒ“ƒg‚ª‚»‚Ì’è‹`‚É‡‚Á‚Ä‚¢‚é‚©‚ğŠm‚©‚ß‚ê‚Î‚æ‚¢Bu–¢Š®—¹vì‹Æ‚ÍAu–¢Š®—¹ì‹Æv‚Æ‚¢‚¤–¼‚Åƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚Ì€–Ú‚É’Ç‰Á‚·‚éBƒŠƒŠ[ƒXƒo[ƒ“ƒ_ƒEƒ“‚ÌƒOƒ‰ƒt‚É³‚µ‚­”½‰f‚·‚é‚½‚ß‚Å‚ ‚éB‚±‚ê‚É‚æ‚Á‚ÄAƒŠƒŠ[ƒX‚Ö‚Ìi’»‚Ì“§–¾«‚ğŠm•Û‚Å‚«‚éBƒXƒvƒŠƒ“ƒgƒŒƒrƒ…[‚Å‚ÌŒŸ¸‚Æ“K‰‚ÍA‚±‚Ì“§–¾«‚Æ“¯‚¶‚­‚ç‚¢³Šm‚È‚à‚Ì‚Å‚ ‚éB
+!ã¾ã¨ã‚
+1ã¤ã®ã‚¹ãƒ—ãƒªãƒ³ãƒˆã§å®Œå…¨ãªã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã‚’æ§‹ç¯‰ã™ã‚‹ã“ã¨ãŒã§ããªã„çµ„ç¹”ã‚‚ã‚ã‚‹ã€‚ãã‚Œã¯ã€è‡ªå‹•ãƒ†ã‚¹ãƒˆã®ã‚¤ãƒ³ãƒ•ãƒ©ãŒãªãã¦ãƒ†ã‚¹ãƒˆã‚’çµ‚äº†ã§ããªã„ã‹ã‚‰ã‹ã‚‚ã—ã‚Œãªã„ã€‚ãã®å ´åˆã€ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã«2ã¤ã®ã‚«ãƒ†ã‚´ãƒªãƒ¼ã‚’ä½œæˆã™ã‚‹ã€‚ã€Œå®Œäº†ã€ä½œæ¥­ã¨ã€Œæœªå®Œäº†ã€ä½œæ¥­ã§ã‚ã‚‹ã€‚ã€Œæœªå®Œäº†ã€ä½œæ¥­ã¯ã€ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã®ä¸€éƒ¨ã§ã‚ã‚Šã€ã‚ã¨ã§å®Œäº†ã—ãªã‘ã‚Œã°ãªã‚‰ãªã„ã€‚ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ã¯ã€ã‚¹ãƒ—ãƒªãƒ³ãƒˆã®çµ‚äº†æ™‚ã«æ¤œæŸ»ã™ã‚‹ã‚‚ã®ã‚’æ­£ç¢ºã«çŸ¥ã£ã¦ã„ã‚‹ã€‚ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã‚ªãƒ¼ãƒŠãƒ¼ã¯ã€Œå®Œäº†ã€ã®å®šç¾©ã‚’ç†è§£ã—ã¦ãŠã‚Šã€ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆãŒãã®å®šç¾©ã«åˆã£ã¦ã„ã‚‹ã‹ã‚’ç¢ºã‹ã‚ã‚Œã°ã‚ˆã„ã€‚ã€Œæœªå®Œäº†ã€ä½œæ¥­ã¯ã€ã€Œæœªå®Œäº†ä½œæ¥­ã€ã¨ã„ã†åã§ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®é …ç›®ã«è¿½åŠ ã™ã‚‹ã€‚ãƒªãƒªãƒ¼ã‚¹ãƒãƒ¼ãƒ³ãƒ€ã‚¦ãƒ³ã®ã‚°ãƒ©ãƒ•ã«æ­£ã—ãåæ˜ ã™ã‚‹ãŸã‚ã§ã‚ã‚‹ã€‚ã“ã‚Œã«ã‚ˆã£ã¦ã€ãƒªãƒªãƒ¼ã‚¹ã¸ã®é€²æ—ã®é€æ˜æ€§ã‚’ç¢ºä¿ã§ãã‚‹ã€‚ã‚¹ãƒ—ãƒªãƒ³ãƒˆãƒ¬ãƒ“ãƒ¥ãƒ¼ã§ã®æ¤œæŸ»ã¨é©å¿œã¯ã€ã“ã®é€æ˜æ€§ã¨åŒã˜ãã‚‰ã„æ­£ç¢ºãªã‚‚ã®ã§ã‚ã‚‹ã€‚
 
-—á‚¦‚ÎAƒ`[ƒ€‚ªƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚Ì€–Ú‚ÉAƒpƒtƒH[ƒ}ƒ“ƒXƒeƒXƒgA‰ñ‹AƒeƒXƒgAƒXƒ^ƒrƒŠƒeƒBƒeƒXƒgAƒZƒLƒ…ƒŠƒeƒBƒeƒXƒgA‚¨‚æ‚ÑŒ‹‡ƒeƒXƒg‚ğs‚¤‚±‚Æ‚ª‚Å‚«‚È‚¯‚ê‚ÎA•ªÍAİŒvAƒŠƒtƒ@ƒNƒ^ƒŠƒ“ƒOAƒvƒƒOƒ‰ƒ~ƒ“ƒOAƒhƒLƒ…ƒƒ“ƒe[ƒVƒ‡ƒ“Aƒ†ƒjƒbƒgƒeƒXƒgA‚¨‚æ‚Ñƒ†[ƒU[ƒeƒXƒg‚ªŠ®—¹‚µ‚½ì‹Æ‚Æ‚Ì”ä—¦‚ğŒvZ‚Å‚«‚éB‚Å‚ÍA‰¼‚ÉuŠ®—¹vì‹Æ‚ª6ŒÂAu–¢Š®—¹vì‹Æ‚ª4ŒÂ‚ÌŠ„‡‚¾‚Æ‚µ‚æ‚¤Bƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚Ì€–Ú‚ğ6ŒÂI—¹‚µ‚½‚çiƒ`[ƒ€‚Íu‚â‚è•ûv‚ğ’m‚Á‚Ä‚¢‚é‘O’ñ‚ÅŒ©Ï‚à‚Á‚Ä‚¢‚éjA‚»‚Ì“_‚Å4ŒÂ‚Ìu–¢Š®—¹vƒvƒƒ_ƒNƒgƒoƒbƒNƒƒO‚Ì€–Ú‚ğ’Ç‰Á‚·‚éB
+ä¾‹ãˆã°ã€ãƒãƒ¼ãƒ ãŒãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®é …ç›®ã«ã€ãƒ‘ãƒ•ã‚©ãƒ¼ãƒãƒ³ã‚¹ãƒ†ã‚¹ãƒˆã€å›å¸°ãƒ†ã‚¹ãƒˆã€ã‚¹ã‚¿ãƒ“ãƒªãƒ†ã‚£ãƒ†ã‚¹ãƒˆã€ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ãƒ†ã‚¹ãƒˆã€ãŠã‚ˆã³çµåˆãƒ†ã‚¹ãƒˆã‚’è¡Œã†ã“ã¨ãŒã§ããªã‘ã‚Œã°ã€åˆ†æã€è¨­è¨ˆã€ãƒªãƒ•ã‚¡ã‚¯ã‚¿ãƒªãƒ³ã‚°ã€ãƒ—ãƒ­ã‚°ãƒ©ãƒŸãƒ³ã‚°ã€ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒ†ãƒ¼ã‚·ãƒ§ãƒ³ã€ãƒ¦ãƒ‹ãƒƒãƒˆãƒ†ã‚¹ãƒˆã€ãŠã‚ˆã³ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒ†ã‚¹ãƒˆãŒå®Œäº†ã—ãŸä½œæ¥­ã¨ã®æ¯”ç‡ã‚’è¨ˆç®—ã§ãã‚‹ã€‚ã§ã¯ã€ä»®ã«ã€Œå®Œäº†ã€ä½œæ¥­ãŒ6å€‹ã€ã€Œæœªå®Œäº†ã€ä½œæ¥­ãŒ4å€‹ã®å‰²åˆã ã¨ã—ã‚ˆã†ã€‚ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®é …ç›®ã‚’6å€‹çµ‚äº†ã—ãŸã‚‰ï¼ˆãƒãƒ¼ãƒ ã¯ã€Œã‚„ã‚Šæ–¹ã€ã‚’çŸ¥ã£ã¦ã„ã‚‹å‰æã§è¦‹ç©ã‚‚ã£ã¦ã„ã‚‹ï¼‰ã€ãã®æ™‚ç‚¹ã§4å€‹ã®ã€Œæœªå®Œäº†ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãƒãƒƒã‚¯ãƒ­ã‚°ã®é …ç›®ã‚’è¿½åŠ ã™ã‚‹ã€‚
 
-ƒXƒvƒŠƒ“ƒg‚ğd‚Ë‚é‚²‚Æ‚ÉAŠeƒCƒ“ƒNƒŠƒƒ“ƒg‚Ìu–¢Š®—¹vì‹Æ‚Í’~Ï‚³‚ê‚é‚½‚ßAƒvƒƒ_ƒNƒg‚ÌƒŠƒŠ[ƒX’¼‘O‚É‚±‚ê‚ç‚Ìcì‹Æ‚Éæ‚è‘g‚Ü‚È‚¯‚ê‚Î‚È‚ç‚È‚¢Bcì‹Æ‚ÍA‘gD‚Ì“Á«‚É¶‰E‚³‚ê‚é‚½‚ßw”ŠÖ”‚É‚È‚é‚±‚Æ‚à‚ ‚é‚ªAŠî–{“I‚É‚Í’¼ü“I‚É’~Ï‚³‚ê‚éB‚±‚¤‚µ‚½u–¢Š®—¹vì‹Æ‚ğÁ‰»‚·‚é‚½‚ß‚ÌƒŠƒŠ[ƒXƒXƒvƒŠƒ“ƒg‚ğƒŠƒŠ[ƒX’¼‘O‚É’Ç‰Á‚·‚éBƒXƒvƒŠƒ“ƒg‚Ì”‚ÍAu–¢Š®—¹vì‹Æ‚Ì’~Ï‚ªüŒ`‚Å‚È‚¯‚ê‚ÎA—\‘ª•s”\‚Å‚ ‚éB
+ã‚¹ãƒ—ãƒªãƒ³ãƒˆã‚’é‡ã­ã‚‹ã”ã¨ã«ã€å„ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã®ã€Œæœªå®Œäº†ã€ä½œæ¥­ã¯è“„ç©ã•ã‚Œã‚‹ãŸã‚ã€ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆã®ãƒªãƒªãƒ¼ã‚¹ç›´å‰ã«ã“ã‚Œã‚‰ã®æ®‹ä½œæ¥­ã«å–ã‚Šçµ„ã¾ãªã‘ã‚Œã°ãªã‚‰ãªã„ã€‚æ®‹ä½œæ¥­ã¯ã€çµ„ç¹”ã®ç‰¹æ€§ã«å·¦å³ã•ã‚Œã‚‹ãŸã‚æŒ‡æ•°é–¢æ•°ã«ãªã‚‹ã“ã¨ã‚‚ã‚ã‚‹ãŒã€åŸºæœ¬çš„ã«ã¯ç›´ç·šçš„ã«è“„ç©ã•ã‚Œã‚‹ã€‚ã“ã†ã—ãŸã€Œæœªå®Œäº†ã€ä½œæ¥­ã‚’æ¶ˆåŒ–ã™ã‚‹ãŸã‚ã®ãƒªãƒªãƒ¼ã‚¹ã‚¹ãƒ—ãƒªãƒ³ãƒˆã‚’ãƒªãƒªãƒ¼ã‚¹ç›´å‰ã«è¿½åŠ ã™ã‚‹ã€‚ã‚¹ãƒ—ãƒªãƒ³ãƒˆã®æ•°ã¯ã€ã€Œæœªå®Œäº†ã€ä½œæ¥­ã®è“„ç©ãŒç·šå½¢ã§ãªã‘ã‚Œã°ã€äºˆæ¸¬ä¸èƒ½ã§ã‚ã‚‹ã€‚
 
 
 //Some helpful techniques for conducting a Scrum Retrospective are contained in: 
 
-//ƒXƒNƒ‰ƒ€ƒŒƒgƒƒXƒyƒNƒeƒBƒu‚ÌÀ{‚É–ğ—§‚Â‹Zp‚ÍAˆÈ‰º‚Ì‘Ğ‚É‹L‚³‚ê‚Ä‚¢‚éF
+//ã‚¹ã‚¯ãƒ©ãƒ ãƒ¬ãƒˆãƒ­ã‚¹ãƒšã‚¯ãƒ†ã‚£ãƒ–ã®å®Ÿæ–½ã«å½¹ç«‹ã¤æŠ€è¡“ã¯ã€ä»¥ä¸‹ã®æ›¸ç±ã«è¨˜ã•ã‚Œã¦ã„ã‚‹ï¼š
 
-//gAgile Retrospectives: Making Good Teams Great,h Esther Derby and Diana Larsen, Pragmatic Bookshelf, 2006. 
-//gUser Stories Applied: For Agile Software Development,h Mike Cohn, Addison-Wesley, 2004. 
-//gWriting Effective Use Cases,h Alistair Cockburn, Addison-Wesley, 2000.
+//â€œAgile Retrospectives: Making Good Teams Great,â€ Esther Derby and Diana Larsen, Pragmatic Bookshelf, 2006. 
+//â€œUser Stories Applied: For Agile Software Development,â€ Mike Cohn, Addison-Wesley, 2004. 
+//â€œWriting Effective Use Cases,â€ Alistair Cockburn, Addison-Wesley, 2000.
 
 //* "Agile Retrospectives: Making Good Teams Great," Ester Derby and Diana Larsen, Pragmatic Bookshelf, 2006.
-//** –|–ówƒAƒWƒƒƒCƒ‹ƒŒƒgƒƒXƒyƒNƒeƒBƒuƒY@‹­‚¢ƒ`[ƒ€‚ğˆç‚Ä‚éu‚Ó‚è‚©‚¦‚èv‚Ìèˆø‚«xŠpª“Ti–ójAƒI[ƒ€ĞA2007”N
+//** ç¿»è¨³ã€ã‚¢ã‚¸ãƒ£ã‚¤ãƒ«ãƒ¬ãƒˆãƒ­ã‚¹ãƒšã‚¯ãƒ†ã‚£ãƒ–ã‚ºã€€å¼·ã„ãƒãƒ¼ãƒ ã‚’è‚²ã¦ã‚‹ã€Œãµã‚Šã‹ãˆã‚Šã€ã®æ‰‹å¼•ãã€è§’å¾å…¸ï¼ˆè¨³ï¼‰ã€ã‚ªãƒ¼ãƒ ç¤¾ã€2007å¹´
 //* "User Stories Applied:For Agile Software Development," Mike Cohn, Addison-Wesley, 2004.
 //* "Writing Effective Use Cases," Alistair Cockburn, Addison-Wesley, 2000.
-//** –|–ówƒ†[ƒXƒP[ƒXÀ‘HƒKƒCƒh\Œø‰Ê“I‚Èƒ†[ƒXƒP[ƒX‚Ì‘‚«•ûxAƒEƒ‹ƒVƒXƒeƒ€ƒYŠ”®‰ïĞiŠÄCjARŠİk“ñi–ójA–îè”‰pi–ójA…’J‰ëGi–ójAÂŒ´–¾qi–ójAãÄ‰jĞA2001”N
+//** ç¿»è¨³ã€ãƒ¦ãƒ¼ã‚¹ã‚±ãƒ¼ã‚¹å®Ÿè·µã‚¬ã‚¤ãƒ‰â€•åŠ¹æœçš„ãªãƒ¦ãƒ¼ã‚¹ã‚±ãƒ¼ã‚¹ã®æ›¸ãæ–¹ã€ã€ã‚¦ãƒ«ã‚·ã‚¹ãƒ†ãƒ ã‚ºæ ªå¼ä¼šç¤¾ï¼ˆç›£ä¿®ï¼‰ã€å±±å²¸è€•äºŒï¼ˆè¨³ï¼‰ã€çŸ¢å´åšè‹±ï¼ˆè¨³ï¼‰ã€æ°´è°·é›…å®ï¼ˆè¨³ï¼‰ã€ç¯ åŸæ˜å­ï¼ˆè¨³ï¼‰ã€ç¿”æ³³ç¤¾ã€2001å¹´
 
-!–|–ó
+!ç¿»è¨³
 
-Špª“T <kdmsnr@gmail.com>
+è§’å¾å…¸ <kdmsnr@gmail.com>
