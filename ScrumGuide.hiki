@@ -212,11 +212,11 @@
 //The Product Owner is the one and only person responsible for managing the Product Backlog and ensuring the value of the work the Team performs. This person maintains the Product Backlog and ensures that it is visible to everyone. Everyone knows what items have the highest priority, so everyone knows what will be worked on. The Product Owner is one person, not a committee. Committees may exist that advise or influence this person, but people who want to change an item’s priority have to convince the Product Owner. Companies that adopt Scrum may find it that influences their methods for setting priorities and requirements over time. 
 
 !!プロダクトオーナー
-プロダクトオーナーは、プロダクトバックログの管理と、チームの作業の価値を保証することのできる唯一の人物である。
+プロダクトオーナーは、プロダクトバックログの管理に責任を持ち、チームの作業の価値を保証する唯一の人物である。
 プロダクトオーナーは、プロダクトバックログを維持し、みんなに確実に見えるようにする。どれが最優先項目なのかを知らせ、何に取り組めばよいのかが分かるようにする。
 プロダクトオーナーは1人の人間であり、委員会であってはならない。
 助言したり影響を与えたりする委員会があってもよいが、項目の優先度を変更したい人はプロダクトオーナーを納得させなければならない。
-スクラムを導入する会社は、自社の優先度付けや要求の決め方に影響があるかもしれない。
+スクラムを導入する会社は、自社のこれまでの優先順位付けや要求の決め方に影響を受けるかもしれない。
 
 
 //Tip: For commercial development, the Product Owner may be the product manager.For in-house development efforts, the Product Owner could be the manager of the business function that is being automated. 
