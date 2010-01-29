@@ -309,7 +309,7 @@
 
 //Products are built iteratively using Scrum, wherein each Sprint creates an increment of the product, starting with the most valuable and riskiest. More and more Sprints create additional increments of the product. Each increment is a potentially shippable slice of the entire product. When enough increments have been created for the Product to be of value, of use to its investors, the product is released. 
 
-スクラムを使用してプロダクトを反復的に構築するには、スプリントでプロダクトのインクリメントを作成することになる。
+スクラムではプロダクトが反復的に構築されるので、各スプリントでプロダクトのインクリメントを作成することになる。
 このとき、最も価値があり、最もリスクの高いものから着手する。
 スプリントのたびに、プロダクトのインクリメントが追加される。
 インクリメントは、プロダクトの出荷判断可能な断片である。
