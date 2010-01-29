@@ -255,8 +255,8 @@
 
 さらに、チームは自己組織である。
 誰も――スクラムマスターでさえも――プロダクトバックログを出荷可能な機能のインクリメントに変える方法をチームに伝えることはない。
-チームは単独でこれを解決する。
-チームメンバーは専門知識をすべての問題に適用する。
+チームは自身でこれを解決する。
+個々のチームメンバーがその専門知識をすべての問題に適用する。
 その結果生じるシナジーによって、チーム全体の効率と効果が向上する。
 
 //The optimal size for a Team is seven people, plus or minus two. When there are fewer than five Team members, there is less interaction and as a result less productivity gain.  What’s more, the Team may encounter skill constraints during parts of the Sprint and be unable to deliver a releasable piece of the product. If there are more than nine members, there is simply too much coordination required. Large Teams generate too much complexity for an empirical processs to manage. However, we have encountered some successful Teams that have exceeded the upper and lower bounds of this size range. The Product Owner and ScrumMaster roles are not included in this count unless they are also pigs. 
